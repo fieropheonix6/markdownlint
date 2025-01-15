@@ -5,7 +5,7 @@
 
 
 Text
-## Banana
+## Banana {MD022}
 
 Text
 ## Cherry
@@ -18,7 +18,16 @@ Text
 Text
 
 ---
-Elderberry
-----------
+Elderberry {MD022}
+------------------
 Text
 ## Fig
+
+<!-- markdownlint-configure-file {
+  "heading-style": false,
+  "no-multiple-blanks": false,
+  "blanks-around-headings": {
+    "lines_above": 0,
+    "lines_below": 2
+  }
+} -->

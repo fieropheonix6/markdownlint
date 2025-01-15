@@ -25,7 +25,7 @@ if (true) {
         }
     }
 
-```text
+``` Text
 	hello
 	world
 }
@@ -48,3 +48,13 @@ if (true) {
 	}                         // {MD010}
 }
 ```
+
+<!-- markdownlint-configure-file {
+  "no-hard-tabs": {
+    "ignore_code_languages": [
+      "js",
+      "text"
+    ]
+  },
+  "code-block-style": false
+} -->

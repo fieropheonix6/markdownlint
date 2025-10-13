@@ -8,7 +8,7 @@ const maxLineLength = 80;
 
 const pathFor = (relativePath) => new URL(relativePath, import.meta.url);
 const inCode = (items) => items.map((item) => `\`${item}\``);
-const sortedComma = (items) => items.sort().join(", ");
+const sortedComma = (items) => items.toSorted().join(", ");
 const linesFrom = (text) => text.split(newLineRe);
 const wrapListItem = (line) => {
   const wrappedLines = [];
@@ -61,13 +61,18 @@ for (const rule of rules) {
     ""
   );
   const ruleData = schema.properties[name];
-  if (ruleData.properties) {
+  const ruleProperties = Object.fromEntries(
+    Object.entries(
+      ruleData.oneOf.at(-1).properties
+    ).filter(([ key ]) => ((key !== "enabled") && (key !== "severity")))
+  );
+  if (Object.keys(ruleProperties).length > 0) {
     section.push(
       "Parameters:",
       ""
     );
-    for (const property of Object.keys(ruleData.properties).sort()) {
-      const propData = ruleData.properties[property];
+    for (const property of Object.keys(ruleProperties).toSorted()) {
+      const propData = ruleProperties[property];
       const propType = [ propData.type ]
         .flat()
         .map((type) => ((type === "array") ? `${propData.items.type}[]` : type))
@@ -75,7 +80,7 @@ for (const rule of rules) {
       const defaultValue = Array.isArray(propData.default) ?
         JSON.stringify(propData.default) :
         propData.default;
-      const allValues = propData.enum?.sort();
+      const allValues = propData.enum?.toSorted();
       const listItem = `- \`${property}\`: ${propData.description} (` +
         `\`${propType}\`, default \`${defaultValue}\`` +
         (propData.enum ?

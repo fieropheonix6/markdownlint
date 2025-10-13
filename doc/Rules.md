@@ -12,6 +12,11 @@ Tags: `headings`
 
 Aliases: `heading-increment`
 
+Parameters:
+
+- `front_matter_title`: RegExp for matching title in front matter (`string`,
+  default `^\s*title\s*[:=]`)
+
 This rule is triggered when you skip heading levels in a Markdown document, for
 example:
 
@@ -39,6 +44,15 @@ level at a time:
 
 ### Another Heading 3
 ```
+
+If [YAML](https://en.wikipedia.org/wiki/YAML) front matter is present and
+contains a `title` property (commonly used with blog posts), this rule treats
+that as a top level heading and will report a violation if the actual first
+heading is not a level 2 heading. To use a different property name in the
+front matter, specify the text of a regular expression via the
+`front_matter_title` parameter. To disable the use of front matter by this
+rule, specify `""` for `front_matter_title`. When front matter is not present,
+the first heading can be any level.
 
 Rationale: Headings represent the structure of a document and can be confusing
 when skipped - especially for accessibility scenarios. More information:
@@ -281,6 +295,7 @@ Aliases: `no-trailing-spaces`
 Parameters:
 
 - `br_spaces`: Spaces for line break (`integer`, default `2`)
+- `code_blocks`: Include code blocks (`boolean`, default `false`)
 - `list_item_empty_lines`: Allow spaces for empty lines in list items
   (`boolean`, default `false`)
 - `strict`: Include unnecessary breaks (`boolean`, default `false`)
@@ -290,21 +305,19 @@ Fixable: Some violations can be fixed by tooling
 This rule is triggered on any lines that end with unexpected whitespace. To fix
 this, remove the trailing space from the end of the line.
 
-Note: Trailing space is allowed in indented and fenced code blocks because some
-languages require it.
-
 The `br_spaces` parameter allows an exception to this rule for a specific number
 of trailing spaces, typically used to insert an explicit line break. The default
-value allows 2 spaces to indicate a hard break (\<br> element).
+value allows 2 spaces to indicate a hard break (\<br> element). (You must set
+`br_spaces` to a value >= 2 for this parameter to take effect. Setting
+`br_spaces` to 1 behaves the same as 0, disallowing any trailing spaces.)
 
-Note: You must set `br_spaces` to a value >= 2 for this parameter to take
-effect. Setting `br_spaces` to 1 behaves the same as 0, disallowing any trailing
-spaces.
+By default, trailing space is allowed in indented and fenced code blocks because
+some programming languages require that. To report such instances, set the
+`code_blocks` parameter to `true`.
 
 By default, this rule will not trigger when the allowed number of spaces is
 used, even when it doesn't create a hard break (for example, at the end of a
-paragraph). To report such instances as well, set the `strict` parameter to
-`true`.
+paragraph). To report such instances, set the `strict` parameter to `true`.
 
 ```markdown
 Text text text
@@ -382,6 +395,12 @@ parameter to the desired value.
 
 Rationale: Hard tabs are often rendered inconsistently by different editors and
 can be harder to work with than spaces.
+
+More information:
+
+- <https://agiletribe.wordpress.com/2011/10/27/18-dont-use-tab-characters/>
+- <https://www.jwz.org/doc/tabs-vs-spaces.html>
+- <https://adamspiers.org/computing/why_no_tabs.html>
 
 <a name="md011"></a>
 
@@ -1026,6 +1045,8 @@ Parameters:
 - `style`: List style (`string`, default `one_or_ordered`, values `one` /
   `one_or_ordered` / `ordered` / `zero`)
 
+Fixable: Some violations can be fixed by tooling
+
 This rule is triggered for ordered lists that do not either start with '1.' or
 do not have a prefix that increases in numerical order (depending on the
 configured style). The less-common pattern of using '0.' as a first prefix or
@@ -1321,6 +1342,8 @@ Aliases: `no-inline-html`
 Parameters:
 
 - `allowed_elements`: Allowed elements (`string[]`, default `[]`)
+- `table_allowed_elements`: Allowed elements in tables (`string[]`, default
+  `[]`)
 
 This rule is triggered whenever raw HTML is used in a Markdown document:
 
@@ -1334,7 +1357,11 @@ To fix this, use 'pure' Markdown instead of including raw HTML:
 # Markdown heading
 ```
 
-Note: To allow specific HTML elements, use the `allowed_elements` parameter.
+To allow specific HTML elements anywhere in Markdown content, set the
+`allowed_elements` parameter to a list of HTML element names. To allow a
+specific set of HTML elements within Markdown tables, set the
+`table_allowed_elements` parameter to a list of HTML element names. This can be
+used to permit the use of `<br>`-style line breaks only within Markdown tables.
 
 Rationale: Raw HTML is allowed in Markdown, but this rule is included for
 those who want their documents to only include "pure" Markdown, or for those
@@ -2523,7 +2550,7 @@ Rationale: Some parsers have difficulty with tables that are missing their
 leading or trailing pipe characters. The use of leading/trailing pipes can also
 help provide visual clarity.
 
-[gfm-table-055]: https://github.github.com/gfm/#tables-extension-
+[gfm-table-055]: https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-tables
 
 <a name="md056"></a>
 
@@ -2563,7 +2590,7 @@ of cells or it will not be recognized as a table (per specification).
 Rationale: Extra cells in a row are usually not shown, so their data is lost.
 Missing cells in a row create holes in the table and suggest an omission.
 
-[gfm-table-056]: https://github.github.com/gfm/#tables-extension-
+[gfm-table-056]: https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-tables
 
 <a name="md058"></a>
 
@@ -2647,7 +2674,83 @@ translations for every language.
 
 Note: This rule checks Markdown links; HTML links are ignored.
 
-More information: <https://webaim.org/techniques/hypertext/>
+More information:
+
+- <https://webaim.org/techniques/hypertext/>
+- <https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-link-only.html>
+
+<a name="md060"></a>
+
+## `MD060` - Table column style
+
+Tags: `table`
+
+Aliases: `table-column-style`
+
+Parameters:
+
+- `style`: Table column style (`string`, default `any`, values `aligned` /
+  `any` / `compact` / `tight`)
+
+This rule is triggered when the column separators of a
+[GitHub Flavored Markdown table][gfm-table-060] are used inconsistently.
+
+This rule recognizes three table column styles based on popular use:
+
+Style `aligned` looks the most like a table:
+
+```markdown
+| Character | Meaning |
+| --------- | ------- |
+| Y         | Yes     |
+| N         | No      |
+```
+
+Style `compact` uses a single space to pad cell content:
+
+```markdown
+| Character | Meaning |
+| --- | --- |
+| Y | Yes |
+| N | No |
+```
+
+Style `tight` uses no padding for cell content:
+
+```markdown
+|Character|Meaning|
+|---|---|
+|Y|Yes|
+|N|No|
+```
+
+When this rule's `style` parameter is set to `aligned`, `compact`, or `tight`,
+every table must match the corresponding pattern and errors will be reported for
+any violations. By default, or when the `any` style is used, each table is
+analyzed to see if it satisfies any supported style. If so, no errors are
+reported. If not, errors are be reported for whichever style would produce the
+*fewest* errors (i.e., whichever style is the closest match).
+
+Note: Pipe alignment for the `aligned` style is based on character count, so
+wide characters and multi-character encodings can produce unexpected results.
+The following table is correctly aligned based on character count, though some
+editors render the emoji wider:
+
+<!-- markdownlint-capture -->
+<!-- markdownlint-disable extended-ascii -->
+
+```markdown
+| Response | Emoji |
+| -------- | ----- |
+| Yes      | ✅     |
+| No       | ❎     |
+```
+
+<!-- markdownlint-restore -->
+
+Rationale: Consistent formatting makes it easier to understand a document.
+
+[gfm-table-060]: https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-tables
 
 <!-- markdownlint-configure-file {
   "no-inline-html": {

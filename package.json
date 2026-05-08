@@ -68,7 +68,7 @@
     "update-test-repos": "node scripts/index.mjs remove ./test-repos && npm run clone-test-repos && npm run update-snapshots-test-repos"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=22"
   },
   "dependencies": {
     "micromark": "4.0.2",

@@ -2,13 +2,10 @@
 
 import test from "ava";
 import path from "node:path";
-import { __dirname as getDirname } from "./esm-helpers.mjs";
 import { resolveModule, resolveModuleCustomResolve } from "../lib/resolve-module.cjs";
 
 import { createRequire } from "node:module";
 const require = createRequire(import.meta.url);
-// eslint-disable-next-line no-underscore-dangle
-const __dirname = getDirname(import.meta);
 
 test("built-in module", (t) => {
   t.plan(1);
@@ -30,7 +27,7 @@ test("absolute path to module", (t) => {
   t.plan(1);
   const absolute =
     path.resolve(
-      __dirname,
+      import.meta.dirname,
       "./rules/node_modules/markdownlint-rule-sample-commonjs"
     );
   t.deepEqual(
@@ -39,14 +36,14 @@ test("absolute path to module", (t) => {
   );
 });
 
-test("relative (to __dirname) path to module", (t) => {
+test("relative (to import.meta.dirname) path to module", (t) => {
   t.plan(1);
   t.deepEqual(
     resolveModule(
       "./rules/node_modules/markdownlint-rule-sample-module",
-      // __dirname is needed because require.resolve is relative to this
+      // import.meta.dirname is needed because require.resolve is relative to this
       // file while resolveModule is relative to resolve-module.cjs
-      [ __dirname ]
+      [ import.meta.dirname ]
     ),
     require.resolve(
       "./rules/node_modules/markdownlint-rule-sample-module"
@@ -67,11 +64,11 @@ test("module in alternate node_modules", (t) => {
   t.deepEqual(
     resolveModule(
       "markdownlint-rule-sample-commonjs",
-      [ path.join(__dirname, "rules") ]
+      [ path.join(import.meta.dirname, "rules") ]
     ),
     require.resolve(
       "markdownlint-rule-sample-commonjs",
-      { "paths": [ path.join(__dirname, "rules") ] }
+      { "paths": [ path.join(import.meta.dirname, "rules") ] }
     )
   );
 });
@@ -79,8 +76,8 @@ test("module in alternate node_modules", (t) => {
 test("module local, relative, and in alternate node_modules (same paths)", (t) => {
   t.plan(3);
   const paths = [
-    __dirname,
-    path.join(__dirname, "rules")
+    import.meta.dirname,
+    path.join(import.meta.dirname, "rules")
   ];
   t.deepEqual(
     resolveModule(
@@ -124,7 +121,7 @@ test("custom resolve implementation", (t) => {
     resolveModuleCustomResolve(
       customResolve,
       "./rules/node_modules/markdownlint-rule-sample-module",
-      [ __dirname ]
+      [ import.meta.dirname ]
     ),
     expected
   );
@@ -140,7 +137,7 @@ test("custom resolve implementation, missing paths", (t) => {
       // @ts-ignore
       customResolve,
       "./rules/node_modules/markdownlint-rule-sample-commonjs",
-      [ __dirname ]
+      [ import.meta.dirname ]
     ),
     expected
   );

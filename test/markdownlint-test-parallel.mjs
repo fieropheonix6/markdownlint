@@ -3,7 +3,6 @@
 import { availableParallelism } from "node:os";
 import { Worker } from "node:worker_threads";
 import { lint } from "markdownlint/sync";
-import { __filename } from "./esm-helpers.mjs";
 
 /**
  * Lint specified Markdown files (using multiple threads).
@@ -22,7 +21,7 @@ export function markdownlintParallel(options) {
         ...options,
         "files": files.slice(i * chunkSize, (i + 1) * chunkSize)
       };
-      const worker = new Worker(__filename(import.meta).replace(/parallel\.mjs$/, "worker.mjs"), { workerData });
+      const worker = new Worker(import.meta.filename.replace(/parallel\.mjs$/, "worker.mjs"), { workerData });
       worker.on("message", resolve);
       worker.on("error", reject);
     }));

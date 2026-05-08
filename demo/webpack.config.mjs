@@ -2,7 +2,7 @@
 
 import webpack from "webpack";
 import TerserPlugin from "terser-webpack-plugin";
-import { __dirname, importWithTypeJson } from "../test/esm-helpers.mjs";
+import { importWithTypeJson } from "../test/esm-helpers.mjs";
 const libraryPackageJson = await importWithTypeJson(import.meta, "../package.json");
 
 // eslint-disable-next-line jsdoc/require-jsdoc
@@ -24,7 +24,7 @@ function config(options) {
         "name": name.replace(/(-\w)/g, (m) => m.slice(1).toUpperCase()),
         "type": "var"
       },
-      "path": __dirname(import.meta)
+      "path": import.meta.dirname
     },
     "plugins": [
       new webpack.BannerPlugin({

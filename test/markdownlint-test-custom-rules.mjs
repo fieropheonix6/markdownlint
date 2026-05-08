@@ -10,7 +10,7 @@ import { lint as lintPromise } from "markdownlint/promise";
 import { lint as lintSync } from "markdownlint/sync";
 import customRules from "./rules/rules.cjs";
 import { newLineRe } from "../helpers/helpers.cjs";
-import { __filename, importWithTypeJson } from "./esm-helpers.mjs";
+import { importWithTypeJson } from "./esm-helpers.mjs";
 const packageJson = await importWithTypeJson(import.meta, "../package.json");
 const { homepage, version } = packageJson;
 
@@ -2201,7 +2201,7 @@ test("customRulesAsyncReadFiles", (t) => {
         "asynchronous": true,
         "parser": "none",
         "function":
-          (params, onError) => fs.readFile(__filename(import.meta), "utf8").then(
+          (params, onError) => fs.readFile(import.meta.filename, "utf8").then(
             (content) => {
               t.true(content.length > 0);
               onError({
@@ -2221,7 +2221,7 @@ test("customRulesAsyncReadFiles", (t) => {
         "parser": "none",
         "function":
           async(params, onError) => {
-            const content = await fs.readFile(__filename(import.meta), "utf8");
+            const content = await fs.readFile(import.meta.filename, "utf8");
             t.true(content.length > 0);
             onError({
               "lineNumber": 1,
@@ -2488,7 +2488,7 @@ for (const flavor of [
   ],
   [
     "customRulesAsyncDeferredString",
-    () => fs.readFile(__filename(import.meta), "utf8").then(
+    () => fs.readFile(import.meta.filename, "utf8").then(
       () => {
         throw errorMessage;
       }
@@ -2496,7 +2496,7 @@ for (const flavor of [
   ],
   [
     "customRulesAsyncDeferredError",
-    () => fs.readFile(__filename(import.meta), "utf8").then(
+    () => fs.readFile(import.meta.filename, "utf8").then(
       () => {
         throw new Error(errorMessage);
       }

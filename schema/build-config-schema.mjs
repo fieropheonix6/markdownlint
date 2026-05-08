@@ -6,7 +6,6 @@ import path from "node:path";
 import rules from "../lib/rules.mjs";
 import jsonSchemaToTypeScript from "json-schema-to-typescript";
 import { version } from "../lib/constants.mjs";
-import { __dirname } from "../test/esm-helpers.mjs";
 
 const schemaName = "markdownlint-config-schema.json";
 const schemaUri = `https://raw.githubusercontent.com/DavidAnson/markdownlint/v${version}/schema/${schemaName}`;
@@ -679,7 +678,7 @@ for (const [ tag, tagTags ] of Object.entries(tags)) {
 }
 
 // Write schema
-const schemaFile = path.join(__dirname(import.meta), schemaName);
+const schemaFile = path.join(import.meta.dirname, schemaName);
 await fs.writeFile(schemaFile, JSON.stringify(schema, null, "  "));
 
 // Create and write strict schema
@@ -688,11 +687,11 @@ const schemaStrict = {
   "$id": schemaStrictUri,
   "additionalProperties": false
 };
-const schemaFileStrict = path.join(__dirname(import.meta), schemaStrictName);
+const schemaFileStrict = path.join(import.meta.dirname, schemaStrictName);
 await fs.writeFile(schemaFileStrict, JSON.stringify(schemaStrict, null, "  "));
 
 // Write TypeScript declaration file
-const declarationStrictName = path.join(__dirname(import.meta), "..", "lib", "configuration-strict.d.ts");
+const declarationStrictName = path.join(import.meta.dirname, "..", "lib", "configuration-strict.d.ts");
 schemaStrict.title = "ConfigurationStrict";
 const declaration = await jsonSchemaToTypeScript.compile(
   // @ts-ignore

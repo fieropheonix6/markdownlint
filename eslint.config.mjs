@@ -155,6 +155,16 @@ export default [
   },
   {
     "files": [
+      "demo/**/*.mjs",
+      "schema/**/*.mjs",
+      "test/**/*.mjs"
+    ],
+    "rules": {
+      "n/no-unsupported-features/node-builtins": [ "error", { "allowExperimental": true } ]
+    }
+  },
+  {
+    "files": [
       "test/rules/**/*.js",
       "test/rules/**/*.cjs"
     ],

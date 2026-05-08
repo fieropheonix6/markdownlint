@@ -3,7 +3,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import yaml from "js-yaml";
-import { __dirname, importWithTypeJson } from "../test/esm-helpers.mjs";
+import { importWithTypeJson } from "../test/esm-helpers.mjs";
 const configSchema = await importWithTypeJson(import.meta, "../schema/markdownlint-config-schema.json");
 
 /** @type {import("markdownlint").Configuration} */
@@ -49,7 +49,7 @@ const transformComments = (input, commentPrefix) => (
 
 const configStringJson = JSON.stringify(configExample, null, 2);
 await fs.writeFile(
-  path.join(__dirname(import.meta), ".markdownlint.jsonc"),
+  path.join(import.meta.dirname, ".markdownlint.jsonc"),
   transformComments(configStringJson, "//"),
   "utf8"
 );
@@ -63,7 +63,7 @@ const configStringYaml = yaml.dump(
   }
 );
 await fs.writeFile(
-  path.join(__dirname(import.meta), ".markdownlint.yaml"),
+  path.join(import.meta.dirname, ".markdownlint.yaml"),
   transformComments(configStringYaml, "#"),
   "utf8"
 );

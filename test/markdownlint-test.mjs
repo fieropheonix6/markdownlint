@@ -21,7 +21,7 @@ import * as cache from "../lib/cache.mjs";
 import * as constants from "../lib/constants.mjs";
 import rules from "../lib/rules.mjs";
 import customRules from "./rules/rules.cjs";
-import { __dirname, importWithTypeJson } from "./esm-helpers.mjs";
+import { importWithTypeJson } from "./esm-helpers.mjs";
 /** @type {{exports: Object.<string, string>, homepage: string, version: string}} */
 const packageJson = await importWithTypeJson(import.meta, "../package.json");
 /** @type {{$id: string, properties: Object<string, Object>}} */
@@ -1203,7 +1203,7 @@ test("validateConfigExampleJson", (t) => {
   // Validate JSONC
   const fileJson = ".markdownlint.jsonc";
   const dataJson = fs.readFileSync(
-    path.join(__dirname(import.meta), "../schema", fileJson),
+    path.join(import.meta.dirname, "../schema", fileJson),
     "utf8"
   );
   const jsonObject = jsoncParser.parse(dataJson);
@@ -1216,7 +1216,7 @@ test("validateConfigExampleJson", (t) => {
   // Validate YAML
   const fileYaml = ".markdownlint.yaml";
   const dataYaml = fs.readFileSync(
-    path.join(__dirname(import.meta), "../schema", fileYaml),
+    path.join(import.meta.dirname, "../schema", fileYaml),
     "utf8"
   );
   const yamlObject = jsYaml.load(dataYaml);

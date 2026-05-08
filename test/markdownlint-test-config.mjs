@@ -9,9 +9,8 @@ import test from "ava";
 import { readConfig as readConfigAsync } from "markdownlint/async";
 import { extendConfig, readConfig as readConfigPromise } from "markdownlint/promise";
 import { readConfig as readConfigSync } from "markdownlint/sync";
-import { __dirname } from "./esm-helpers.mjs";
 
-const sameFileSystem = (path.relative(os.homedir(), __dirname(import.meta)) !== __dirname(import.meta));
+const sameFileSystem = (path.relative(os.homedir(), import.meta.dirname) !== import.meta.dirname);
 
 test("configSingle", (t) => new Promise((resolve) => {
   t.plan(2);
@@ -26,7 +25,7 @@ test("configSingle", (t) => new Promise((resolve) => {
 
 test("configAbsolute", (t) => new Promise((resolve) => {
   t.plan(2);
-  readConfigAsync(path.join(__dirname(import.meta), "config", "config-child.json"),
+  readConfigAsync(path.join(import.meta.dirname, "config", "config-child.json"),
     function callback(err, actual) {
       t.falsy(err);
       const expected = require("./config/config-child.json");
@@ -272,7 +271,7 @@ test("configSingleSync", (t) => {
 test("configAbsoluteSync", (t) => {
   t.plan(1);
   const actual = readConfigSync(
-    path.join(__dirname(import.meta), "config", "config-child.json"));
+    path.join(import.meta.dirname, "config", "config-child.json"));
   const expected = require("./config/config-child.json");
   t.deepEqual(actual, expected, "Config object not correct.");
 });

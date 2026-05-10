@@ -2,11 +2,10 @@
 
 import webpack from "webpack";
 import TerserPlugin from "terser-webpack-plugin";
-import { importWithTypeJson } from "../test/esm-helpers.mjs";
-const libraryPackageJson = await importWithTypeJson(import.meta, "../package.json");
+import libraryPackageJson from "../package.json" with { "type": "json" };
 
-// eslint-disable-next-line jsdoc/require-jsdoc
-function config(options) {
+// eslint-disable-next-line jsdoc/require-jsdoc, jsdoc/reject-any-type
+function config(/** @type {any} */ options) {
   const { entry, filename, mode, optimization, packageJson } = options;
   const { name, version, homepage, license } = packageJson;
   return {
@@ -21,7 +20,7 @@ function config(options) {
     "output": {
       "filename": filename,
       "library": {
-        "name": name.replace(/(-\w)/g, (m) => m.slice(1).toUpperCase()),
+        "name": name.replace(/(-\w)/g, (/** @type {string} */ m) => m.slice(1).toUpperCase()),
         "type": "var"
       },
       "path": import.meta.dirname

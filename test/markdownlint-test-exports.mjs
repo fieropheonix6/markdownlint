@@ -4,8 +4,7 @@ import { createRequire } from "node:module";
 const require = createRequire(import.meta.url);
 import test from "ava";
 import spawn from "nano-spawn";
-import { importWithTypeJson } from "./esm-helpers.mjs";
-const packageJson = await importWithTypeJson(import.meta, "../package.json");
+import packageJson from "../package.json" with { "type": "json" };
 
 const exportMappings = new Map([
   [ ".", "../lib/exports.mjs" ],
@@ -47,6 +46,7 @@ for (const [ exportName, exportPath ] of exportMappings) {
 
 test(`exported names`, async(t) => {
   t.plan(1);
+  /** @type {Object.<string, string[]>} */
   const exportedNames = {};
   for (const [ exportName, exportPath ] of exportMappings) {
     const exportByName = exportName.replace(/^\./u, packageJson.name);

@@ -21,12 +21,11 @@ import * as cache from "../lib/cache.mjs";
 import * as constants from "../lib/constants.mjs";
 import rules from "../lib/rules.mjs";
 import customRules from "./rules/rules.cjs";
-import { importWithTypeJson } from "./esm-helpers.mjs";
 /** @type {{exports: Object.<string, string>, homepage: string, version: string}} */
-const packageJson = await importWithTypeJson(import.meta, "../package.json");
+import packageJson from "../package.json" with { "type": "json" };
 /** @type {{$id: string, properties: Object<string, Object>}} */
-const configSchema = await importWithTypeJson(import.meta, "../schema/markdownlint-config-schema.json");
-const configSchemaStrict = await importWithTypeJson(import.meta, "../schema/markdownlint-config-schema-strict.json");
+import configSchema from "../schema/markdownlint-config-schema.json" with { "type": "json" };
+import configSchemaStrict from "../schema/markdownlint-config-schema-strict.json" with { "type": "json" };
 
 const deprecatedRuleNames = new Set(constants.deprecatedRuleNames);
 const ajvOptions = {
@@ -594,6 +593,7 @@ test("styleFiles", async(t) => {
     t.truthy(require(path.join("../style", file)), "Unable to load/parse.");
     const exportValue = `./style/${file}`;
     const exportKey = exportValue.replace(/\.json$/, "");
+    // @ts-ignore
     t.is(packageJson.exports[exportKey], exportValue);
   }
 });
@@ -1449,16 +1449,18 @@ test("token-map-spans", (t) => {
           );
           for (const token of inlines) {
             t.truthy(token.map);
-            for (let i = token.map[0]; i < token.map[1]; i++) {
-              if (tokenLines.includes(i)) {
-                t.true(
-                  lastLineNumber === token.lineNumber,
-                  `Line ${i + 1} is part of token maps from multiple lines.`
-                );
-              } else {
-                tokenLines.push(i);
+            if (token.map) {
+              for (let i = token.map[0]; i < token.map[1]; i++) {
+                if (tokenLines.includes(i)) {
+                  t.true(
+                    lastLineNumber === token.lineNumber,
+                    `Line ${i + 1} is part of token maps from multiple lines.`
+                  );
+                } else {
+                  tokenLines.push(i);
+                }
+                lastLineNumber = token.lineNumber;
               }
-              lastLineNumber = token.lineNumber;
             }
           }
         }

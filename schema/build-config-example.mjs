@@ -3,13 +3,13 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import yaml from "js-yaml";
-import { importWithTypeJson } from "../test/esm-helpers.mjs";
-const configSchema = await importWithTypeJson(import.meta, "../schema/markdownlint-config-schema.json");
+import configSchema from "../schema/markdownlint-config-schema.json" with { "type": "json" };
 
 /** @type {import("markdownlint").Configuration} */
 const configExample = {};
 for (const rule in configSchema.properties) {
   if (/^(?:MD\d{3}|default|extends)$/.test(rule)) {
+    // @ts-ignore
     const properties = configSchema.properties[rule];
     configExample[rule + "-description"] = properties.description;
     configExample[rule] = properties.default;

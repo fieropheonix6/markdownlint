@@ -5,8 +5,7 @@ import { lint as lintAsync } from "markdownlint/async";
 import { lint as lintPromise } from "markdownlint/promise";
 import { lint as lintSync } from "markdownlint/sync";
 import { convertToResultVersion0, convertToResultVersion1, convertToResultVersion2 } from "markdownlint/helpers";
-import { importWithTypeJson } from "./esm-helpers.mjs";
-const packageJson = await importWithTypeJson(import.meta, "../package.json");
+import packageJson from "../package.json" with { "type": "json" };
 const { homepage, version } = packageJson;
 
 test("resultObjectToStringNotEnumerable", (t) => new Promise((resolve) => {

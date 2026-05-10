@@ -10,8 +10,7 @@ import { lint as lintPromise } from "markdownlint/promise";
 import { lint as lintSync } from "markdownlint/sync";
 import customRules from "./rules/rules.cjs";
 import { newLineRe } from "../helpers/helpers.cjs";
-import { importWithTypeJson } from "./esm-helpers.mjs";
-const packageJson = await importWithTypeJson(import.meta, "../package.json");
+import packageJson from "../package.json" with { "type": "json" };
 const { homepage, version } = packageJson;
 
 const markdownItFactory = () => markdownIt({ "html": true });

@@ -84,7 +84,7 @@ Thank you!
 [closing-keywords]: https://help.github.com/articles/closing-issues-using-keywords/
 [custom-rules]: doc/CustomRules.md
 [dependencies]: https://docs.npmjs.com/cli/v11/configuring-npm/package-json#dependencies
-[example-com]: https://en.wikipedia.org/wiki/Example.com
+[example-com]: https://wikipedia.org/wiki/Example.com
 [micromark]: https://www.npmjs.com/package/micromark
 [new-rule]: https://github.com/DavidAnson/markdownlint/labels/new%20rule
 [npm-scripts]: https://docs.npmjs.com/misc/scripts

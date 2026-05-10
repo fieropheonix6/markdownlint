@@ -32,12 +32,12 @@ as well as directives, footnotes, and math syntax - all implemented by
 
 [commonmark]: https://commonmark.org/
 [gfm]: https://github.github.com/gfm/
-[markdown]: https://en.wikipedia.org/wiki/Markdown
+[markdown]: https://wikipedia.org/wiki/Markdown
 [markdownlint-ruby]: https://github.com/markdownlint/markdownlint
 [micromark]: https://github.com/micromark/micromark
 [micromark-extensions]: https://github.com/micromark/micromark?tab=readme-ov-file#list-of-extensions
 [nodejs]: https://nodejs.org/
-[static-analysis]: https://en.wikipedia.org/wiki/Static_program_analysis
+[static-analysis]: https://wikipedia.org/wiki/Static_program_analysis
 
 ### Related
 
@@ -489,7 +489,7 @@ See [.markdownlint.jsonc](schema/.markdownlint.jsonc) and/or
 configuration object with all properties set to the default value.
 
 Sets of rules (known as a "style") can be stored separately and loaded
-as [JSON](https://en.wikipedia.org/wiki/JSON).
+as [JSON](https://wikipedia.org/wiki/JSON).
 
 Example of referencing a built-in style from JavaScript:
 
@@ -604,7 +604,7 @@ Type: `Array` of `String`
 List of files to lint.
 
 Each array element should be a single file (via relative or absolute path);
-[globbing](https://en.wikipedia.org/wiki/Glob_%28programming%29) is the
+[globbing](https://wikipedia.org/wiki/Glob_%28programming%29) is the
 caller's responsibility.
 
 Example: `[ "one.md", "dir/two.md" ]`
@@ -626,9 +626,9 @@ The default value:
 /((^---[^\S\r\n\u2028\u2029]*$[\s\S]+?^---\s*)|(^\+\+\+[^\S\r\n\u2028\u2029]*$[\s\S]+?^(\+\+\+|\.\.\.)\s*)|(^\{[^\S\r\n\u2028\u2029]*$[\s\S]+?^\}\s*))(\r\n|\r|\n|$)/m
 ```
 
-Ignores [YAML](https://en.wikipedia.org/wiki/YAML),
-[TOML](https://en.wikipedia.org/wiki/TOML), and
-[JSON](https://en.wikipedia.org/wiki/JSON) front matter such as:
+Ignores [YAML](https://wikipedia.org/wiki/YAML),
+[TOML](https://wikipedia.org/wiki/TOML), and
+[JSON](https://wikipedia.org/wiki/JSON) front matter such as:
 
 ```text
 ---

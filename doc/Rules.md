@@ -45,7 +45,7 @@ level at a time:
 ### Another Heading 3
 ```
 
-If [YAML](https://en.wikipedia.org/wiki/YAML) front matter is present and
+If [YAML](https://wikipedia.org/wiki/YAML) front matter is present and
 contains a `title` property (commonly used with blog posts), this rule treats
 that as a top level heading and will report a violation if the actual first
 heading is not a level 2 heading. To use a different property name in the
@@ -426,7 +426,7 @@ To fix this, swap the `[]` and `()` around:
 [Correct link syntax](https://www.example.com/)
 ```
 
-Note: [Markdown Extra](https://en.wikipedia.org/wiki/Markdown_Extra)-style
+Note: [Markdown Extra](https://wikipedia.org/wiki/Markdown_Extra)-style
 footnotes do not trigger this rule:
 
 ```markdown
@@ -898,7 +898,7 @@ lower-level headings (h2, h3, etc.):
 Note: The `level` parameter can be used to change the top-level (ex: to h2) in
 cases where an h1 is added externally.
 
-If [YAML](https://en.wikipedia.org/wiki/YAML) front matter is present and
+If [YAML](https://wikipedia.org/wiki/YAML) front matter is present and
 contains a `title` property (commonly used with blog posts), this rule treats
 that as a top level heading and will report a violation for any subsequent
 top-level headings. To use a different property name in the front matter,
@@ -952,7 +952,7 @@ Rationale: Headings are not meant to be full sentences. More information:
 [Punctuation at the end of headers][end-punctuation].
 
 [end-punctuation]: https://cirosantilli.com/markdown-style-guide#punctuation-at-the-end-of-headers
-[html-entity-references]: https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references
+[html-entity-references]: https://wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references
 
 <a name="md027"></a>
 
@@ -1750,9 +1750,9 @@ in cases where an `h1` is added externally.
 Rationale: The top-level heading often acts as the title of a document. More
 information: <https://cirosantilli.com/markdown-style-guide#top-level-header>.
 
-[HTML]: https://en.wikipedia.org/wiki/HTML
+[HTML]: https://wikipedia.org/wiki/HTML
 [RegExp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions
-[YAML]: https://en.wikipedia.org/wiki/YAML
+[YAML]: https://wikipedia.org/wiki/YAML
 
 <a name="md042"></a>
 
@@ -1976,7 +1976,7 @@ content of an image for people who may not be able to see it.
 [aria-hidden]: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-hidden
 [phase2technology]: https://www.phase2technology.com/blog/no-more-excuses
 [w3c]: https://www.w3.org/WAI/alt/
-[wikipedia]: https://en.wikipedia.org/wiki/Alt_attribute
+[wikipedia]: https://wikipedia.org/wiki/Alt_attribute
 
 <a name="md046"></a>
 
@@ -2800,10 +2800,10 @@ appear aligned in most editors and monospaced fonts:
 
 Rationale: Consistent formatting makes it easier to understand a document.
 
-[cjk-characters]: https://en.wikipedia.org/wiki/CJK_characters
-[emoji]: https://en.wikipedia.org/wiki/Emoji
+[cjk-characters]: https://wikipedia.org/wiki/CJK_characters
+[emoji]: https://wikipedia.org/wiki/Emoji
 [gfm-table-060]: https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-tables
-[latin-script]: https://en.wikipedia.org/wiki/Latin_script
+[latin-script]: https://wikipedia.org/wiki/Latin_script
 
 <!-- markdownlint-configure-file {
   "no-inline-html": {

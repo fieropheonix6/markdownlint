@@ -91,7 +91,7 @@ URLs may end with a dash: https://example.com#heading- {MD034}
 
 ... when embedded: <code>https://example.com#heading-</code>
 
-Links with spaces inside angle brackets are okay: [blue jay](<https://en.wikipedia.org/wiki/Blue jay>)
+Links with spaces inside angle brackets are okay: [blue jay](<https://wikipedia.org/wiki/Blue jay>)
 
 Email addresses are treated similarly: user@example.com {MD034}
 

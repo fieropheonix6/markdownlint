@@ -24,6 +24,6 @@ be useful to custom rule authors and may avoid duplicating code.
 
 [custom-rules]: https://github.com/DavidAnson/markdownlint/blob/v0.40.0/doc/CustomRules.md
 [jsdoc]: https://en.m.wikipedia.org/wiki/JSDoc
-[markdown]: https://en.wikipedia.org/wiki/Markdown
+[markdown]: https://wikipedia.org/wiki/Markdown
 [markdownlint]: https://github.com/DavidAnson/markdownlint
 [rules]: https://github.com/DavidAnson/markdownlint/blob/v0.40.0/doc/Rules.md

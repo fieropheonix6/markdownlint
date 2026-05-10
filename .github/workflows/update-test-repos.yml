@@ -20,7 +20,7 @@ jobs:
         ref: next
     - uses: actions/setup-node@v6
       with:
-        node-version: latest
+        node-version: lts/*
     - run: git config user.email "david@dlaa.me"
     - run: git config user.name "David Anson"
     - run: git checkout -b update-test-repos-$GITHUB_RUN_ID

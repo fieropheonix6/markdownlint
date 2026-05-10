@@ -39,10 +39,10 @@ jobs:
       uses: pnpm/action-setup@v6
       with:
         version: latest
-    - name: Use Node.js latest
+    - name: Use Node.js LTS
       uses: actions/setup-node@v6
       with:
-        node-version: latest
+        node-version: lts/*
     - name: Install dependencies
       run: pnpm install
     - name: Run CI Tests

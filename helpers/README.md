@@ -23,7 +23,7 @@ be useful to custom rule authors and may avoid duplicating code.
 `markdownlint` project, so there are no additional tests here.
 
 [custom-rules]: https://github.com/DavidAnson/markdownlint/blob/v0.40.0/doc/CustomRules.md
-[jsdoc]: https://en.m.wikipedia.org/wiki/JSDoc
+[jsdoc]: https://wikipedia.org/wiki/JSDoc
 [markdown]: https://wikipedia.org/wiki/Markdown
 [markdownlint]: https://github.com/DavidAnson/markdownlint
 [rules]: https://github.com/DavidAnson/markdownlint/blob/v0.40.0/doc/Rules.md

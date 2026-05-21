@@ -14,7 +14,7 @@ import { markdownlintParallel } from "./markdownlint-test-parallel.mjs";
 /**
  * Lints a test repository.
  *
- * @param {import("ava").ExecutionContext<unknown>} t Test instance.
+ * @param {import("node:test").TestContext} t Test instance.
  * @param {string[]} globPatterns Array of files to in/exclude.
  * @param {string} [configPath] Path to config file.
  * @param {Configuration} [configOverrides] Configuration overrides.
@@ -32,8 +32,6 @@ export function lintTestRepo(t, globPatterns, configPath, configOverrides, paral
     globby(globPatterns),
     configPath ? readConfig(configPath, [ jsoncParse, yamlParse ]) : {}
   ]).then(([ files, rawConfig ]) => {
-    // eslint-disable-next-line no-console
-    console.log(`${t.title}: Linting ${files.length} files...`);
     const cookedConfig = Object.fromEntries(
       Object.entries(rawConfig)
         .map(([ k, v ]) => [
@@ -49,10 +47,7 @@ export function lintTestRepo(t, globPatterns, configPath, configOverrides, paral
       files,
       config
     }).then((results) => {
-      t.snapshot(
-        formatLintResults(results).join("\n"),
-        "Expected linting violations"
-      );
+      t.assert.snapshot(formatLintResults(results).join("\n"));
     });
   });
 }

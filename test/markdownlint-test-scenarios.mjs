@@ -2,19 +2,19 @@
 
 import fs from "node:fs/promises";
 import path from "node:path";
-import test from "ava";
+import test from "node:test";
 import { lint } from "markdownlint/promise";
 import { applyFixes } from "markdownlint";
 import helpers from "../helpers/helpers.cjs";
 import { fixableRuleNames } from "../lib/constants.mjs";
 
-const numericalSortCompareFn = (a, b) => a - b;
+const numericalSortCompareFn = (/** @type {number} */ a, /** @type {number} */ b) => a - b;
 
 /**
  * Create a test function for the specified test file.
  *
  * @param {string} file Test file relative path.
- * @returns {import("ava").Implementation<unknown[]>} Test function.
+ * @returns {import("node:test").TestFn} Test function.
  */
 function createTestForFile(file) {
   return (t) => (
@@ -33,11 +33,13 @@ function createTestForFile(file) {
           .filter((error) => !!error.ruleInformation);
         for (const error of errors) {
           error.ruleInformation =
+            // @ts-ignore
             error.ruleInformation.replace(/v\d+\.\d+\.\d+/, "v0.0.0");
         }
         // Match identified issues by MD### markers
         const marker = /\{(MD\d+)(?::([-+]?)(\d+))?\}/g;
         const lines = content.split(helpers.newLineRe);
+        /** @type {Object.<string, number[]>} */
         const expected = {};
         // @ts-ignore
         for (const [ index, line ] of lines.entries()) {
@@ -63,6 +65,7 @@ function createTestForFile(file) {
         for (const list of Object.values(expected)) {
           list.sort(numericalSortCompareFn);
         }
+        /** @type {Object.<string, number[]>} */
         const actual = {};
         for (const error of errors) {
           const rule = error.ruleNames[0];
@@ -71,19 +74,20 @@ function createTestForFile(file) {
           if (indices[indices.length - 1] !== error.lineNumber) {
             indices.push(error.lineNumber);
           }
-          t.true(
+          t.assert.equal(
             !error.fixInfo || fixableRuleNames.includes(rule),
+            true,
             `Fixable rule ${rule} is not tagged as such.`
           );
         }
         for (const list of Object.values(actual)) {
           list.sort(numericalSortCompareFn);
         }
-        t.deepEqual(actual, expected, "Too few or too many issues found.");
+        t.assert.deepEqual(actual, expected, "Too few or too many issues found.");
         // Create snapshot
         const fixed = applyFixes(content, errors)
           .replace(/\r\n/g, "\n");
-        t.snapshot({
+        t.assert.snapshot({
           errors,
           fixed
         });
@@ -94,7 +98,7 @@ function createTestForFile(file) {
           }
         }).then((fixedResults) => {
           const unfixed = fixedResults.input.filter((error) => !!error.fixInfo);
-          t.deepEqual(unfixed, [], "Fixable error(s) not fixed.");
+          t.assert.deepEqual(unfixed, [], "Fixable error(s) not fixed.");
         });
       })
       .catch()
@@ -103,10 +107,11 @@ function createTestForFile(file) {
 
 const dir = await fs.readdir("./test");
 const files = dir.filter((file) => /\.md$/.test(file));
-for (const file of files) {
-  // @ts-ignore
-  test(
-    file,
-    createTestForFile(path.join("./test", file))
-  );
-}
+
+test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
+
+  for (const file of files) {
+    test(file, createTestForFile(path.join("./test", file)));
+  }
+
+});

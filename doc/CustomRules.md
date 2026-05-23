@@ -191,4 +191,4 @@ throws an exception.
 [rule-helpers]: https://www.npmjs.com/package/markdownlint-rule-helpers
 [options-custom-rules]: ../README.md#optionscustomrules
 [test-rules]: ../test/rules
-[tokens]: ../test/snapshots/markdownlint-test-custom-rules.mjs.md
+[tokens]: ../test/markdownlint-test-custom-rules.mjs.snapshot

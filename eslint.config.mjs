@@ -104,6 +104,7 @@ export default [
     "languageOptions": {
       "sourceType": "commonjs",
       "globals": {
+        "__filename": "readonly",
         "module": "readonly",
         "require": "readonly"
       }

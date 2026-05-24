@@ -358,6 +358,7 @@ test("expandTildePath", (t) => {
   t.plan(17);
   const homedir = os.homedir();
   t.is(helpers.expandTildePath("", os), "");
+  // @ts-ignore
   t.is(helpers.expandTildePath("", {}), "");
   // @ts-ignore
   t.is(helpers.expandTildePath("", null), "");
@@ -543,14 +544,20 @@ test("hasOverlap", (t) => {
 test("formatLintResults", async(t) => {
   t.plan(2);
   t.deepEqual(formatLintResults(undefined), []);
-  const lintResults = await lint({ "strings": { "content": "#  Heading\n<br/><!-- markdownlint-configure-file { \"MD033\": \"warning\" } -->" } });
+  const lintResults = await lint({
+    "strings": {
+      "contenttoo": "# Heading",
+      "content": "#  Heading\n<br/><!-- markdownlint-configure-file { \"MD033\": \"warning\" } -->"
+    }
+  });
   t.deepEqual(
     formatLintResults(lintResults),
     [
       "content:1:3 error MD019/no-multiple-space-atx Multiple spaces after hash on atx style heading [Context: \"#  Heading\"]",
       "content:1 error MD022/blanks-around-headings Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: \"#  Heading\"]",
       "content:2:1 warning MD033/no-inline-html Inline HTML [Element: br]",
-      "content:2:64 error MD047/single-trailing-newline Files should end with a single newline character"
+      "content:2:64 error MD047/single-trailing-newline Files should end with a single newline character",
+      "contenttoo:1:9 error MD047/single-trailing-newline Files should end with a single newline character"
     ]
   );
 });

@@ -1778,6 +1778,10 @@ Empty fragments will trigger this rule:
 
 ```markdown
 [an empty fragment](#)
+
+[an empty link definition][empty]
+
+[empty]: #
 ```
 
 But non-empty fragments will not:
@@ -1785,6 +1789,8 @@ But non-empty fragments will not:
 ```markdown
 [a valid fragment](#fragment)
 ```
+
+Empty link definitions
 
 Rationale: Empty links do not lead anywhere and therefore don't function as
 links.

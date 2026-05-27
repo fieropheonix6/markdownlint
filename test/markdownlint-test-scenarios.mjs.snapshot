@@ -21516,6 +21516,13 @@ exports[`markdownlint-test-scenarios.mjs > link-fragments-ignored-pattern-presen
 }
 `;
 
+exports[`markdownlint-test-scenarios.mjs > link-fragments-malformed-uri.md 1`] = `
+{
+  "errors": [],
+  "fixed": "# Link Fragments Malformed URI\\n\\n[Unicode High/Low Surrogates \\\\ud83d\\\\udd6e](<🕮.md>)\\n"
+}
+`;
+
 exports[`markdownlint-test-scenarios.mjs > link-fragments.md 1`] = `
 {
   "errors": [

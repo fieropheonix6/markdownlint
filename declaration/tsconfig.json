@@ -7,7 +7,7 @@
     "module": "nodenext",
     "outDir": "../dts",
     "rootDir": "..",
-    "target": "es2019",
+    "target": "es2024",
     "types": [
       "node"
     ]

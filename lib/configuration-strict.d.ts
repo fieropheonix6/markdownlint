@@ -690,6 +690,10 @@ export interface ConfigurationStrict {
          */
         severity?: "error" | "warning";
         /**
+         * Include front matter content
+         */
+        include_front_matter?: boolean;
+        /**
          * Blank lines above heading
          */
         lines_above?: number | number[];
@@ -713,6 +717,10 @@ export interface ConfigurationStrict {
          * Rule severity
          */
         severity?: "error" | "warning";
+        /**
+         * Include front matter content
+         */
+        include_front_matter?: boolean;
         /**
          * Blank lines above heading
          */

@@ -1384,6 +1384,11 @@
               ],
               "default": "error"
             },
+            "include_front_matter": {
+              "description": "Include front matter content",
+              "type": "boolean",
+              "default": false
+            },
             "lines_above": {
               "description": "Blank lines above heading",
               "type": [
@@ -1442,6 +1447,11 @@
                 "warning"
               ],
               "default": "error"
+            },
+            "include_front_matter": {
+              "description": "Include front matter content",
+              "type": "boolean",
+              "default": false
             },
             "lines_above": {
               "description": "Blank lines above heading",

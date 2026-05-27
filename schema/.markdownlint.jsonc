@@ -106,6 +106,8 @@
 
   // MD022/blanks-around-headings : Headings should be surrounded by blank lines : https://github.com/DavidAnson/markdownlint/blob/v0.40.0/doc/md022.md
   "MD022": {
+    // Include front matter content
+    "include_front_matter": false,
     // Blank lines above heading
     "lines_above": 1,
     // Blank lines below heading

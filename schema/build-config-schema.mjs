@@ -266,6 +266,12 @@ for (const rule of rules) {
       break;
     case "MD022":
       // @ts-ignore
+      subscheme.properties.include_front_matter = {
+        "description": "Include front matter content",
+        "type": "boolean",
+        "default": false
+      };
+      // @ts-ignore
       subscheme.properties.lines_above = {
         "description": "Blank lines above heading",
         "type": [

@@ -4059,6 +4059,138 @@ exports[`markdownlint-test-scenarios.mjs > blanks-around-headings-arrays.md 1`] 
 }
 `;
 
+exports[`markdownlint-test-scenarios.mjs > blanks-around-headings-one-false.md 1`] = `
+{
+  "errors": [],
+  "fixed": "\\n# Blanks Around Headings One False\\n\\n## Subheading\\n\\nText\\n\\n<!-- markdownlint-configure-file {\\n  \\"blanks-around-headings\\": {\\n    \\"include_front_matter\\": false\\n  }\\n} -->\\n"
+}
+`;
+
+exports[`markdownlint-test-scenarios.mjs > blanks-around-headings-one-true.md 1`] = `
+{
+  "errors": [],
+  "fixed": "\\n# Blanks Around Headings One True\\n\\n## Subheading\\n\\nText\\n\\n<!-- markdownlint-configure-file {\\n  \\"blanks-around-headings\\": {\\n    \\"include_front_matter\\": true\\n  }\\n} -->\\n"
+}
+`;
+
+exports[`markdownlint-test-scenarios.mjs > blanks-around-headings-one-yaml-false.md 1`] = `
+{
+  "errors": [],
+  "fixed": "---\\ntitle: Blanks Around Headings One YAML False\\n---\\n\\n## Subheading\\n\\nText\\n\\n<!-- markdownlint-configure-file {\\n  \\"blanks-around-headings\\": {\\n    \\"include_front_matter\\": false\\n  }\\n} -->\\n"
+}
+`;
+
+exports[`markdownlint-test-scenarios.mjs > blanks-around-headings-one-yaml-true.md 1`] = `
+{
+  "errors": [],
+  "fixed": "---\\ntitle: Blanks Around Headings One YAML True\\n---\\n\\n## Subheading\\n\\nText\\n\\n<!-- markdownlint-configure-file {\\n  \\"blanks-around-headings\\": {\\n    \\"include_front_matter\\": true\\n  }\\n} -->\\n"
+}
+`;
+
+exports[`markdownlint-test-scenarios.mjs > blanks-around-headings-one-yaml.md 1`] = `
+{
+  "errors": [],
+  "fixed": "---\\ntitle: Blanks Around Headings One YAML\\n---\\n\\n## Subheading\\n\\nText\\n"
+}
+`;
+
+exports[`markdownlint-test-scenarios.mjs > blanks-around-headings-one.md 1`] = `
+{
+  "errors": [],
+  "fixed": "\\n# Blanks Around Headings One\\n\\n## Subheading\\n\\nText\\n"
+}
+`;
+
+exports[`markdownlint-test-scenarios.mjs > blanks-around-headings-two-true.md 1`] = `
+{
+  "errors": [],
+  "fixed": "\\n# Blanks Around Headings Two True\\n\\n\\n## Subheading\\n\\nText\\n\\n<!-- markdownlint-configure-file {\\n  \\"blanks-around-headings\\": {\\n    \\"lines_above\\": 2,\\n    \\"include_front_matter\\": true\\n  },\\n  \\"no-multiple-blanks\\": false\\n} -->\\n"
+}
+`;
+
+exports[`markdownlint-test-scenarios.mjs > blanks-around-headings-two-yaml-true.md 1`] = `
+{
+  "errors": [
+    {
+      "lineNumber": 5,
+      "ruleNames": [
+        "MD022",
+        "blanks-around-headings"
+      ],
+      "ruleDescription": "Headings should be surrounded by blank lines",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md022.md",
+      "errorDetail": "Expected: 2; Actual: 1; Above",
+      "errorContext": "## Subheading",
+      "errorRange": null,
+      "fixInfo": {
+        "insertText": "\\n"
+      },
+      "severity": "error"
+    }
+  ],
+  "fixed": "---\\ntitle: Blanks Around Headings Two YAML True\\n---\\n\\n\\n## Subheading\\n\\nText {MD022:-2}\\n\\n<!-- markdownlint-configure-file {\\n  \\"blanks-around-headings\\": {\\n    \\"lines_above\\": 2,\\n    \\"include_front_matter\\": true\\n  }\\n} -->\\n"
+}
+`;
+
+exports[`markdownlint-test-scenarios.mjs > blanks-around-headings-zero-false.md 1`] = `
+{
+  "errors": [],
+  "fixed": "# Blanks Around Headings Zero False\\n\\n## Subheading\\n\\nText\\n\\n<!-- markdownlint-configure-file {\\n  \\"blanks-around-headings\\": {\\n    \\"include_front_matter\\": false\\n  }\\n} -->\\n"
+}
+`;
+
+exports[`markdownlint-test-scenarios.mjs > blanks-around-headings-zero-true.md 1`] = `
+{
+  "errors": [],
+  "fixed": "# Blanks Around Headings Zero True\\n\\n## Subheading\\n\\nText\\n\\n<!-- markdownlint-configure-file {\\n  \\"blanks-around-headings\\": {\\n    \\"include_front_matter\\": true\\n  }\\n} -->\\n"
+}
+`;
+
+exports[`markdownlint-test-scenarios.mjs > blanks-around-headings-zero-yaml-false.md 1`] = `
+{
+  "errors": [],
+  "fixed": "---\\ntitle: Blanks Around Headings Zero YAML False\\n---\\n## Subheading\\n\\nText\\n\\n<!-- markdownlint-configure-file {\\n  \\"blanks-around-headings\\": {\\n    \\"include_front_matter\\": false\\n  }\\n} -->\\n"
+}
+`;
+
+exports[`markdownlint-test-scenarios.mjs > blanks-around-headings-zero-yaml-true.md 1`] = `
+{
+  "errors": [
+    {
+      "lineNumber": 4,
+      "ruleNames": [
+        "MD022",
+        "blanks-around-headings"
+      ],
+      "ruleDescription": "Headings should be surrounded by blank lines",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md022.md",
+      "errorDetail": "Expected: 1; Actual: 0; Above",
+      "errorContext": "## Subheading",
+      "errorRange": null,
+      "fixInfo": {
+        "insertText": "\\n"
+      },
+      "severity": "error"
+    }
+  ],
+  "fixed": "---\\ntitle: Blanks Around Headings Zero YAML True\\n---\\n\\n## Subheading\\n\\nText {MD022:-2}\\n\\n<!-- markdownlint-configure-file {\\n  \\"blanks-around-headings\\": {\\n    \\"include_front_matter\\": true\\n  }\\n} -->\\n"
+}
+`;
+
+exports[`markdownlint-test-scenarios.mjs > blanks-around-headings-zero-yaml.md 1`] = `
+{
+  "errors": [],
+  "fixed": "---\\ntitle: Blanks Around Headings Zero YAML\\n---\\n## Subheading\\n\\nText\\n"
+}
+`;
+
+exports[`markdownlint-test-scenarios.mjs > blanks-around-headings-zero.md 1`] = `
+{
+  "errors": [],
+  "fixed": "# Blanks Around Headings Zero\\n\\n## Subheading\\n\\nText\\n"
+}
+`;
+
 exports[`markdownlint-test-scenarios.mjs > blanks-around-headings.md 1`] = `
 {
   "errors": [

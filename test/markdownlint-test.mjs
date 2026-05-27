@@ -1101,7 +1101,7 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
   });
 
   test("validateJsonUsingConfigSchemaStrict", async(t) => {
-    t.plan(224);
+    t.plan(234);
     // @ts-ignore
     const ajv = new Ajv(ajvOptions);
     const validateSchemaStrict = ajv.compile(configSchemaStrict);

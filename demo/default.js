@@ -55,9 +55,14 @@
     if (renderer === "markdown-it") {
       return markdownit({ "html": true }).render(markdown);
     } else if (renderer === "micromark") {
+      // See lib/micromark-parse.mjs
+      const micromarkDirectiveNoInline = {
+        ...micromark.directive()
+      };
+      delete micromarkDirectiveNoInline.text;
       const parseOptions = {
         "extensions": [
-          micromark.directive(),
+          micromarkDirectiveNoInline,
           micromark.gfmAutolinkLiteral(),
           micromark.gfmFootnote(),
           micromark.gfmTable(),

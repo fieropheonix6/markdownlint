@@ -28,7 +28,8 @@ documentation, and test cases came from that project.
 [CommonMark][commonmark] specification for Markdown. It additionally supports
 popular [GitHub Flavored Markdown (GFM)][gfm] syntax like autolinks and tables
 as well as directives, footnotes, and math syntax - all implemented by
-[`micromark` extensions][micromark-extensions].
+[`micromark` extensions][micromark-extensions]. (Note that inline directives are
+not supported to avoid confusion due to over-matching.)
 
 [commonmark]: https://commonmark.org/
 [gfm]: https://github.github.com/gfm/

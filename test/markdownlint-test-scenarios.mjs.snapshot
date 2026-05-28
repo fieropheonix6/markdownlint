@@ -21519,7 +21519,7 @@ exports[`markdownlint-test-scenarios.mjs > link-fragments-ignored-pattern-presen
 exports[`markdownlint-test-scenarios.mjs > link-fragments-inline-directive.md 1`] = `
 {
   "errors": [],
-  "fixed": "# Link Fragments Inline Directive\\n\\n## Time 12\\\\:34\\n\\n[Time](#time-1234)\\n\\n## Ratio 16\\\\:9\\n\\n[Ratio](#ratio-169)\\n\\n## Stock NYSE\\\\:MSFT\\n\\n[Stock](#stock-nysemsft)\\n\\n## Spreadsheet A1\\\\:B2\\n\\n[Spreadsheet](#spreadsheet-a1b2)\\n"
+  "fixed": "# Link Fragments Inline Directive\\n\\n## Time 12:34\\n\\n[Time](#time-1234)\\n\\n## Ratio 16:9\\n\\n[Ratio](#ratio-169)\\n\\n## Stock NYSE:MSFT\\n\\n[Stock](#stock-nysemsft)\\n\\n## Spreadsheet A1:B2\\n\\n[Spreadsheet](#spreadsheet-a1b2)\\n"
 }
 `;
 

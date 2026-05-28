@@ -21516,6 +21516,13 @@ exports[`markdownlint-test-scenarios.mjs > link-fragments-ignored-pattern-presen
 }
 `;
 
+exports[`markdownlint-test-scenarios.mjs > link-fragments-inline-directive.md 1`] = `
+{
+  "errors": [],
+  "fixed": "# Link Fragments Inline Directive\\n\\n## Time 12\\\\:34\\n\\n[Time](#time-1234)\\n\\n## Ratio 16\\\\:9\\n\\n[Ratio](#ratio-169)\\n\\n## Stock NYSE\\\\:MSFT\\n\\n[Stock](#stock-nysemsft)\\n\\n## Spreadsheet A1\\\\:B2\\n\\n[Spreadsheet](#spreadsheet-a1b2)\\n"
+}
+`;
+
 exports[`markdownlint-test-scenarios.mjs > link-fragments-malformed-uri.md 1`] = `
 {
   "errors": [],
@@ -34990,6 +34997,13 @@ exports[`markdownlint-test-scenarios.mjs > md052-invalid-range-bug.md 1`] = `
 {
   "errors": [],
   "fixed": "# MD052 Invalid Range Bug\\n\\n* [0, N)\\n* \`inputs[0][d]\`\\n* \`inputs[k]\`\\n"
+}
+`;
+
+exports[`markdownlint-test-scenarios.mjs > micromark-directive-extension-syntax.md 1`] = `
+{
+  "errors": [],
+  "fixed": "# micromark Directive Extension Syntax\\n\\n## Inline\\n\\n### Valid\\n\\n:name[content]{key=val}\\n\\n:name[content]\\n\\n:name{key=val}\\n\\n:name\\n\\nprefix:name\\n\\n## Leaf Block\\n\\n### Valid\\n\\n::name[content]{key=val}\\n\\n::name[content]\\n\\n::name{key=val}\\n\\n::name\\n\\n### Invalid\\n\\nprefix::name\\n\\n## Container Block\\n\\n### Valid\\n\\n:::name[inline-content]{key=val}\\ncontents\\n:::\\n\\n:::name[inline-content]\\ncontents\\n:::\\n\\n:::name{key=val}\\ncontents\\n:::\\n\\n:::name\\ncontents\\n:::\\n\\n### Invalid\\n\\nprefix:::name[inline-content]{key=val}\\ncontents\\n:::\\n\\n<!-- markdownlint-configure-file { \\"no-duplicate-heading\\": false } -->\\n"
 }
 `;
 

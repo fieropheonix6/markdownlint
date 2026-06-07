@@ -47973,24 +47973,7 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-aligned-delimiter.
       "errorDetail": "Table pipe does not align with header for option \\"aligned_delimiter\\"",
       "errorContext": null,
       "errorRange": [
-        3,
-        1
-      ],
-      "fixInfo": null,
-      "severity": "error"
-    },
-    {
-      "lineNumber": 72,
-      "ruleNames": [
-        "MD060",
-        "table-column-style"
-      ],
-      "ruleDescription": "Table column style",
-      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md060.md",
-      "errorDetail": "Table pipe does not align with header for option \\"aligned_delimiter\\"",
-      "errorContext": null,
-      "errorRange": [
-        5,
+        4,
         1
       ],
       "fixInfo": null,
@@ -48008,6 +47991,23 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-aligned-delimiter.
       "errorContext": null,
       "errorRange": [
         7,
+        1
+      ],
+      "fixInfo": null,
+      "severity": "error"
+    },
+    {
+      "lineNumber": 72,
+      "ruleNames": [
+        "MD060",
+        "table-column-style"
+      ],
+      "ruleDescription": "Table column style",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md060.md",
+      "errorDetail": "Table pipe does not align with header for option \\"aligned_delimiter\\"",
+      "errorContext": null,
+      "errorRange": [
+        10,
         1
       ],
       "fixInfo": null,
@@ -48041,7 +48041,7 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-aligned-delimiter.
       "errorDetail": "Table pipe does not align with header for option \\"aligned_delimiter\\"",
       "errorContext": null,
       "errorRange": [
-        2,
+        3,
         1
       ],
       "fixInfo": null,
@@ -48058,7 +48058,7 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-aligned-delimiter.
       "errorDetail": "Table pipe does not align with header for option \\"aligned_delimiter\\"",
       "errorContext": null,
       "errorRange": [
-        4,
+        6,
         1
       ],
       "fixInfo": null,
@@ -48082,7 +48082,7 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-aligned-delimiter.
       "severity": "error"
     }
   ],
-  "fixed": "# Table Column Style - Aligned Delimiter\\n\\n## Aligned / Edge Pipes\\n\\n| Heading | Heading   | Heading |\\n| ------- | --------- | ------- |\\n| Text    | Text text | Text    |\\n| Text    | Text text | Text    |\\n| Text    | Text text | Text    |\\n\\n## Aligned / No Edge Pipes\\n\\nHeading | Heading   | Heading\\n------- | --------- | -------\\nText    | Text text | Text\\nText    | Text text | Text\\nText    | Text text | Text\\n\\n## Compact / Edge Pipes\\n\\n| Heading | Heading | Heading |\\n| ------- | ------- | ------- |\\n| Text | Text text | Text |\\n| Text text | Text text text | Text |\\n| Text | Text | Text |\\n\\n| Heading | Heading | Heading |\\n| - | - | - |\\n| Text | Text text | Text |\\n| Text text | Text text text | Text |\\n| Text | Text | Text |\\n\\n{MD060:-5}\\n\\n| Heading | Heading | Heading |\\n| ------- | -------- | ------ |\\n| Text text | Text text text | Text |\\n\\n{MD060:-3}\\n\\n## Compact / No Edge Pipes\\n\\nHeading | Heading | Heading\\n------- | ------- | -------\\nText | Text text | Text\\nText text | Text text text | Text\\nText | Text | Text\\n\\nHeading | Heading | Heading\\n-- | -- | --\\nText | Text text | Text\\nText text | Text text text | Text\\nText | Text | Text\\n\\n{MD060:-5}\\n\\nHeading | Heading | Heading\\n------- | -------- | ------\\nText text | Text text text | Text\\n\\n{MD060:-3}\\n\\n## Tight / Edge Pipes\\n\\n|Heading|Heading|Heading|\\n|-------|-------|-------|\\n|Text|Text text|Text|\\n|Text text|Text text text|Text|\\n|Text|Text|Text|\\n\\n|Heading|Heading|Heading|\\n|-|-|-|\\n|Text|Text text|Text|\\n|Text text|Text text text|Text|\\n|Text|Text|Text|\\n\\n{MD060:-5}\\n\\n|Heading|Heading|Heading|\\n|-------|--------|------|\\n|Text text|Text text text|Text|\\n\\n{MD060:-3}\\n\\n## Tight / No Edge Pipes\\n\\nHeading|Heading|Heading\\n-------|-------|-------\\nText|Text text|Text\\nText text|Text text text|Text\\nText|Text|Text\\n\\nHeading|Heading|Heading\\n-|-|-\\nText|Text text|Text\\nText text|Text text text|Text\\nText|Text|Text\\n\\n{MD060:-5}\\n\\nHeading|Heading|Heading\\n-------|--------|------\\nText text|Text text text|Text\\n\\n{MD060:-3}\\n\\n<!-- markdownlint-configure-file {\\n  \\"table-column-style\\": {\\n    \\"aligned_delimiter\\": true\\n  },\\n  \\"table-pipe-style\\": false\\n} -->\\n"
+  "fixed": "# Table Column Style - Aligned Delimiter\\n\\n## Aligned / Edge Pipes\\n\\n| Heading | Heading   | Heading |\\n| ------- | --------- | ------- |\\n| Text    | Text text | Text    |\\n| Text    | Text text | Text    |\\n| Text    | Text text | Text    |\\n\\n## Aligned / No Edge Pipes\\n\\nHeading | Heading   | Heading\\n------- | --------- | -------\\nText    | Text text | Text\\nText    | Text text | Text\\nText    | Text text | Text\\n\\n## Compact / Edge Pipes\\n\\n| Heading | Heading | Heading |\\n| ------- | ------- | ------- |\\n| Text | Text text | Text |\\n| Text text | Text text text | Text |\\n| Text | Text | Text |\\n\\n| Heading | Heading | Heading |\\n| - | - | - |\\n| Text | Text text | Text |\\n| Text text | Text text text | Text |\\n| Text | Text | Text |\\n\\n{MD060:-5}\\n\\n| Heading | Heading | Heading |\\n| ------- | -------- | ------ |\\n| Text text | Text text text | Text |\\n\\n{MD060:-3}\\n\\n## Compact / No Edge Pipes\\n\\nHeading | Heading | Heading\\n------- | ------- | -------\\nText | Text text | Text\\nText text | Text text text | Text\\nText | Text | Text\\n\\nHeading | Heading | Heading\\n-- | -- | --\\nText | Text text | Text\\nText text | Text text text | Text\\nText | Text | Text\\n\\n{MD060:-5}\\n\\nHeading | Heading | Heading\\n------- | -------- | ------\\nText text | Text text text | Text\\n\\n{MD060:-3}\\n\\n## Tight / Edge Pipes\\n\\n|Heading|Heading|Heading|\\n|-------|-------|-------|\\n|Text|Text text|Text|\\n|Text text|Text text text|Text|\\n|Text|Text|Text|\\n\\n|Heading|Heading|Heading|\\n|--|--|--|\\n|Text|Text text|Text|\\n|Text text|Text text text|Text|\\n|Text|Text|Text|\\n\\n{MD060:-5}\\n\\n|Heading|Heading|Heading|\\n|-------|--------|------|\\n|Text text|Text text text|Text|\\n\\n{MD060:-3}\\n\\n## Tight / No Edge Pipes\\n\\nHeading|Heading|Heading\\n-------|-------|-------\\nText|Text text|Text\\nText text|Text text text|Text\\nText|Text|Text\\n\\nHeading|Heading|Heading\\n--|--|--\\nText|Text text|Text\\nText text|Text text text|Text\\nText|Text|Text\\n\\n{MD060:-5}\\n\\nHeading|Heading|Heading\\n-------|--------|------\\nText text|Text text text|Text\\n\\n{MD060:-3}\\n\\n<!-- markdownlint-configure-file {\\n  \\"table-column-style\\": {\\n    \\"aligned_delimiter\\": true\\n  },\\n  \\"table-pipe-style\\": false\\n} -->\\n"
 }
 `;
 
@@ -49256,24 +49256,7 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-aligned.md 1`] = `
       "errorDetail": "Table pipe does not align with header for style \\"aligned\\"",
       "errorContext": null,
       "errorRange": [
-        3,
-        1
-      ],
-      "fixInfo": null,
-      "severity": "error"
-    },
-    {
-      "lineNumber": 98,
-      "ruleNames": [
-        "MD060",
-        "table-column-style"
-      ],
-      "ruleDescription": "Table column style",
-      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md060.md",
-      "errorDetail": "Table pipe does not align with header for style \\"aligned\\"",
-      "errorContext": null,
-      "errorRange": [
-        5,
+        4,
         1
       ],
       "fixInfo": null,
@@ -49291,6 +49274,23 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-aligned.md 1`] = `
       "errorContext": null,
       "errorRange": [
         7,
+        1
+      ],
+      "fixInfo": null,
+      "severity": "error"
+    },
+    {
+      "lineNumber": 98,
+      "ruleNames": [
+        "MD060",
+        "table-column-style"
+      ],
+      "ruleDescription": "Table column style",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md060.md",
+      "errorDetail": "Table pipe does not align with header for style \\"aligned\\"",
+      "errorContext": null,
+      "errorRange": [
+        10,
         1
       ],
       "fixInfo": null,
@@ -49698,7 +49698,7 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-aligned.md 1`] = `
       "errorDetail": "Table pipe does not align with header for style \\"aligned\\"",
       "errorContext": null,
       "errorRange": [
-        2,
+        3,
         1
       ],
       "fixInfo": null,
@@ -49715,7 +49715,7 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-aligned.md 1`] = `
       "errorDetail": "Table pipe does not align with header for style \\"aligned\\"",
       "errorContext": null,
       "errorRange": [
-        4,
+        6,
         1
       ],
       "fixInfo": null,
@@ -49943,7 +49943,7 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-aligned.md 1`] = `
       "severity": "error"
     }
   ],
-  "fixed": "# Table Column Style - Aligned\\n\\n## Aligned / Edge Pipes\\n\\n| Heading | Heading   | Heading |\\n| ------- | --------- | ------- |\\n| Text    | Text text | Text    |\\n| Text    | Text text | Text    |\\n| Text    | Text text | Text    |\\n\\n| Heading | Heading   | Heading |\\n| ------- | -------- | ------- |\\n| Text    | Text text | Text    |\\n| Text     | Text text | Text   |\\n| Text    | Text tex | Text    |\\n\\n{MD060:-5} {MD060:-3} {MD060:-2}\\n\\n## Aligned / No Edge Pipes\\n\\nHeading | Heading   | Heading\\n------- | --------- | -------\\nText    | Text text | Text\\nText    | Text text | Text\\nText    | Text text | Text\\n\\nHeading | Heading   | Heading\\n------- | -------- | --------\\nText    | Text text | Text\\nText     | Text text | Text\\nText    | Text tex | Text\\n\\n{MD060:-5} {MD060:-3} {MD060:-2}\\n\\n## Compact / Edge Pipes\\n\\n| Heading | Heading | Heading |\\n| ------- | ------- | ------- |\\n| Text | Text text | Text |\\n| Text text | Text text text | Text |\\n| Text | Text | Text |\\n\\n{MD060:-4} {MD060:-3} {MD060:-2}\\n\\n| Heading | Heading | Heading |\\n| - | - | - |\\n| Text | Text text | Text |\\n| Text text | Text text text | Text |\\n| Text | Text | Text |\\n\\n{MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n| Heading | Heading  | Heading |\\n| -       |  ---     | -       |\\n| Text    | Text text | Text  |\\n|  Text |  Text  |   Text   |\\n| Text  |  Text |        Text |\\n\\n{MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Compact / No Edge Pipes\\n\\nHeading | Heading | Heading\\n------- | ------- | -------\\nText | Text text | Text\\nText text | Text text text | Text\\nText | Text | Text\\n\\n{MD060:-4} {MD060:-3} {MD060:-2}\\n\\nHeading | Heading | Heading\\n-- | -- | --\\nText | Text text | Text\\nText text | Text text text | Text\\nText | Text | Text\\n\\n{MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\nHeading | Heading  | Heading\\n-- |  ---  | --\\nText    | Text text |  Text\\nText text | Text text text | Text\\nText  | Text |  Text\\n\\n{MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Tight / Edge Pipes\\n\\n|Heading|Heading|Heading|\\n|-------|-------|-------|\\n|Text|Text text|Text|\\n|Text text|Text text text|Text|\\n|Text|Text|Text|\\n\\n{MD060:-4} {MD060:-3} {MD060:-2}\\n\\n|Heading|Heading|Heading|\\n|-|-|-|\\n|Text|Text text|Text|\\n|Text text|Text text text|Text|\\n|Text|Text|Text|\\n\\n{MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n|Heading|Heading |Heading|\\n|-------|-------|------- |\\n| Text|Text text |Text|\\n|Text text |Text text text|Text|\\n|Text| Text |Text|\\n\\n{MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Tight / No Edge Pipes\\n\\nHeading|Heading|Heading\\n-------|-------|-------\\nText|Text text|Text\\nText text|Text text text|Text\\nText|Text|Text\\n\\n{MD060:-4} {MD060:-3} {MD060:-2}\\n\\nHeading|Heading|Heading\\n-|-|-\\nText|Text text|Text\\nText text|Text text text|Text\\nText|Text|Text\\n\\n{MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\nHeading|Heading |Heading\\n-------|-------| -------\\nText |Text text|Text\\nText text|Text text text|Text\\nText| Text |Text\\n\\n{MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n<!-- markdownlint-configure-file {\\n  \\"table-column-style\\": {\\n    \\"style\\": \\"aligned\\"\\n  },\\n  \\"table-pipe-style\\": false\\n} -->\\n"
+  "fixed": "# Table Column Style - Aligned\\n\\n## Aligned / Edge Pipes\\n\\n| Heading | Heading   | Heading |\\n| ------- | --------- | ------- |\\n| Text    | Text text | Text    |\\n| Text    | Text text | Text    |\\n| Text    | Text text | Text    |\\n\\n| Heading | Heading   | Heading |\\n| ------- | -------- | ------- |\\n| Text    | Text text | Text    |\\n| Text     | Text text | Text   |\\n| Text    | Text tex | Text    |\\n\\n{MD060:-5} {MD060:-3} {MD060:-2}\\n\\n## Aligned / No Edge Pipes\\n\\nHeading | Heading   | Heading\\n------- | --------- | -------\\nText    | Text text | Text\\nText    | Text text | Text\\nText    | Text text | Text\\n\\nHeading | Heading   | Heading\\n------- | -------- | --------\\nText    | Text text | Text\\nText     | Text text | Text\\nText    | Text tex | Text\\n\\n{MD060:-5} {MD060:-3} {MD060:-2}\\n\\n## Compact / Edge Pipes\\n\\n| Heading | Heading | Heading |\\n| ------- | ------- | ------- |\\n| Text | Text text | Text |\\n| Text text | Text text text | Text |\\n| Text | Text | Text |\\n\\n{MD060:-4} {MD060:-3} {MD060:-2}\\n\\n| Heading | Heading | Heading |\\n| - | - | - |\\n| Text | Text text | Text |\\n| Text text | Text text text | Text |\\n| Text | Text | Text |\\n\\n{MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n| Heading | Heading  | Heading |\\n| -       |  ---     | -       |\\n| Text    | Text text | Text  |\\n|  Text |  Text  |   Text   |\\n| Text  |  Text |        Text |\\n\\n{MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Compact / No Edge Pipes\\n\\nHeading | Heading | Heading\\n------- | ------- | -------\\nText | Text text | Text\\nText text | Text text text | Text\\nText | Text | Text\\n\\n{MD060:-4} {MD060:-3} {MD060:-2}\\n\\nHeading | Heading | Heading\\n-- | -- | --\\nText | Text text | Text\\nText text | Text text text | Text\\nText | Text | Text\\n\\n{MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\nHeading | Heading  | Heading\\n-- |  ---  | --\\nText    | Text text |  Text\\nText text | Text text text | Text\\nText  | Text |  Text\\n\\n{MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Tight / Edge Pipes\\n\\n|Heading|Heading|Heading|\\n|-------|-------|-------|\\n|Text|Text text|Text|\\n|Text text|Text text text|Text|\\n|Text|Text|Text|\\n\\n{MD060:-4} {MD060:-3} {MD060:-2}\\n\\n|Heading|Heading|Heading|\\n|--|--|--|\\n|Text|Text text|Text|\\n|Text text|Text text text|Text|\\n|Text|Text|Text|\\n\\n{MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n|Heading|Heading |Heading|\\n|-------|-------|------- |\\n| Text|Text text |Text|\\n|Text text |Text text text|Text|\\n|Text| Text |Text|\\n\\n{MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Tight / No Edge Pipes\\n\\nHeading|Heading|Heading\\n-------|-------|-------\\nText|Text text|Text\\nText text|Text text text|Text\\nText|Text|Text\\n\\n{MD060:-4} {MD060:-3} {MD060:-2}\\n\\nHeading|Heading|Heading\\n--|--|--\\nText|Text text|Text\\nText text|Text text text|Text\\nText|Text|Text\\n\\n{MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\nHeading|Heading |Heading\\n-------|-------| -------\\nText |Text text|Text\\nText text|Text text text|Text\\nText| Text |Text\\n\\n{MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n<!-- markdownlint-configure-file {\\n  \\"table-column-style\\": {\\n    \\"style\\": \\"aligned\\"\\n  },\\n  \\"table-pipe-style\\": false\\n} -->\\n"
 }
 `;
 
@@ -51338,7 +51338,7 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
       "errorDetail": "Table pipe is missing space to the left for style \\"compact\\"",
       "errorContext": null,
       "errorRange": [
-        3,
+        4,
         1
       ],
       "fixInfo": null,
@@ -51355,41 +51355,7 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
       "errorDetail": "Table pipe is missing space to the right for style \\"compact\\"",
       "errorContext": null,
       "errorRange": [
-        3,
-        1
-      ],
-      "fixInfo": null,
-      "severity": "error"
-    },
-    {
-      "lineNumber": 94,
-      "ruleNames": [
-        "MD060",
-        "table-column-style"
-      ],
-      "ruleDescription": "Table column style",
-      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md060.md",
-      "errorDetail": "Table pipe is missing space to the left for style \\"compact\\"",
-      "errorContext": null,
-      "errorRange": [
-        5,
-        1
-      ],
-      "fixInfo": null,
-      "severity": "error"
-    },
-    {
-      "lineNumber": 94,
-      "ruleNames": [
-        "MD060",
-        "table-column-style"
-      ],
-      "ruleDescription": "Table column style",
-      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md060.md",
-      "errorDetail": "Table pipe is missing space to the right for style \\"compact\\"",
-      "errorContext": null,
-      "errorRange": [
-        5,
+        4,
         1
       ],
       "fixInfo": null,
@@ -51407,6 +51373,40 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
       "errorContext": null,
       "errorRange": [
         7,
+        1
+      ],
+      "fixInfo": null,
+      "severity": "error"
+    },
+    {
+      "lineNumber": 94,
+      "ruleNames": [
+        "MD060",
+        "table-column-style"
+      ],
+      "ruleDescription": "Table column style",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md060.md",
+      "errorDetail": "Table pipe is missing space to the right for style \\"compact\\"",
+      "errorContext": null,
+      "errorRange": [
+        7,
+        1
+      ],
+      "fixInfo": null,
+      "severity": "error"
+    },
+    {
+      "lineNumber": 94,
+      "ruleNames": [
+        "MD060",
+        "table-column-style"
+      ],
+      "ruleDescription": "Table column style",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md060.md",
+      "errorDetail": "Table pipe is missing space to the left for style \\"compact\\"",
+      "errorContext": null,
+      "errorRange": [
+        10,
         1
       ],
       "fixInfo": null,
@@ -52528,7 +52528,7 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
       "errorDetail": "Table pipe is missing space to the left for style \\"compact\\"",
       "errorContext": null,
       "errorRange": [
-        2,
+        3,
         1
       ],
       "fixInfo": null,
@@ -52545,7 +52545,7 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
       "errorDetail": "Table pipe is missing space to the right for style \\"compact\\"",
       "errorContext": null,
       "errorRange": [
-        2,
+        3,
         1
       ],
       "fixInfo": null,
@@ -52562,7 +52562,7 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
       "errorDetail": "Table pipe is missing space to the left for style \\"compact\\"",
       "errorContext": null,
       "errorRange": [
-        4,
+        6,
         1
       ],
       "fixInfo": null,
@@ -52579,7 +52579,7 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
       "errorDetail": "Table pipe is missing space to the right for style \\"compact\\"",
       "errorContext": null,
       "errorRange": [
-        4,
+        6,
         1
       ],
       "fixInfo": null,
@@ -53045,7 +53045,7 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
       "severity": "error"
     }
   ],
-  "fixed": "# Table Column Style - Compact\\n\\n## Aligned / Edge Pipes\\n\\n| Heading | Heading   | Heading |\\n| ------- | --------- | ------- |\\n| Text    | Text text | Text    |\\n| Text    | Text text | Text    |\\n| Text    | Text text | Text    |\\n\\n{MD060:-6} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n| Heading | Heading   | Heading |\\n| ------- | -------- | ------- |\\n| Text    | Text text | Text    |\\n| Text     | Text text | Text   |\\n| Text    | Text tex | Text    |\\n\\n{MD060:-6} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Aligned / No Edge Pipes\\n\\nHeading | Heading   | Heading\\n------- | --------- | -------\\nText    | Text text | Text\\nText    | Text text | Text\\nText    | Text text | Text\\n\\n{MD060:-6} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\nHeading | Heading   | Heading\\n------- | -------- | --------\\nText    | Text text | Text\\nText     | Text text | Text\\nText    | Text tex | Text\\n\\n{MD060:-6} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Compact / Edge Pipes\\n\\n| Heading | Heading | Heading |\\n| ------- | ------- | ------- |\\n| Text | Text text | Text |\\n| Text text | Text text text | Text |\\n| Text | Text | Text |\\n\\n| Heading | Heading | Heading |\\n| - | - | - |\\n| Text | Text text | Text |\\n| Text text | Text text text | Text |\\n| Text | Text | Text |\\n\\n| Heading | Heading  | Heading |\\n| -       |  ---     | -       |\\n| Text    | Text text | Text  |\\n|  Text |  Text  |   Text   |\\n| Text  |  Text |        Text |\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Compact / No Edge Pipes\\n\\nHeading | Heading | Heading\\n------- | ------- | -------\\nText | Text text | Text\\nText text | Text text text | Text\\nText | Text | Text\\n\\nHeading | Heading | Heading\\n-- | -- | --\\nText | Text text | Text\\nText text | Text text text | Text\\nText | Text | Text\\n\\nHeading | Heading  | Heading\\n-- |  ---  | --\\nText    | Text text |  Text\\nText text | Text text text | Text\\nText  | Text |  Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-2}\\n\\n## Tight / Edge Pipes\\n\\n|Heading|Heading|Heading|\\n|-------|-------|-------|\\n|Text|Text text|Text|\\n|Text text|Text text text|Text|\\n|Text|Text|Text|\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n|Heading|Heading|Heading|\\n|-|-|-|\\n|Text|Text text|Text|\\n|Text text|Text text text|Text|\\n|Text|Text|Text|\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n|Heading|Heading |Heading|\\n|-------|-------|------- |\\n| Text|Text text |Text|\\n|Text text |Text text text|Text|\\n|Text| Text |Text|\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Tight / No Edge Pipes\\n\\nHeading|Heading|Heading\\n-------|-------|-------\\nText|Text text|Text\\nText text|Text text text|Text\\nText|Text|Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\nHeading|Heading|Heading\\n-|-|-\\nText|Text text|Text\\nText text|Text text text|Text\\nText|Text|Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\nHeading|Heading |Heading\\n-------|-------| -------\\nText |Text text|Text\\nText text|Text text text|Text\\nText| Text |Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n<!-- markdownlint-configure-file {\\n  \\"table-column-style\\": {\\n    \\"style\\": \\"compact\\"\\n  },\\n  \\"table-pipe-style\\": false\\n} -->\\n"
+  "fixed": "# Table Column Style - Compact\\n\\n## Aligned / Edge Pipes\\n\\n| Heading | Heading   | Heading |\\n| ------- | --------- | ------- |\\n| Text    | Text text | Text    |\\n| Text    | Text text | Text    |\\n| Text    | Text text | Text    |\\n\\n{MD060:-6} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n| Heading | Heading   | Heading |\\n| ------- | -------- | ------- |\\n| Text    | Text text | Text    |\\n| Text     | Text text | Text   |\\n| Text    | Text tex | Text    |\\n\\n{MD060:-6} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Aligned / No Edge Pipes\\n\\nHeading | Heading   | Heading\\n------- | --------- | -------\\nText    | Text text | Text\\nText    | Text text | Text\\nText    | Text text | Text\\n\\n{MD060:-6} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\nHeading | Heading   | Heading\\n------- | -------- | --------\\nText    | Text text | Text\\nText     | Text text | Text\\nText    | Text tex | Text\\n\\n{MD060:-6} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Compact / Edge Pipes\\n\\n| Heading | Heading | Heading |\\n| ------- | ------- | ------- |\\n| Text | Text text | Text |\\n| Text text | Text text text | Text |\\n| Text | Text | Text |\\n\\n| Heading | Heading | Heading |\\n| - | - | - |\\n| Text | Text text | Text |\\n| Text text | Text text text | Text |\\n| Text | Text | Text |\\n\\n| Heading | Heading  | Heading |\\n| -       |  ---     | -       |\\n| Text    | Text text | Text  |\\n|  Text |  Text  |   Text   |\\n| Text  |  Text |        Text |\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Compact / No Edge Pipes\\n\\nHeading | Heading | Heading\\n------- | ------- | -------\\nText | Text text | Text\\nText text | Text text text | Text\\nText | Text | Text\\n\\nHeading | Heading | Heading\\n-- | -- | --\\nText | Text text | Text\\nText text | Text text text | Text\\nText | Text | Text\\n\\nHeading | Heading  | Heading\\n-- |  ---  | --\\nText    | Text text |  Text\\nText text | Text text text | Text\\nText  | Text |  Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-2}\\n\\n## Tight / Edge Pipes\\n\\n|Heading|Heading|Heading|\\n|-------|-------|-------|\\n|Text|Text text|Text|\\n|Text text|Text text text|Text|\\n|Text|Text|Text|\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n|Heading|Heading|Heading|\\n|--|--|--|\\n|Text|Text text|Text|\\n|Text text|Text text text|Text|\\n|Text|Text|Text|\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n|Heading|Heading |Heading|\\n|-------|-------|------- |\\n| Text|Text text |Text|\\n|Text text |Text text text|Text|\\n|Text| Text |Text|\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Tight / No Edge Pipes\\n\\nHeading|Heading|Heading\\n-------|-------|-------\\nText|Text text|Text\\nText text|Text text text|Text\\nText|Text|Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\nHeading|Heading|Heading\\n--|--|--\\nText|Text text|Text\\nText text|Text text text|Text\\nText|Text|Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\nHeading|Heading |Heading\\n-------|-------| -------\\nText |Text text|Text\\nText text|Text text text|Text\\nText| Text |Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n<!-- markdownlint-configure-file {\\n  \\"table-column-style\\": {\\n    \\"style\\": \\"compact\\"\\n  },\\n  \\"table-pipe-style\\": false\\n} -->\\n"
 }
 `;
 
@@ -53682,7 +53682,7 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-default.md 1`] = `
       "severity": "error"
     }
   ],
-  "fixed": "# Table Column Style - Default\\n\\n## Aligned / Edge Pipes\\n\\n| Heading | Heading   | Heading |\\n| ------- | --------- | ------- |\\n| Text    | Text text | Text    |\\n| Text    | Text text | Text    |\\n| Text    | Text text | Text    |\\n\\n| Heading | Heading   | Heading |\\n| ------- | -------- | ------- |\\n| Text    | Text text | Text    |\\n| Text     | Text text | Text   |\\n| Text    | Text tex | Text    |\\n\\n{MD060:-5} {MD060:-3} {MD060:-2}\\n\\n## Aligned / No Edge Pipes\\n\\nHeading | Heading   | Heading\\n------- | --------- | -------\\nText    | Text text | Text\\nText    | Text text | Text\\nText    | Text text | Text\\n\\nHeading | Heading   | Heading\\n------- | -------- | --------\\nText    | Text text | Text\\nText     | Text text | Text\\nText    | Text tex | Text\\n\\n{MD060:-5} {MD060:-3} {MD060:-2}\\n\\n## Compact / Edge Pipes\\n\\n| Heading | Heading | Heading |\\n| ------- | ------- | ------- |\\n| Text | Text text | Text |\\n| Text text | Text text text | Text |\\n| Text | Text | Text |\\n\\n| Heading | Heading | Heading |\\n| - | - | - |\\n| Text | Text text | Text |\\n| Text text | Text text text | Text |\\n| Text | Text | Text |\\n\\n| Heading | Heading  | Heading |\\n| -       |  ---     | -       |\\n| Text    | Text text | Text  |\\n|  Text |  Text  |   Text   |\\n| Text  |  Text |        Text |\\n\\n{MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Compact / No Edge Pipes\\n\\nHeading | Heading | Heading\\n------- | ------- | -------\\nText | Text text | Text\\nText text | Text text text | Text\\nText | Text | Text\\n\\nHeading | Heading | Heading\\n-- | -- | --\\nText | Text text | Text\\nText text | Text text text | Text\\nText | Text | Text\\n\\nHeading | Heading  | Heading\\n-- |  ---  | --\\nText  | Text text |  Text\\nText text | Text text text | Text\\nText  | Text |  Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-2}\\n\\n## Tight / Edge Pipes\\n\\n|Heading|Heading|Heading|\\n|-------|-------|-------|\\n|Text|Text text|Text|\\n|Text text|Text text text|Text|\\n|Text|Text|Text|\\n\\n|Heading|Heading|Heading|\\n|-|-|-|\\n|Text|Text text|Text|\\n|Text text|Text text text|Text|\\n|Text|Text|Text|\\n\\n|Heading|Heading |Heading|\\n|-------|-------|------- |\\n| Text|Text text |Text|\\n|Text text |Text text text|Text|\\n|Text| Text |Text|\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Tight / No Edge Pipes\\n\\nHeading|Heading|Heading\\n-------|-------|-------\\nText|Text text|Text\\nText text|Text text text|Text\\nText|Text|Text\\n\\nHeading|Heading|Heading\\n-|-|-\\nText|Text text|Text\\nText text|Text text text|Text\\nText|Text|Text\\n\\nHeading|Heading |Heading\\n-------|-------| -------\\nText |Text text|Text\\nText text|Text text text|Text\\nText| Text |Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-2}\\n\\n<!-- markdownlint-configure-file {\\n  \\"table-pipe-style\\": false\\n} -->\\n"
+  "fixed": "# Table Column Style - Default\\n\\n## Aligned / Edge Pipes\\n\\n| Heading | Heading   | Heading |\\n| ------- | --------- | ------- |\\n| Text    | Text text | Text    |\\n| Text    | Text text | Text    |\\n| Text    | Text text | Text    |\\n\\n| Heading | Heading   | Heading |\\n| ------- | -------- | ------- |\\n| Text    | Text text | Text    |\\n| Text     | Text text | Text   |\\n| Text    | Text tex | Text    |\\n\\n{MD060:-5} {MD060:-3} {MD060:-2}\\n\\n## Aligned / No Edge Pipes\\n\\nHeading | Heading   | Heading\\n------- | --------- | -------\\nText    | Text text | Text\\nText    | Text text | Text\\nText    | Text text | Text\\n\\nHeading | Heading   | Heading\\n------- | -------- | --------\\nText    | Text text | Text\\nText     | Text text | Text\\nText    | Text tex | Text\\n\\n{MD060:-5} {MD060:-3} {MD060:-2}\\n\\n## Compact / Edge Pipes\\n\\n| Heading | Heading | Heading |\\n| ------- | ------- | ------- |\\n| Text | Text text | Text |\\n| Text text | Text text text | Text |\\n| Text | Text | Text |\\n\\n| Heading | Heading | Heading |\\n| - | - | - |\\n| Text | Text text | Text |\\n| Text text | Text text text | Text |\\n| Text | Text | Text |\\n\\n| Heading | Heading  | Heading |\\n| -       |  ---     | -       |\\n| Text    | Text text | Text  |\\n|  Text |  Text  |   Text   |\\n| Text  |  Text |        Text |\\n\\n{MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Compact / No Edge Pipes\\n\\nHeading | Heading | Heading\\n------- | ------- | -------\\nText | Text text | Text\\nText text | Text text text | Text\\nText | Text | Text\\n\\nHeading | Heading | Heading\\n-- | -- | --\\nText | Text text | Text\\nText text | Text text text | Text\\nText | Text | Text\\n\\nHeading | Heading  | Heading\\n-- |  ---  | --\\nText  | Text text |  Text\\nText text | Text text text | Text\\nText  | Text |  Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-2}\\n\\n## Tight / Edge Pipes\\n\\n|Heading|Heading|Heading|\\n|-------|-------|-------|\\n|Text|Text text|Text|\\n|Text text|Text text text|Text|\\n|Text|Text|Text|\\n\\n|Heading|Heading|Heading|\\n|--|--|--|\\n|Text|Text text|Text|\\n|Text text|Text text text|Text|\\n|Text|Text|Text|\\n\\n|Heading|Heading |Heading|\\n|-------|-------|------- |\\n| Text|Text text |Text|\\n|Text text |Text text text|Text|\\n|Text| Text |Text|\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Tight / No Edge Pipes\\n\\nHeading|Heading|Heading\\n-------|-------|-------\\nText|Text text|Text\\nText text|Text text text|Text\\nText|Text|Text\\n\\nHeading|Heading|Heading\\n--|--|--\\nText|Text text|Text\\nText text|Text text text|Text\\nText|Text|Text\\n\\nHeading|Heading |Heading\\n-------|-------| -------\\nText |Text text|Text\\nText text|Text text text|Text\\nText| Text |Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-2}\\n\\n<!-- markdownlint-configure-file {\\n  \\"table-pipe-style\\": false\\n} -->\\n"
 }
 `;
 
@@ -53748,7 +53748,7 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-emoji.md 1`] = `
 exports[`markdownlint-test-scenarios.mjs > table-column-style-empty-cells.md 1`] = `
 {
   "errors": [],
-  "fixed": "# Table Column Style - Empty Cells\\n\\n## Aligned / Edge Pipes\\n\\n| Heading | Heading   | Heading |\\n| ------- | --------- | ------- |\\n|         | Text text | Text    |\\n| Text    |           | Text    |\\n| Text    | Text text |         |\\n\\n## Aligned / No Edge Pipes\\n\\nHeading | Heading   | Heading\\n------- | --------- | -------\\nText    | Text text | Text\\nText    |           | Text\\nText    | Text text | Text\\n\\n## Compact / Edge Pipes\\n\\n| Heading | Heading | Heading |\\n| - | - | - |\\n| | Text text | Text |\\n| Text text | | Text |\\n| Text | Text | |\\n\\n## Compact / No Edge Pipes\\n\\nHeading | Heading | Heading\\n-- | -- | --\\nText | Text text | Text\\nText text | | Text\\nText | Text | Text\\n\\n## Tight / Edge Pipes\\n\\n|Heading|Heading|Heading|\\n|-|-|-|\\n||Text text|Text|\\n|Text text||Text|\\n|Text|Text||\\n\\n## Tight / No Edge Pipes\\n\\nHeading|Heading|Heading\\n-|-|-\\nText|Text text|Text\\nText text||Text\\nText|Text|Text\\n\\n<!-- markdownlint-configure-file {\\n  \\"table-pipe-style\\": false\\n} -->\\n"
+  "fixed": "# Table Column Style - Empty Cells\\n\\n## Aligned / Edge Pipes\\n\\n| Heading | Heading   | Heading |\\n| ------- | --------- | ------- |\\n|         | Text text | Text    |\\n| Text    |           | Text    |\\n| Text    | Text text |         |\\n\\n## Aligned / No Edge Pipes\\n\\nHeading | Heading   | Heading\\n------- | --------- | -------\\nText    | Text text | Text\\nText    |           | Text\\nText    | Text text | Text\\n\\n## Compact / Edge Pipes\\n\\n| Heading | Heading | Heading |\\n| - | - | - |\\n| | Text text | Text |\\n| Text text | | Text |\\n| Text | Text | |\\n\\n## Compact / No Edge Pipes\\n\\nHeading | Heading | Heading\\n-- | -- | --\\nText | Text text | Text\\nText text | | Text\\nText | Text | Text\\n\\n## Tight / Edge Pipes\\n\\n|Heading|Heading|Heading|\\n|--|--|--|\\n||Text text|Text|\\n|Text text||Text|\\n|Text|Text||\\n\\n## Tight / No Edge Pipes\\n\\nHeading|Heading|Heading\\n--|--|--\\nText|Text text|Text\\nText text||Text\\nText|Text|Text\\n\\n<!-- markdownlint-configure-file {\\n  \\"table-pipe-style\\": false\\n} -->\\n"
 }
 `;
 
@@ -58422,7 +58422,7 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
       "severity": "error"
     }
   ],
-  "fixed": "# Table Column Style - Tight\\n\\n## Aligned / Edge Pipes\\n\\n| Heading | Heading   | Heading |\\n| ------- | --------- | ------- |\\n| Text    | Text text | Text    |\\n| Text    | Text text | Text    |\\n| Text    | Text text | Text    |\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n| Heading | Heading   | Heading |\\n| ------- | -------- | ------- |\\n| Text    | Text text | Text    |\\n| Text     | Text text | Text   |\\n| Text    | Text tex | Text    |\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Aligned / No Edge Pipes\\n\\nHeading | Heading   | Heading\\n------- | --------- | -------\\nText    | Text text | Text\\nText    | Text text | Text\\nText    | Text text | Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\nHeading | Heading   | Heading\\n------- | -------- | --------\\nText    | Text text | Text\\nText     | Text text | Text\\nText    | Text tex | Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Compact / Edge Pipes\\n\\n| Heading | Heading | Heading |\\n| ------- | ------- | ------- |\\n| Text | Text text | Text |\\n| Text text | Text text text | Text |\\n| Text | Text | Text |\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n| Heading | Heading | Heading |\\n| - | - | - |\\n| Text | Text text | Text |\\n| Text text | Text text text | Text |\\n| Text | Text | Text |\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n| Heading | Heading  | Heading |\\n| -       |  ---     | -       |\\n| Text    | Text text | Text  |\\n|  Text |  Text  |   Text   |\\n| Text  |  Text |        Text |\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Compact / No Edge Pipes\\n\\nHeading | Heading | Heading\\n------- | ------- | -------\\nText | Text text | Text\\nText text | Text text text | Text\\nText | Text | Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\nHeading | Heading | Heading\\n-- | -- | --\\nText | Text text | Text\\nText text | Text text text | Text\\nText | Text | Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\nHeading | Heading  | Heading\\n-- |  ---  | --\\nText    | Text text |  Text\\nText text | Text text text | Text\\nText  | Text |  Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Tight / Edge Pipes\\n\\n|Heading|Heading|Heading|\\n|-------|-------|-------|\\n|Text|Text text|Text|\\n|Text text|Text text text|Text|\\n|Text|Text|Text|\\n\\n|Heading|Heading|Heading|\\n|-|-|-|\\n|Text|Text text|Text|\\n|Text text|Text text text|Text|\\n|Text|Text|Text|\\n\\n|Heading|Heading |Heading|\\n|-------|-------|------- |\\n| Text|Text text |Text|\\n|Text text |Text text text|Text|\\n|Text| Text |Text|\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Tight / No Edge Pipes\\n\\nHeading|Heading|Heading\\n-------|-------|-------\\nText|Text text|Text\\nText text|Text text text|Text\\nText|Text|Text\\n\\nHeading|Heading|Heading\\n-|-|-\\nText|Text text|Text\\nText text|Text text text|Text\\nText|Text|Text\\n\\nHeading|Heading |Heading\\n-------|-------| -------\\nText |Text text|Text\\nText text|Text text text|Text\\nText| Text |Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-2}\\n\\n<!-- markdownlint-configure-file {\\n  \\"table-column-style\\": {\\n    \\"style\\": \\"tight\\"\\n  },\\n  \\"table-pipe-style\\": false\\n} -->\\n"
+  "fixed": "# Table Column Style - Tight\\n\\n## Aligned / Edge Pipes\\n\\n| Heading | Heading   | Heading |\\n| ------- | --------- | ------- |\\n| Text    | Text text | Text    |\\n| Text    | Text text | Text    |\\n| Text    | Text text | Text    |\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n| Heading | Heading   | Heading |\\n| ------- | -------- | ------- |\\n| Text    | Text text | Text    |\\n| Text     | Text text | Text   |\\n| Text    | Text tex | Text    |\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Aligned / No Edge Pipes\\n\\nHeading | Heading   | Heading\\n------- | --------- | -------\\nText    | Text text | Text\\nText    | Text text | Text\\nText    | Text text | Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\nHeading | Heading   | Heading\\n------- | -------- | --------\\nText    | Text text | Text\\nText     | Text text | Text\\nText    | Text tex | Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Compact / Edge Pipes\\n\\n| Heading | Heading | Heading |\\n| ------- | ------- | ------- |\\n| Text | Text text | Text |\\n| Text text | Text text text | Text |\\n| Text | Text | Text |\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n| Heading | Heading | Heading |\\n| - | - | - |\\n| Text | Text text | Text |\\n| Text text | Text text text | Text |\\n| Text | Text | Text |\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n| Heading | Heading  | Heading |\\n| -       |  ---     | -       |\\n| Text    | Text text | Text  |\\n|  Text |  Text  |   Text   |\\n| Text  |  Text |        Text |\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Compact / No Edge Pipes\\n\\nHeading | Heading | Heading\\n------- | ------- | -------\\nText | Text text | Text\\nText text | Text text text | Text\\nText | Text | Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\nHeading | Heading | Heading\\n-- | -- | --\\nText | Text text | Text\\nText text | Text text text | Text\\nText | Text | Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\nHeading | Heading  | Heading\\n-- |  ---  | --\\nText    | Text text |  Text\\nText text | Text text text | Text\\nText  | Text |  Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Tight / Edge Pipes\\n\\n|Heading|Heading|Heading|\\n|-------|-------|-------|\\n|Text|Text text|Text|\\n|Text text|Text text text|Text|\\n|Text|Text|Text|\\n\\n|Heading|Heading|Heading|\\n|--|--|--|\\n|Text|Text text|Text|\\n|Text text|Text text text|Text|\\n|Text|Text|Text|\\n\\n|Heading|Heading |Heading|\\n|-------|-------|------- |\\n| Text|Text text |Text|\\n|Text text |Text text text|Text|\\n|Text| Text |Text|\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Tight / No Edge Pipes\\n\\nHeading|Heading|Heading\\n-------|-------|-------\\nText|Text text|Text\\nText text|Text text text|Text\\nText|Text|Text\\n\\nHeading|Heading|Heading\\n--|--|--\\nText|Text text|Text\\nText text|Text text text|Text\\nText|Text|Text\\n\\nHeading|Heading |Heading\\n-------|-------| -------\\nText |Text text|Text\\nText text|Text text text|Text\\nText| Text |Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-2}\\n\\n<!-- markdownlint-configure-file {\\n  \\"table-column-style\\": {\\n    \\"style\\": \\"tight\\"\\n  },\\n  \\"table-pipe-style\\": false\\n} -->\\n"
 }
 `;
 

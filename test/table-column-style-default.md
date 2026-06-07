@@ -85,7 +85,7 @@ Text  | Text |  Text
 |Text|Text|Text|
 
 |Heading|Heading|Heading|
-|-|-|-|
+|--|--|--|
 |Text|Text text|Text|
 |Text text|Text text text|Text|
 |Text|Text|Text|
@@ -107,7 +107,7 @@ Text text|Text text text|Text
 Text|Text|Text
 
 Heading|Heading|Heading
--|-|-
+--|--|--
 Text|Text text|Text
 Text text|Text text text|Text
 Text|Text|Text

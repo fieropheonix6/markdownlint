@@ -95,7 +95,7 @@ Text  | Text |  Text
 {MD060:-4} {MD060:-3} {MD060:-2}
 
 |Heading|Heading|Heading|
-|-|-|-|
+|--|--|--|
 |Text|Text text|Text|
 |Text text|Text text text|Text|
 |Text|Text|Text|
@@ -121,7 +121,7 @@ Text|Text|Text
 {MD060:-4} {MD060:-3} {MD060:-2}
 
 Heading|Heading|Heading
--|-|-
+--|--|--
 Text|Text text|Text
 Text text|Text text text|Text
 Text|Text|Text

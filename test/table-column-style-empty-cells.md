@@ -35,7 +35,7 @@ Text | Text | Text
 ## Tight / Edge Pipes
 
 |Heading|Heading|Heading|
-|-|-|-|
+|--|--|--|
 ||Text text|Text|
 |Text text||Text|
 |Text|Text||
@@ -43,7 +43,7 @@ Text | Text | Text
 ## Tight / No Edge Pipes
 
 Heading|Heading|Heading
--|-|-
+--|--|--
 Text|Text text|Text
 Text text||Text
 Text|Text|Text

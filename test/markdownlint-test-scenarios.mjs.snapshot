@@ -49964,7 +49964,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         23,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 20,
+        "deleteCount": 2
+      },
       "severity": "error"
     },
     {
@@ -49981,7 +49984,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 7,
+        "deleteCount": 3
+      },
       "severity": "error"
     },
     {
@@ -49998,7 +50004,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         33,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 29,
+        "deleteCount": 3
+      },
       "severity": "error"
     },
     {
@@ -50015,7 +50024,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 7,
+        "deleteCount": 3
+      },
       "severity": "error"
     },
     {
@@ -50032,7 +50044,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         33,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 29,
+        "deleteCount": 3
+      },
       "severity": "error"
     },
     {
@@ -50049,7 +50064,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 7,
+        "deleteCount": 3
+      },
       "severity": "error"
     },
     {
@@ -50066,7 +50084,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         33,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 29,
+        "deleteCount": 3
+      },
       "severity": "error"
     },
     {
@@ -50083,7 +50104,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         23,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 20,
+        "deleteCount": 2
+      },
       "severity": "error"
     },
     {
@@ -50100,7 +50124,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 7,
+        "deleteCount": 3
+      },
       "severity": "error"
     },
     {
@@ -50117,7 +50144,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         33,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 29,
+        "deleteCount": 3
+      },
       "severity": "error"
     },
     {
@@ -50134,7 +50164,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         12,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 7,
+        "deleteCount": 4
+      },
       "severity": "error"
     },
     {
@@ -50151,7 +50184,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         33,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 30,
+        "deleteCount": 2
+      },
       "severity": "error"
     },
     {
@@ -50168,7 +50204,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 7,
+        "deleteCount": 3
+      },
       "severity": "error"
     },
     {
@@ -50185,7 +50224,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         32,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 28,
+        "deleteCount": 3
+      },
       "severity": "error"
     },
     {
@@ -50202,7 +50244,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         21,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 18,
+        "deleteCount": 2
+      },
       "severity": "error"
     },
     {
@@ -50219,7 +50264,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 5,
+        "deleteCount": 3
+      },
       "severity": "error"
     },
     {
@@ -50236,7 +50284,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 5,
+        "deleteCount": 3
+      },
       "severity": "error"
     },
     {
@@ -50253,7 +50304,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 5,
+        "deleteCount": 3
+      },
       "severity": "error"
     },
     {
@@ -50270,7 +50324,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         21,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 18,
+        "deleteCount": 2
+      },
       "severity": "error"
     },
     {
@@ -50287,7 +50344,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 5,
+        "deleteCount": 3
+      },
       "severity": "error"
     },
     {
@@ -50304,7 +50364,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         10,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 5,
+        "deleteCount": 4
+      },
       "severity": "error"
     },
     {
@@ -50321,7 +50384,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 5,
+        "deleteCount": 3
+      },
       "severity": "error"
     },
     {
@@ -50338,7 +50404,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         22,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 20,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -50355,7 +50424,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 4,
+        "deleteCount": 6
+      },
       "severity": "error"
     },
     {
@@ -50372,7 +50444,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 12,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -50389,7 +50464,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         22,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 17,
+        "deleteCount": 4
+      },
       "severity": "error"
     },
     {
@@ -50406,7 +50484,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         32,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 25,
+        "deleteCount": 6
+      },
       "severity": "error"
     },
     {
@@ -50423,7 +50504,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 7,
+        "deleteCount": 3
+      },
       "severity": "error"
     },
     {
@@ -50440,7 +50524,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         31,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 29,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -50457,7 +50544,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         1,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 2,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -50474,7 +50564,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 10,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -50491,7 +50584,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         18,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 16,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -50508,7 +50604,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         18,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 19,
+        "deleteCount": 2
+      },
       "severity": "error"
     },
     {
@@ -50525,7 +50624,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         29,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 26,
+        "deleteCount": 2
+      },
       "severity": "error"
     },
     {
@@ -50542,7 +50644,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 7,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -50559,7 +50664,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 10,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -50576,7 +50684,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         17,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 18,
+        "deleteCount": 7
+      },
       "severity": "error"
     },
     {
@@ -50593,7 +50704,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         20,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 18,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -50610,7 +50724,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         4,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 5,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -50627,7 +50744,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         12,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 10,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -50644,7 +50764,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 5,
+        "deleteCount": 3
+      },
       "severity": "error"
     },
     {
@@ -50661,7 +50784,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         21,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 22,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -50678,7 +50804,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         7,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 5,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -50695,7 +50824,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         14,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 15,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -50712,7 +50844,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         1,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 2,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -50729,7 +50864,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 9,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -50746,7 +50884,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 10,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -50763,7 +50904,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         17,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 17,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -50780,7 +50924,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         17,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 18,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -50797,7 +50944,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         25,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 25,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -50814,7 +50964,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         1,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 2,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -50831,7 +50984,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 9,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -50848,7 +51004,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 10,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -50865,7 +51024,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         17,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 17,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -50882,7 +51044,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         17,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 18,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -50899,7 +51064,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         25,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 25,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -50916,7 +51084,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         1,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 2,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -50933,7 +51104,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         6,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 6,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -50950,7 +51124,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         6,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 7,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -50967,7 +51144,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         16,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 16,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -50984,7 +51164,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         16,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 17,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51001,7 +51184,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         21,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 21,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51018,7 +51204,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         1,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 2,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51035,7 +51224,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 11,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51052,7 +51244,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 12,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51069,7 +51264,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         26,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 26,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51086,7 +51284,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         26,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 27,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51103,7 +51304,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         31,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 31,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51120,7 +51324,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         1,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 2,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51137,7 +51344,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         6,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 6,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51154,7 +51364,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         6,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 7,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51171,7 +51384,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 11,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51188,7 +51404,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 12,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51205,7 +51424,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         16,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 16,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51222,7 +51444,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         1,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 2,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51239,7 +51464,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 9,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51256,7 +51484,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 10,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51273,7 +51504,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         17,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 17,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51290,7 +51524,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         17,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 18,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51307,7 +51544,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         25,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 25,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51324,7 +51564,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         1,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 2,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51341,7 +51584,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         4,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 4,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51358,7 +51604,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         4,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 5,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51375,7 +51624,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         7,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 7,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51392,7 +51644,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         7,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 8,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51409,7 +51664,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         10,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 10,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51426,7 +51684,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         1,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 2,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51443,7 +51704,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         6,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 6,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51460,7 +51724,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         6,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 7,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51477,7 +51744,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         16,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 16,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51494,7 +51764,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         16,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 17,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51511,7 +51784,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         21,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 21,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51528,7 +51804,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         1,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 2,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51545,7 +51824,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 11,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51562,7 +51844,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 12,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51579,7 +51864,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         26,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 26,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51596,7 +51884,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         26,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 27,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51613,7 +51904,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         31,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 31,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51630,7 +51924,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         1,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 2,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51647,7 +51944,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         6,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 6,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51664,7 +51964,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         6,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 7,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51681,7 +51984,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 11,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51698,7 +52004,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 12,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51715,7 +52024,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         16,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 16,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51732,7 +52044,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         1,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 2,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51749,7 +52064,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 9,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51766,7 +52084,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 10,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51783,7 +52104,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         18,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 19,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51800,7 +52124,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         26,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 26,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51817,7 +52144,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         1,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 2,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51834,7 +52164,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 9,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51851,7 +52184,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 10,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51868,7 +52204,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         17,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 17,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51885,7 +52224,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         17,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 18,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51902,7 +52244,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         7,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 7,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51919,7 +52264,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         7,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 8,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51936,7 +52284,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         18,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 19,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51953,7 +52304,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         23,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 23,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51970,7 +52324,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         1,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 2,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -51987,7 +52344,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         12,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 13,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52004,7 +52364,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         27,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 27,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52021,7 +52384,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         27,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 28,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52038,7 +52404,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         32,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 32,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52055,7 +52424,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         1,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 2,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52072,7 +52444,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         6,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 6,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52089,7 +52464,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         13,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 14,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52106,7 +52484,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         18,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 18,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52123,7 +52504,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         8,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 8,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52140,7 +52524,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         8,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 9,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52157,7 +52544,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         16,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 16,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52174,7 +52564,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         16,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 17,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52191,7 +52584,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         8,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 8,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52208,7 +52604,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         8,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 9,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52225,7 +52624,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         16,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 16,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52242,7 +52644,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         16,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 17,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52259,7 +52664,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         5,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 5,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52276,7 +52684,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         5,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 6,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52293,7 +52704,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         15,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 15,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52310,7 +52724,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         15,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 16,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52327,7 +52744,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         10,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 10,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52344,7 +52764,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         10,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 11,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52361,7 +52784,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         25,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 25,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52378,7 +52804,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         25,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 26,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52395,7 +52824,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         5,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 5,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52412,7 +52844,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         5,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 6,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52429,7 +52864,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         10,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 10,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52446,7 +52884,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         10,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 11,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52463,7 +52904,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         8,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 8,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52480,7 +52924,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         8,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 9,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52497,7 +52944,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         16,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 16,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52514,7 +52964,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         16,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 17,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52531,7 +52984,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         3,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 3,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52548,7 +53004,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         3,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 4,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52565,7 +53024,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         6,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 6,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52582,7 +53044,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         6,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 7,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52599,7 +53064,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         5,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 5,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52616,7 +53084,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         5,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 6,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52633,7 +53104,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         15,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 15,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52650,7 +53124,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         15,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 16,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52667,7 +53144,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         10,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 10,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52684,7 +53164,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         10,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 11,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52701,7 +53184,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         25,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 25,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52718,7 +53204,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         25,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 26,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52735,7 +53224,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         5,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 5,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52752,7 +53244,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         5,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 6,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52769,7 +53264,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         10,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 10,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52786,7 +53284,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         10,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 11,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52803,7 +53304,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         8,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 8,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52820,7 +53324,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         8,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 9,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52837,7 +53344,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         17,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 18,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52854,7 +53364,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         8,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 8,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52871,7 +53384,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         8,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 9,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52888,7 +53404,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         16,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 16,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52905,7 +53424,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         6,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 7,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52922,7 +53444,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         16,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 16,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52939,7 +53464,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         16,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 17,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52956,7 +53484,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         10,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 10,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52973,7 +53504,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         10,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 11,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -52990,7 +53524,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         25,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 25,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -53007,7 +53544,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         25,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 26,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -53024,7 +53564,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         5,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 5,
+        "insertText": " "
+      },
       "severity": "error"
     },
     {
@@ -53041,11 +53584,14 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-compact.md 1`] = `
         12,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 13,
+        "insertText": " "
+      },
       "severity": "error"
     }
   ],
-  "fixed": "# Table Column Style - Compact\\n\\n## Aligned / Edge Pipes\\n\\n| Heading | Heading   | Heading |\\n| ------- | --------- | ------- |\\n| Text    | Text text | Text    |\\n| Text    | Text text | Text    |\\n| Text    | Text text | Text    |\\n\\n{MD060:-6} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n| Heading | Heading   | Heading |\\n| ------- | -------- | ------- |\\n| Text    | Text text | Text    |\\n| Text     | Text text | Text   |\\n| Text    | Text tex | Text    |\\n\\n{MD060:-6} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Aligned / No Edge Pipes\\n\\nHeading | Heading   | Heading\\n------- | --------- | -------\\nText    | Text text | Text\\nText    | Text text | Text\\nText    | Text text | Text\\n\\n{MD060:-6} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\nHeading | Heading   | Heading\\n------- | -------- | --------\\nText    | Text text | Text\\nText     | Text text | Text\\nText    | Text tex | Text\\n\\n{MD060:-6} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Compact / Edge Pipes\\n\\n| Heading | Heading | Heading |\\n| ------- | ------- | ------- |\\n| Text | Text text | Text |\\n| Text text | Text text text | Text |\\n| Text | Text | Text |\\n\\n| Heading | Heading | Heading |\\n| - | - | - |\\n| Text | Text text | Text |\\n| Text text | Text text text | Text |\\n| Text | Text | Text |\\n\\n| Heading | Heading  | Heading |\\n| -       |  ---     | -       |\\n| Text    | Text text | Text  |\\n|  Text |  Text  |   Text   |\\n| Text  |  Text |        Text |\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Compact / No Edge Pipes\\n\\nHeading | Heading | Heading\\n------- | ------- | -------\\nText | Text text | Text\\nText text | Text text text | Text\\nText | Text | Text\\n\\nHeading | Heading | Heading\\n-- | -- | --\\nText | Text text | Text\\nText text | Text text text | Text\\nText | Text | Text\\n\\nHeading | Heading  | Heading\\n-- |  ---  | --\\nText    | Text text |  Text\\nText text | Text text text | Text\\nText  | Text |  Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-2}\\n\\n## Tight / Edge Pipes\\n\\n|Heading|Heading|Heading|\\n|-------|-------|-------|\\n|Text|Text text|Text|\\n|Text text|Text text text|Text|\\n|Text|Text|Text|\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n|Heading|Heading|Heading|\\n|--|--|--|\\n|Text|Text text|Text|\\n|Text text|Text text text|Text|\\n|Text|Text|Text|\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n|Heading|Heading |Heading|\\n|-------|-------|------- |\\n| Text|Text text |Text|\\n|Text text |Text text text|Text|\\n|Text| Text |Text|\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Tight / No Edge Pipes\\n\\nHeading|Heading|Heading\\n-------|-------|-------\\nText|Text text|Text\\nText text|Text text text|Text\\nText|Text|Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\nHeading|Heading|Heading\\n--|--|--\\nText|Text text|Text\\nText text|Text text text|Text\\nText|Text|Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\nHeading|Heading |Heading\\n-------|-------| -------\\nText |Text text|Text\\nText text|Text text text|Text\\nText| Text |Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n<!-- markdownlint-configure-file {\\n  \\"table-column-style\\": {\\n    \\"style\\": \\"compact\\"\\n  },\\n  \\"table-pipe-style\\": false\\n} -->\\n"
+  "fixed": "# Table Column Style - Compact\\n\\n## Aligned / Edge Pipes\\n\\n| Heading | Heading | Heading |\\n| ------- | --------- | ------- |\\n| Text | Text text | Text |\\n| Text | Text text | Text |\\n| Text | Text text | Text |\\n\\n{MD060:-6} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n| Heading | Heading | Heading |\\n| ------- | -------- | ------- |\\n| Text | Text text | Text |\\n| Text | Text text | Text |\\n| Text | Text tex | Text |\\n\\n{MD060:-6} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Aligned / No Edge Pipes\\n\\nHeading | Heading | Heading\\n------- | --------- | -------\\nText | Text text | Text\\nText | Text text | Text\\nText | Text text | Text\\n\\n{MD060:-6} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\nHeading | Heading | Heading\\n------- | -------- | --------\\nText | Text text | Text\\nText | Text text | Text\\nText | Text tex | Text\\n\\n{MD060:-6} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Compact / Edge Pipes\\n\\n| Heading | Heading | Heading |\\n| ------- | ------- | ------- |\\n| Text | Text text | Text |\\n| Text text | Text text text | Text |\\n| Text | Text | Text |\\n\\n| Heading | Heading | Heading |\\n| - | - | - |\\n| Text | Text text | Text |\\n| Text text | Text text text | Text |\\n| Text | Text | Text |\\n\\n| Heading | Heading | Heading |\\n| - | --- | - |\\n| Text | Text text | Text |\\n| Text | Text | Text |\\n| Text | Text | Text |\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Compact / No Edge Pipes\\n\\nHeading | Heading | Heading\\n------- | ------- | -------\\nText | Text text | Text\\nText text | Text text text | Text\\nText | Text | Text\\n\\nHeading | Heading | Heading\\n-- | -- | --\\nText | Text text | Text\\nText text | Text text text | Text\\nText | Text | Text\\n\\nHeading | Heading | Heading\\n-- | --- | --\\nText | Text text | Text\\nText text | Text text text | Text\\nText | Text | Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-2}\\n\\n## Tight / Edge Pipes\\n\\n| Heading | Heading | Heading |\\n| ------- | ------- | ------- |\\n| Text | Text text | Text |\\n| Text text | Text text text | Text |\\n| Text | Text | Text |\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n| Heading | Heading | Heading |\\n| -- | -- | -- |\\n| Text | Text text | Text |\\n| Text text | Text text text | Text |\\n| Text | Text | Text |\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n| Heading | Heading | Heading |\\n| ------- | ------- | ------- |\\n| Text | Text text | Text |\\n| Text text | Text text text | Text |\\n| Text | Text | Text |\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Tight / No Edge Pipes\\n\\nHeading | Heading | Heading\\n------- | ------- | -------\\nText | Text text | Text\\nText text | Text text text | Text\\nText | Text | Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\nHeading | Heading | Heading\\n-- | -- | --\\nText | Text text | Text\\nText text | Text text text | Text\\nText | Text | Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\nHeading | Heading | Heading\\n------- | ------- | -------\\nText | Text text | Text\\nText text | Text text text | Text\\nText | Text | Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n<!-- markdownlint-configure-file {\\n  \\"table-column-style\\": {\\n    \\"style\\": \\"compact\\"\\n  },\\n  \\"table-pipe-style\\": false\\n} -->\\n"
 }
 `;
 
@@ -53372,7 +53918,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-default.md 1`] = `
         20,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 18,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -53389,7 +53938,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-default.md 1`] = `
         4,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 5,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -53406,7 +53958,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-default.md 1`] = `
         12,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 10,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -53423,7 +53978,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-default.md 1`] = `
         7,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 5,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -53440,7 +53998,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-default.md 1`] = `
         19,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 20,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -53457,7 +54018,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-default.md 1`] = `
         7,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 5,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -53474,7 +54038,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-default.md 1`] = `
         14,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 15,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -53491,7 +54058,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-default.md 1`] = `
         18,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 17,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -53508,7 +54078,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-default.md 1`] = `
         26,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 25,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -53525,7 +54098,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-default.md 1`] = `
         1,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 2,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -53542,7 +54118,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-default.md 1`] = `
         18,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 17,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -53559,7 +54138,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-default.md 1`] = `
         12,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 11,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -53576,7 +54158,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-default.md 1`] = `
         6,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 7,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -53593,7 +54178,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-default.md 1`] = `
         13,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 12,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -53610,7 +54198,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-default.md 1`] = `
         17,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 16,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -53627,7 +54218,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-default.md 1`] = `
         16,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 17,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -53644,7 +54238,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-default.md 1`] = `
         6,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 5,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -53661,7 +54258,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-default.md 1`] = `
         5,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 6,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -53678,11 +54278,14 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-default.md 1`] = `
         12,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 11,
+        "deleteCount": 1
+      },
       "severity": "error"
     }
   ],
-  "fixed": "# Table Column Style - Default\\n\\n## Aligned / Edge Pipes\\n\\n| Heading | Heading   | Heading |\\n| ------- | --------- | ------- |\\n| Text    | Text text | Text    |\\n| Text    | Text text | Text    |\\n| Text    | Text text | Text    |\\n\\n| Heading | Heading   | Heading |\\n| ------- | -------- | ------- |\\n| Text    | Text text | Text    |\\n| Text     | Text text | Text   |\\n| Text    | Text tex | Text    |\\n\\n{MD060:-5} {MD060:-3} {MD060:-2}\\n\\n## Aligned / No Edge Pipes\\n\\nHeading | Heading   | Heading\\n------- | --------- | -------\\nText    | Text text | Text\\nText    | Text text | Text\\nText    | Text text | Text\\n\\nHeading | Heading   | Heading\\n------- | -------- | --------\\nText    | Text text | Text\\nText     | Text text | Text\\nText    | Text tex | Text\\n\\n{MD060:-5} {MD060:-3} {MD060:-2}\\n\\n## Compact / Edge Pipes\\n\\n| Heading | Heading | Heading |\\n| ------- | ------- | ------- |\\n| Text | Text text | Text |\\n| Text text | Text text text | Text |\\n| Text | Text | Text |\\n\\n| Heading | Heading | Heading |\\n| - | - | - |\\n| Text | Text text | Text |\\n| Text text | Text text text | Text |\\n| Text | Text | Text |\\n\\n| Heading | Heading  | Heading |\\n| -       |  ---     | -       |\\n| Text    | Text text | Text  |\\n|  Text |  Text  |   Text   |\\n| Text  |  Text |        Text |\\n\\n{MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Compact / No Edge Pipes\\n\\nHeading | Heading | Heading\\n------- | ------- | -------\\nText | Text text | Text\\nText text | Text text text | Text\\nText | Text | Text\\n\\nHeading | Heading | Heading\\n-- | -- | --\\nText | Text text | Text\\nText text | Text text text | Text\\nText | Text | Text\\n\\nHeading | Heading  | Heading\\n-- |  ---  | --\\nText  | Text text |  Text\\nText text | Text text text | Text\\nText  | Text |  Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-2}\\n\\n## Tight / Edge Pipes\\n\\n|Heading|Heading|Heading|\\n|-------|-------|-------|\\n|Text|Text text|Text|\\n|Text text|Text text text|Text|\\n|Text|Text|Text|\\n\\n|Heading|Heading|Heading|\\n|--|--|--|\\n|Text|Text text|Text|\\n|Text text|Text text text|Text|\\n|Text|Text|Text|\\n\\n|Heading|Heading |Heading|\\n|-------|-------|------- |\\n| Text|Text text |Text|\\n|Text text |Text text text|Text|\\n|Text| Text |Text|\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Tight / No Edge Pipes\\n\\nHeading|Heading|Heading\\n-------|-------|-------\\nText|Text text|Text\\nText text|Text text text|Text\\nText|Text|Text\\n\\nHeading|Heading|Heading\\n--|--|--\\nText|Text text|Text\\nText text|Text text text|Text\\nText|Text|Text\\n\\nHeading|Heading |Heading\\n-------|-------| -------\\nText |Text text|Text\\nText text|Text text text|Text\\nText| Text |Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-2}\\n\\n<!-- markdownlint-configure-file {\\n  \\"table-pipe-style\\": false\\n} -->\\n"
+  "fixed": "# Table Column Style - Default\\n\\n## Aligned / Edge Pipes\\n\\n| Heading | Heading   | Heading |\\n| ------- | --------- | ------- |\\n| Text    | Text text | Text    |\\n| Text    | Text text | Text    |\\n| Text    | Text text | Text    |\\n\\n| Heading | Heading   | Heading |\\n| ------- | -------- | ------- |\\n| Text    | Text text | Text    |\\n| Text     | Text text | Text   |\\n| Text    | Text tex | Text    |\\n\\n{MD060:-5} {MD060:-3} {MD060:-2}\\n\\n## Aligned / No Edge Pipes\\n\\nHeading | Heading   | Heading\\n------- | --------- | -------\\nText    | Text text | Text\\nText    | Text text | Text\\nText    | Text text | Text\\n\\nHeading | Heading   | Heading\\n------- | -------- | --------\\nText    | Text text | Text\\nText     | Text text | Text\\nText    | Text tex | Text\\n\\n{MD060:-5} {MD060:-3} {MD060:-2}\\n\\n## Compact / Edge Pipes\\n\\n| Heading | Heading | Heading |\\n| ------- | ------- | ------- |\\n| Text | Text text | Text |\\n| Text text | Text text text | Text |\\n| Text | Text | Text |\\n\\n| Heading | Heading | Heading |\\n| - | - | - |\\n| Text | Text text | Text |\\n| Text text | Text text text | Text |\\n| Text | Text | Text |\\n\\n| Heading | Heading  | Heading |\\n| -       |  ---     | -       |\\n| Text    | Text text | Text  |\\n|  Text |  Text  |   Text   |\\n| Text  |  Text |        Text |\\n\\n{MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Compact / No Edge Pipes\\n\\nHeading | Heading | Heading\\n------- | ------- | -------\\nText | Text text | Text\\nText text | Text text text | Text\\nText | Text | Text\\n\\nHeading | Heading | Heading\\n-- | -- | --\\nText | Text text | Text\\nText text | Text text text | Text\\nText | Text | Text\\n\\nHeading | Heading | Heading\\n-- | --- | --\\nText | Text text | Text\\nText text | Text text text | Text\\nText | Text | Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-2}\\n\\n## Tight / Edge Pipes\\n\\n|Heading|Heading|Heading|\\n|-------|-------|-------|\\n|Text|Text text|Text|\\n|Text text|Text text text|Text|\\n|Text|Text|Text|\\n\\n|Heading|Heading|Heading|\\n|--|--|--|\\n|Text|Text text|Text|\\n|Text text|Text text text|Text|\\n|Text|Text|Text|\\n\\n|Heading|Heading|Heading|\\n|-------|-------|-------|\\n|Text|Text text|Text|\\n|Text text|Text text text|Text|\\n|Text|Text|Text|\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Tight / No Edge Pipes\\n\\nHeading|Heading|Heading\\n-------|-------|-------\\nText|Text text|Text\\nText text|Text text text|Text\\nText|Text|Text\\n\\nHeading|Heading|Heading\\n--|--|--\\nText|Text text|Text\\nText text|Text text text|Text\\nText|Text|Text\\n\\nHeading|Heading|Heading\\n-------|-------|-------\\nText|Text text|Text\\nText text|Text text text|Text\\nText|Text|Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-2}\\n\\n<!-- markdownlint-configure-file {\\n  \\"table-pipe-style\\": false\\n} -->\\n"
 }
 `;
 
@@ -53720,7 +54323,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-emoji.md 1`] = `
         13,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 11,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -53737,11 +54343,14 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-emoji.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 8,
+        "deleteCount": 1
+      },
       "severity": "error"
     }
   ],
-  "fixed": "# Table Column Style - Emoji\\n\\n## Aligned\\n\\n| Response | Emoji |\\n| -------- | ----- |\\n| Yes      | ✅    |\\n| No       | ❎    |\\n| Oops     | ❌     |\\n\\n{MD060:-2}\\n\\n## Compact\\n\\n| Response | Emoji |\\n| --- | --- |\\n| Yes | ✅ |\\n| No | ❎ |\\n| Oops | ❌  |\\n\\n{MD060:-2}\\n\\n## Tight\\n\\n|Response|Emoji|\\n|---|---|\\n|Yes|✅|\\n|No|❎|\\n|Oops|❌ |\\n\\n{MD060:-2}\\n"
+  "fixed": "# Table Column Style - Emoji\\n\\n## Aligned\\n\\n| Response | Emoji |\\n| -------- | ----- |\\n| Yes      | ✅    |\\n| No       | ❎    |\\n| Oops     | ❌     |\\n\\n{MD060:-2}\\n\\n## Compact\\n\\n| Response | Emoji |\\n| --- | --- |\\n| Yes | ✅ |\\n| No | ❎ |\\n| Oops | ❌ |\\n\\n{MD060:-2}\\n\\n## Tight\\n\\n|Response|Emoji|\\n|---|---|\\n|Yes|✅|\\n|No|❎|\\n|Oops|❌|\\n\\n{MD060:-2}\\n"
 }
 `;
 
@@ -53981,7 +54590,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         1,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 2,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -53998,7 +54610,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 10,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -54015,7 +54630,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 12,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -54032,7 +54650,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         23,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 20,
+        "deleteCount": 3
+      },
       "severity": "error"
     },
     {
@@ -54049,7 +54670,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         23,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 24,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -54066,7 +54690,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         33,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 32,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -54083,7 +54710,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         1,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 2,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -54100,7 +54730,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 10,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -54117,7 +54750,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 12,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -54134,7 +54770,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         23,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 22,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -54151,7 +54790,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         23,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 24,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -54168,7 +54810,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         33,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 32,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -54185,7 +54830,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         1,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 2,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -54202,7 +54850,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 7,
+        "deleteCount": 4
+      },
       "severity": "error"
     },
     {
@@ -54219,7 +54870,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 12,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -54236,7 +54890,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         23,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 22,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -54253,7 +54910,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         23,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 24,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -54270,7 +54930,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         33,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 29,
+        "deleteCount": 4
+      },
       "severity": "error"
     },
     {
@@ -54287,7 +54950,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         1,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 2,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -54304,7 +54970,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 7,
+        "deleteCount": 4
+      },
       "severity": "error"
     },
     {
@@ -54321,7 +54990,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 12,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -54338,7 +55010,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         23,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 22,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -54355,7 +55030,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         23,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 24,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -54372,7 +55050,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         33,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 29,
+        "deleteCount": 4
+      },
       "severity": "error"
     },
     {
@@ -54389,7 +55070,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         1,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 2,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -54406,7 +55090,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 7,
+        "deleteCount": 4
+      },
       "severity": "error"
     },
     {
@@ -54423,7 +55110,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 12,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -54440,7 +55130,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         23,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 22,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -54457,7 +55150,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         23,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 24,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -54474,7 +55170,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         33,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 29,
+        "deleteCount": 4
+      },
       "severity": "error"
     },
     {
@@ -54491,7 +55190,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         1,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 2,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -54508,7 +55210,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 10,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -54525,7 +55230,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 12,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -54542,7 +55250,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         23,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 20,
+        "deleteCount": 3
+      },
       "severity": "error"
     },
     {
@@ -54559,7 +55270,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         23,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 24,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -54576,7 +55290,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         33,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 32,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -54593,7 +55310,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         1,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 2,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -54610,7 +55330,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 10,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -54627,7 +55350,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 12,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -54644,7 +55370,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         22,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 21,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -54661,7 +55390,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         22,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 23,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -54678,7 +55410,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         32,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 31,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -54695,7 +55430,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         1,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 2,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -54712,7 +55450,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 7,
+        "deleteCount": 4
+      },
       "severity": "error"
     },
     {
@@ -54729,7 +55470,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 12,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -54746,7 +55490,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         23,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 22,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -54763,7 +55510,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         23,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 24,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -54780,7 +55530,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         33,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 29,
+        "deleteCount": 4
+      },
       "severity": "error"
     },
     {
@@ -54797,7 +55550,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         1,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 2,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -54814,7 +55570,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         12,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 7,
+        "deleteCount": 5
+      },
       "severity": "error"
     },
     {
@@ -54831,7 +55590,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         12,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 13,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -54848,7 +55610,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         24,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 23,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -54865,7 +55630,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         24,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 25,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -54882,7 +55650,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         33,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 30,
+        "deleteCount": 3
+      },
       "severity": "error"
     },
     {
@@ -54899,7 +55670,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         1,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 2,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -54916,7 +55690,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 7,
+        "deleteCount": 4
+      },
       "severity": "error"
     },
     {
@@ -54933,7 +55710,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 12,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -54950,7 +55730,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         22,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 21,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -54967,7 +55750,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         22,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 23,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -54984,7 +55770,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         32,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 28,
+        "deleteCount": 4
+      },
       "severity": "error"
     },
     {
@@ -55001,7 +55790,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 8,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55018,7 +55810,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 10,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55035,7 +55830,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         21,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 18,
+        "deleteCount": 3
+      },
       "severity": "error"
     },
     {
@@ -55052,7 +55850,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         21,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 22,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55069,7 +55870,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 8,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55086,7 +55890,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 10,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55103,7 +55910,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         21,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 20,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55120,7 +55930,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         21,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 22,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55137,7 +55950,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 5,
+        "deleteCount": 4
+      },
       "severity": "error"
     },
     {
@@ -55154,7 +55970,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 10,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55171,7 +55990,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         21,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 20,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55188,7 +56010,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         21,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 22,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55205,7 +56030,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 5,
+        "deleteCount": 4
+      },
       "severity": "error"
     },
     {
@@ -55222,7 +56050,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 10,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55239,7 +56070,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         21,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 20,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55256,7 +56090,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         21,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 22,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55273,7 +56110,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 5,
+        "deleteCount": 4
+      },
       "severity": "error"
     },
     {
@@ -55290,7 +56130,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 10,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55307,7 +56150,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         21,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 20,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55324,7 +56170,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         21,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 22,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55341,7 +56190,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 8,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55358,7 +56210,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 10,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55375,7 +56230,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         21,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 18,
+        "deleteCount": 3
+      },
       "severity": "error"
     },
     {
@@ -55392,7 +56250,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         21,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 22,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55409,7 +56270,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 8,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55426,7 +56290,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 10,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55443,7 +56310,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         20,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 19,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55460,7 +56330,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         20,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 21,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55477,7 +56350,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 5,
+        "deleteCount": 4
+      },
       "severity": "error"
     },
     {
@@ -55494,7 +56370,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 10,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55511,7 +56390,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         21,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 20,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55528,7 +56410,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         21,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 22,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55545,7 +56430,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         10,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 5,
+        "deleteCount": 5
+      },
       "severity": "error"
     },
     {
@@ -55562,7 +56450,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         10,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 11,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55579,7 +56470,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         22,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 21,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55596,7 +56490,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         22,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 23,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55613,7 +56510,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 5,
+        "deleteCount": 4
+      },
       "severity": "error"
     },
     {
@@ -55630,7 +56530,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 10,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55647,7 +56550,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         20,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 19,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55664,7 +56570,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         20,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 21,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55681,7 +56590,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         1,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 2,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55698,7 +56610,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 10,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55715,7 +56630,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 12,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55732,7 +56650,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         21,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 20,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55749,7 +56670,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         21,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 22,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55766,7 +56690,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         31,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 30,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55783,7 +56710,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         1,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 2,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55800,7 +56730,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 10,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55817,7 +56750,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 12,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55834,7 +56770,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         21,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 20,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55851,7 +56790,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         21,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 22,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55868,7 +56810,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         31,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 30,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55885,7 +56830,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         1,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 2,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55902,7 +56850,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         8,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 7,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55919,7 +56870,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         8,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 9,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55936,7 +56890,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         20,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 19,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55953,7 +56910,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         20,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 21,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55970,7 +56930,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         27,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 26,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -55987,7 +56950,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         1,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 2,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56004,7 +56970,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         13,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 12,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56021,7 +56990,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         13,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 14,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56038,7 +57010,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         30,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 29,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56055,7 +57030,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         30,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 31,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56072,7 +57050,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         37,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 36,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56089,7 +57070,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         1,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 2,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56106,7 +57090,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         8,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 7,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56123,7 +57110,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         8,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 9,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56140,7 +57130,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         15,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 14,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56157,7 +57150,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         15,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 16,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56174,7 +57170,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         22,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 21,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56191,7 +57190,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         1,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 2,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56208,7 +57210,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 10,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56225,7 +57230,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 12,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56242,7 +57250,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         21,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 20,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56259,7 +57270,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         21,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 22,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56276,7 +57290,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         31,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 30,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56293,7 +57310,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         1,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 2,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56310,7 +57330,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         5,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 4,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56327,7 +57350,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         5,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 6,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56344,7 +57370,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 8,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56361,7 +57390,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 10,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56378,7 +57410,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         13,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 12,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56395,7 +57430,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         1,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 2,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56412,7 +57450,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         8,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 7,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56429,7 +57470,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         8,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 9,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56446,7 +57490,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         20,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 19,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56463,7 +57510,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         20,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 21,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56480,7 +57530,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         27,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 26,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56497,7 +57550,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         1,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 2,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56514,7 +57570,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         13,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 12,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56531,7 +57590,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         13,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 14,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56548,7 +57610,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         30,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 29,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56565,7 +57630,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         30,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 31,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56582,7 +57650,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         37,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 36,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56599,7 +57670,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         1,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 2,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56616,7 +57690,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         8,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 7,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56633,7 +57710,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         8,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 9,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56650,7 +57730,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         15,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 14,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56667,7 +57750,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         15,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 16,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56684,7 +57770,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         22,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 21,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56701,7 +57790,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         1,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 2,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56718,7 +57810,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 10,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56735,7 +57830,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 12,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56752,7 +57850,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         22,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 20,
+        "deleteCount": 2
+      },
       "severity": "error"
     },
     {
@@ -56769,7 +57870,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         22,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 23,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56786,7 +57890,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         32,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 31,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56803,7 +57910,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         1,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 2,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56820,7 +57930,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 4,
+        "deleteCount": 7
+      },
       "severity": "error"
     },
     {
@@ -56837,7 +57950,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 12,
+        "deleteCount": 2
+      },
       "severity": "error"
     },
     {
@@ -56854,7 +57970,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         22,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 17,
+        "deleteCount": 5
+      },
       "severity": "error"
     },
     {
@@ -56871,7 +57990,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         22,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 23,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56888,7 +58010,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         32,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 25,
+        "deleteCount": 7
+      },
       "severity": "error"
     },
     {
@@ -56905,7 +58030,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         1,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 2,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56922,7 +58050,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 7,
+        "deleteCount": 4
+      },
       "severity": "error"
     },
     {
@@ -56939,7 +58070,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 12,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56956,7 +58090,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         23,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 22,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56973,7 +58110,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         23,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 24,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -56990,7 +58130,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         31,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 29,
+        "deleteCount": 2
+      },
       "severity": "error"
     },
     {
@@ -57007,7 +58150,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         1,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 2,
+        "deleteCount": 2
+      },
       "severity": "error"
     },
     {
@@ -57024,7 +58170,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 8,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57041,7 +58190,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 10,
+        "deleteCount": 2
+      },
       "severity": "error"
     },
     {
@@ -57058,7 +58210,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         18,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 16,
+        "deleteCount": 2
+      },
       "severity": "error"
     },
     {
@@ -57075,7 +58230,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         18,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 19,
+        "deleteCount": 3
+      },
       "severity": "error"
     },
     {
@@ -57092,7 +58250,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         29,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 26,
+        "deleteCount": 3
+      },
       "severity": "error"
     },
     {
@@ -57109,7 +58270,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         1,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 2,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57126,7 +58290,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 7,
+        "deleteCount": 2
+      },
       "severity": "error"
     },
     {
@@ -57143,7 +58310,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 10,
+        "deleteCount": 2
+      },
       "severity": "error"
     },
     {
@@ -57160,7 +58330,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         17,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 16,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57177,7 +58350,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         17,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 18,
+        "deleteCount": 8
+      },
       "severity": "error"
     },
     {
@@ -57194,7 +58370,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         31,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 30,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57211,7 +58390,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 8,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57228,7 +58410,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 10,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57245,7 +58430,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         19,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 18,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57262,7 +58450,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         19,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 20,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57279,7 +58470,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 8,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57296,7 +58490,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 10,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57313,7 +58510,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         19,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 18,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57330,7 +58530,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         19,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 20,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57347,7 +58550,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         6,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 5,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57364,7 +58570,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         6,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 7,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57381,7 +58590,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         18,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 17,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57398,7 +58610,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         18,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 19,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57415,7 +58630,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 10,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57432,7 +58650,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 12,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57449,7 +58670,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         28,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 27,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57466,7 +58690,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         28,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 29,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57483,7 +58710,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         6,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 5,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57500,7 +58730,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         6,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 7,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57517,7 +58750,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         13,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 12,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57534,7 +58770,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         13,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 14,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57551,7 +58790,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 8,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57568,7 +58810,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 10,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57585,7 +58830,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         19,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 18,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57602,7 +58850,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         19,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 20,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57619,7 +58870,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         4,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 3,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57636,7 +58890,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         4,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 5,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57653,7 +58910,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 8,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57670,7 +58930,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 10,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57687,7 +58950,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         6,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 5,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57704,7 +58970,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         6,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 7,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57721,7 +58990,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         18,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 17,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57738,7 +59010,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         18,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 19,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57755,7 +59030,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 10,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57772,7 +59050,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 12,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57789,7 +59070,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         28,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 27,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57806,7 +59090,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         28,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 29,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57823,7 +59110,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         6,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 5,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57840,7 +59130,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         6,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 7,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57857,7 +59150,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         13,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 12,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57874,7 +59170,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         13,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 14,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57891,7 +59190,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 8,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57908,7 +59210,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 10,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57925,7 +59230,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         20,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 18,
+        "deleteCount": 2
+      },
       "severity": "error"
     },
     {
@@ -57942,7 +59250,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         20,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 21,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57959,7 +59270,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         4,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 3,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -57976,7 +59290,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         4,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 5,
+        "deleteCount": 2
+      },
       "severity": "error"
     },
     {
@@ -57993,7 +59310,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         12,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 10,
+        "deleteCount": 2
+      },
       "severity": "error"
     },
     {
@@ -58010,7 +59330,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         12,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 13,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -58027,7 +59350,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 5,
+        "deleteCount": 4
+      },
       "severity": "error"
     },
     {
@@ -58044,7 +59370,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         9,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 10,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -58061,7 +59390,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         21,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 20,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -58078,7 +59410,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         21,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 22,
+        "deleteCount": 2
+      },
       "severity": "error"
     },
     {
@@ -58095,7 +59430,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 10,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -58112,7 +59450,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         11,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 12,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -58129,7 +59470,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         28,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 27,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -58146,7 +59490,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         28,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 29,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -58163,7 +59510,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         7,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 5,
+        "deleteCount": 2
+      },
       "severity": "error"
     },
     {
@@ -58180,7 +59530,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         7,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 8,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -58197,7 +59550,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         14,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 13,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -58214,7 +59570,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         14,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 15,
+        "deleteCount": 2
+      },
       "severity": "error"
     },
     {
@@ -58231,7 +59590,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         18,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 17,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -58248,7 +59610,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         26,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 25,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -58265,7 +59630,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         1,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 2,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -58282,7 +59650,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         18,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 17,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -58299,7 +59670,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         12,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 11,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -58316,7 +59690,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         6,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 7,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -58333,7 +59710,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         13,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 12,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -58350,7 +59730,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         17,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 16,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -58367,7 +59750,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         16,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 17,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -58384,7 +59770,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         6,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 5,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -58401,7 +59790,10 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         5,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 6,
+        "deleteCount": 1
+      },
       "severity": "error"
     },
     {
@@ -58418,11 +59810,14 @@ exports[`markdownlint-test-scenarios.mjs > table-column-style-tight.md 1`] = `
         12,
         1
       ],
-      "fixInfo": null,
+      "fixInfo": {
+        "editColumn": 11,
+        "deleteCount": 1
+      },
       "severity": "error"
     }
   ],
-  "fixed": "# Table Column Style - Tight\\n\\n## Aligned / Edge Pipes\\n\\n| Heading | Heading   | Heading |\\n| ------- | --------- | ------- |\\n| Text    | Text text | Text    |\\n| Text    | Text text | Text    |\\n| Text    | Text text | Text    |\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n| Heading | Heading   | Heading |\\n| ------- | -------- | ------- |\\n| Text    | Text text | Text    |\\n| Text     | Text text | Text   |\\n| Text    | Text tex | Text    |\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Aligned / No Edge Pipes\\n\\nHeading | Heading   | Heading\\n------- | --------- | -------\\nText    | Text text | Text\\nText    | Text text | Text\\nText    | Text text | Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\nHeading | Heading   | Heading\\n------- | -------- | --------\\nText    | Text text | Text\\nText     | Text text | Text\\nText    | Text tex | Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Compact / Edge Pipes\\n\\n| Heading | Heading | Heading |\\n| ------- | ------- | ------- |\\n| Text | Text text | Text |\\n| Text text | Text text text | Text |\\n| Text | Text | Text |\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n| Heading | Heading | Heading |\\n| - | - | - |\\n| Text | Text text | Text |\\n| Text text | Text text text | Text |\\n| Text | Text | Text |\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n| Heading | Heading  | Heading |\\n| -       |  ---     | -       |\\n| Text    | Text text | Text  |\\n|  Text |  Text  |   Text   |\\n| Text  |  Text |        Text |\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Compact / No Edge Pipes\\n\\nHeading | Heading | Heading\\n------- | ------- | -------\\nText | Text text | Text\\nText text | Text text text | Text\\nText | Text | Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\nHeading | Heading | Heading\\n-- | -- | --\\nText | Text text | Text\\nText text | Text text text | Text\\nText | Text | Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\nHeading | Heading  | Heading\\n-- |  ---  | --\\nText    | Text text |  Text\\nText text | Text text text | Text\\nText  | Text |  Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Tight / Edge Pipes\\n\\n|Heading|Heading|Heading|\\n|-------|-------|-------|\\n|Text|Text text|Text|\\n|Text text|Text text text|Text|\\n|Text|Text|Text|\\n\\n|Heading|Heading|Heading|\\n|--|--|--|\\n|Text|Text text|Text|\\n|Text text|Text text text|Text|\\n|Text|Text|Text|\\n\\n|Heading|Heading |Heading|\\n|-------|-------|------- |\\n| Text|Text text |Text|\\n|Text text |Text text text|Text|\\n|Text| Text |Text|\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Tight / No Edge Pipes\\n\\nHeading|Heading|Heading\\n-------|-------|-------\\nText|Text text|Text\\nText text|Text text text|Text\\nText|Text|Text\\n\\nHeading|Heading|Heading\\n--|--|--\\nText|Text text|Text\\nText text|Text text text|Text\\nText|Text|Text\\n\\nHeading|Heading |Heading\\n-------|-------| -------\\nText |Text text|Text\\nText text|Text text text|Text\\nText| Text |Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-2}\\n\\n<!-- markdownlint-configure-file {\\n  \\"table-column-style\\": {\\n    \\"style\\": \\"tight\\"\\n  },\\n  \\"table-pipe-style\\": false\\n} -->\\n"
+  "fixed": "# Table Column Style - Tight\\n\\n## Aligned / Edge Pipes\\n\\n|Heading|Heading|Heading|\\n|-------|---------|-------|\\n|Text|Text text|Text|\\n|Text|Text text|Text|\\n|Text|Text text|Text|\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n|Heading|Heading|Heading|\\n|-------|--------|-------|\\n|Text|Text text|Text|\\n|Text|Text text|Text|\\n|Text|Text tex|Text|\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Aligned / No Edge Pipes\\n\\nHeading|Heading|Heading\\n-------|---------|-------\\nText|Text text|Text\\nText|Text text|Text\\nText|Text text|Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\nHeading|Heading|Heading\\n-------|--------|--------\\nText|Text text|Text\\nText|Text text|Text\\nText|Text tex|Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Compact / Edge Pipes\\n\\n|Heading|Heading|Heading|\\n|-------|-------|-------|\\n|Text|Text text|Text|\\n|Text text|Text text text|Text|\\n|Text|Text|Text|\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n|Heading|Heading|Heading|\\n|-|-|-|\\n|Text|Text text|Text|\\n|Text text|Text text text|Text|\\n|Text|Text|Text|\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n|Heading|Heading|Heading|\\n|-|---|-|\\n|Text|Text text|Text|\\n|Text|Text|Text|\\n|Text|Text|Text|\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Compact / No Edge Pipes\\n\\nHeading|Heading|Heading\\n-------|-------|-------\\nText|Text text|Text\\nText text|Text text text|Text\\nText|Text|Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\nHeading|Heading|Heading\\n--|--|--\\nText|Text text|Text\\nText text|Text text text|Text\\nText|Text|Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\nHeading|Heading|Heading\\n--|---|--\\nText|Text text|Text\\nText text|Text text text|Text\\nText|Text|Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Tight / Edge Pipes\\n\\n|Heading|Heading|Heading|\\n|-------|-------|-------|\\n|Text|Text text|Text|\\n|Text text|Text text text|Text|\\n|Text|Text|Text|\\n\\n|Heading|Heading|Heading|\\n|--|--|--|\\n|Text|Text text|Text|\\n|Text text|Text text text|Text|\\n|Text|Text|Text|\\n\\n|Heading|Heading|Heading|\\n|-------|-------|-------|\\n|Text|Text text|Text|\\n|Text text|Text text text|Text|\\n|Text|Text|Text|\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-3} {MD060:-2}\\n\\n## Tight / No Edge Pipes\\n\\nHeading|Heading|Heading\\n-------|-------|-------\\nText|Text text|Text\\nText text|Text text text|Text\\nText|Text|Text\\n\\nHeading|Heading|Heading\\n--|--|--\\nText|Text text|Text\\nText text|Text text text|Text\\nText|Text|Text\\n\\nHeading|Heading|Heading\\n-------|-------|-------\\nText|Text text|Text\\nText text|Text text text|Text\\nText|Text|Text\\n\\n{MD060:-6} {MD060:-5} {MD060:-4} {MD060:-2}\\n\\n<!-- markdownlint-configure-file {\\n  \\"table-column-style\\": {\\n    \\"style\\": \\"tight\\"\\n  },\\n  \\"table-pipe-style\\": false\\n} -->\\n"
 }
 `;
 

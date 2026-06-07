@@ -2730,6 +2730,8 @@ Parameters:
 - `style`: Table column style (`string`, default `any`, values `aligned` /
   `any` / `compact` / `tight`)
 
+Fixable: Some violations can be fixed by tooling
+
 This rule is triggered when the column separator pipe characters (`|`) of a
 [GitHub Flavored Markdown table][gfm-table-060] are used inconsistently.
 
@@ -2799,6 +2801,16 @@ Style `tight` with `aligned_delimiter`:
 |---------|-------|
 |Y|Yes|
 |N|No|
+```
+
+Violations for styles `compact` and `tight` are simple/independent and can be
+fixed automatically. However, fixing even single violations for style `aligned`
+may require modifying the entire table, and therefore are not automatic:
+
+```markdown
+|Alpha |Delta|
+|------|-----|
+|Charlie|Beta|
 ```
 
 **Note**: This rule does not require leading/trailing pipe characters, so this

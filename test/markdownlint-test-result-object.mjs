@@ -5,6 +5,7 @@ import { lint as lintAsync } from "markdownlint/async";
 import { lint as lintPromise } from "markdownlint/promise";
 import { lint as lintSync } from "markdownlint/sync";
 import { convertToResultVersion0, convertToResultVersion1, convertToResultVersion2 } from "markdownlint/helpers";
+import firstLine from "./rules/first-line.cjs";
 import packageJson from "../package.json" with { "type": "json" };
 const { homepage, version } = packageJson;
 
@@ -669,6 +670,7 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
   test("convertToResultVersionN", async(t) => {
     t.plan(1);
     const options = {
+      "customRules": [ firstLine ],
       "files": [
         "./test/break-all-the-rules.md",
         "./test/inline-disable-enable.md"

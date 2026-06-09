@@ -636,6 +636,36 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
     });
   }));
 
+  test("lintResultObjectKeysAreSorted", async(t) => {
+    t.plan(1);
+    const options = {
+      "files": [
+        "./test/break-all-the-rules.md",
+        "./test/inline-disable-enable.md",
+        "./test/atx_heading_spacing.md",
+        "./test/first_heading_bad_atx.md"
+      ],
+      "strings": {
+        "first": "#  Heading",
+        "second": "## Heading",
+        "third": "#  Heading",
+        "fourth": "## Heading"
+      }
+    };
+    const actual = Object.keys(await lintPromise(options));
+    const expected = [
+      "./test/atx_heading_spacing.md",
+      "./test/break-all-the-rules.md",
+      "./test/first_heading_bad_atx.md",
+      "./test/inline-disable-enable.md",
+      "first",
+      "fourth",
+      "second",
+      "third"
+    ];
+    t.assert.deepEqual(actual, expected);
+  });
+
   test("convertToResultVersionN", async(t) => {
     t.plan(8);
     const options = {

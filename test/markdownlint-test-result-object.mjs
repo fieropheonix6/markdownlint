@@ -667,7 +667,7 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
   });
 
   test("convertToResultVersionN", async(t) => {
-    t.plan(9);
+    t.plan(1);
     const options = {
       "files": [
         "./test/break-all-the-rules.md",
@@ -678,32 +678,14 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
         "second": "## Heading"
       }
     };
-    const [ base, version3, version2, version1, version0 ] = await Promise.all([
-      lintPromise(options),
-      // @ts-ignore
-      lintPromise({ ...options, "resultVersion": 3 }),
-      // @ts-ignore
-      lintPromise({ ...options, "resultVersion": 2 }),
-      // @ts-ignore
-      lintPromise({ ...options, "resultVersion": 1 }),
-      // @ts-ignore
-      lintPromise({ ...options, "resultVersion": 0 })
-    ]);
-    const v3 = version3;
-    t.assert.deepEqual(v3, base);
-    t.assert.equal(v3.toString(), base.toString());
-    const v2 = convertToResultVersion2(base);
-    t.assert.deepEqual(v2, version2);
-    t.assert.equal(v2.toString(), version2.toString());
-    const v1 = convertToResultVersion1(base);
-    t.assert.deepEqual(v1, version1);
-    t.assert.equal(v1.toString(), version1.toString());
-    const v0 = convertToResultVersion0(base);
-    t.assert.deepEqual(v0, version0);
-    t.assert.equal(v0.toString(), version0.toString());
+    const results = await lintPromise(options);
+    const version0 = convertToResultVersion0(results);
+    const version1 = convertToResultVersion1(results);
+    const version2 = convertToResultVersion2(results);
+    const version3 = results;
     t.assert.snapshot({
-      "results": base,
-      "resultsToString": base.toString(),
+      results,
+      "resultsToString": results.toString(),
       version0,
       "version0ToString": version0.toString(),
       version1,

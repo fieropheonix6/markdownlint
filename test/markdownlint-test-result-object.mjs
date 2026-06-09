@@ -667,7 +667,7 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
   });
 
   test("convertToResultVersionN", async(t) => {
-    t.plan(8);
+    t.plan(9);
     const options = {
       "files": [
         "./test/break-all-the-rules.md",
@@ -701,6 +701,18 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
     const v0 = convertToResultVersion0(base);
     t.assert.deepEqual(v0, version0);
     t.assert.equal(v0.toString(), version0.toString());
+    t.assert.snapshot({
+      "results": base,
+      "resultsToString": base.toString(),
+      version0,
+      "version0ToString": version0.toString(),
+      version1,
+      "version1ToString": version1.toString(),
+      version2,
+      "version2ToString": version2.toString(),
+      version3,
+      "version3ToString": version3.toString()
+    });
   });
 
 });

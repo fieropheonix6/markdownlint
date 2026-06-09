@@ -716,16 +716,6 @@ By default, properly-formatted inline comments can be used to create exceptions
 for parts of a document. Setting `noInlineConfig` to `true` ignores all such
 comments.
 
-##### ~~options.resultVersion~~
-
-This property is *deprecated* and should be removed. The default format of the
-`result` object remains the same as setting `resultVersion` to `3`. For
-continued access to other (previously *deprecated*) formats:
-
-```javascript
-import { convertToResultVersion0, convertToResultVersion1, convertToResultVersion2 } from "markdownlint/helpers";
-```
-
 ##### options.strings
 
 Type: `Object` mapping `String` to `String`

@@ -17,6 +17,7 @@ import { getVersion } from "markdownlint";
 import { lint as lintAsync } from "markdownlint/async";
 import { lint as lintPromise } from "markdownlint/promise";
 import { lint as lintSync } from "markdownlint/sync";
+import { convertToResultVersion0 } from "markdownlint/helpers";
 import * as cache from "../lib/cache.mjs";
 import * as constants from "../lib/constants.mjs";
 import rules from "../lib/rules.mjs";
@@ -106,8 +107,7 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
       },
       "config": {
         "MD041": false
-      },
-      "resultVersion": 0
+      }
     };
     lintAsync(options, function callback(err, actualResult) {
       t.assert.equal(err, null);
@@ -117,8 +117,7 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
         "crlf": { "MD018": [ 3 ] },
         "mixed": { "MD018": [ 3 ] }
       };
-      // @ts-ignore
-      t.assert.deepEqual(actualResult, expectedResult, "Undetected issues.");
+      t.assert.deepEqual(convertToResultVersion0(actualResult || {}), expectedResult);
       resolve();
     });
   }));
@@ -142,7 +141,7 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
         "lf": [],
         "crlf": []
       };
-      t.assert.deepEqual(actualResult, expectedResult, "Undetected issues.");
+      t.assert.deepEqual(actualResult, expectedResult);
       resolve();
     });
   }));
@@ -605,8 +604,7 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
     const options = {
       "files": [ "./test/break-all-the-rules.md" ],
       "config": require("../style/all.json"),
-      "noInlineConfig": true,
-      "resultVersion": 0
+      "noInlineConfig": true
     };
     const actualResult = await lintPromise(options);
     const expectedResult = {
@@ -662,7 +660,7 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
         "MD060": [ 110 ]
       }
     };
-    t.assert.deepEqual(actualResult, expectedResult, "Undetected issues.");
+    t.assert.deepEqual(convertToResultVersion0(actualResult), expectedResult);
   });
 
   test("styleRelaxed", async(t) => {
@@ -670,8 +668,7 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
     const options = {
       "files": [ "./test/break-all-the-rules.md" ],
       "config": require("../style/relaxed.json"),
-      "noInlineConfig": true,
-      "resultVersion": 0
+      "noInlineConfig": true
     };
     const actualResult = await lintPromise(options);
     const expectedResult = {
@@ -712,7 +709,7 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
         "MD060": [ 110 ]
       }
     };
-    t.assert.deepEqual(actualResult, expectedResult, "Undetected issues.");
+    t.assert.deepEqual(convertToResultVersion0(actualResult), expectedResult);
   });
 
   test("nullFrontMatter", (t) => new Promise((resolve) => {
@@ -725,16 +722,13 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
       "config": {
         "default": false,
         "MD010": true
-      },
-      // @ts-ignore
-      "resultVersion": 0
+      }
     }, function callback(err, result) {
       t.assert.equal(err, null);
       const expectedResult = {
         "content": { "MD010": [ 2 ] }
       };
-      // @ts-ignore
-      t.assert.deepEqual(result, expectedResult, "Undetected issues.");
+      t.assert.deepEqual(convertToResultVersion0(result || {}), expectedResult);
       resolve();
     });
   }));
@@ -778,9 +772,7 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
           "\tTab\n"
         ].join("\n")
       },
-      "noInlineConfig": true,
-      // @ts-ignore
-      "resultVersion": 0
+      "noInlineConfig": true
     }, function callback(err, result) {
       t.assert.equal(err, null);
       const expectedResult = {
@@ -788,8 +780,7 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
           "MD010": [ 3, 7, 11 ]
         }
       };
-      // @ts-ignore
-      t.assert.deepEqual(result, expectedResult, "Undetected issues.");
+      t.assert.deepEqual(convertToResultVersion0(result || {}), expectedResult);
       resolve();
     });
   }));
@@ -828,7 +819,6 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
             "##### options.handleRuleFailures",
             "##### options.markdownItFactory",
             "##### options.noInlineConfig",
-            "##### ~~options.resultVersion~~",
             "##### options.strings",
             "#### callback",
             "#### result",
@@ -852,7 +842,7 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
     }, function callback(err, result) {
       t.assert.equal(err, null);
       const expected = { "README.md": [] };
-      t.assert.deepEqual(result, expected, "Unexpected issues.");
+      t.assert.deepEqual(result, expected);
       resolve();
     });
   }));
@@ -1426,13 +1416,11 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
 
   [reference]: https://example.com
   `
-      },
-      // @ts-ignore
-      "resultVersion": 0
+      }
     }, (err, actual) => {
       t.assert.equal(err, null);
-      const expected = { "string": {} };
-      t.assert.deepEqual(actual, expected, "Unexpected issues.");
+      const expected = { "string": [] };
+      t.assert.deepEqual(actual, expected);
       resolve();
     });
   }));

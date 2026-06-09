@@ -9,6 +9,7 @@ import markdownIt from "markdown-it";
 import { lint as lintAsync } from "markdownlint/async";
 import { lint as lintPromise } from "markdownlint/promise";
 import { lint as lintSync } from "markdownlint/sync";
+import { convertToResultVersion0 } from "markdownlint/helpers";
 import customRules from "./rules/rules.cjs";
 import { newlineRe } from "../helpers/shared.cjs";
 import packageJson from "../package.json" with { "type": "json" };
@@ -18,225 +19,14 @@ const markdownItFactory = () => markdownIt({ "html": true });
 
 test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
 
-  test("customRulesV0", (t) => new Promise((resolve) => {
-    t.plan(4);
-    const customRulesMd = "./test/custom-rules.md";
-    /** @type {import("markdownlint").Options} */
-    const options = {
-      "customRules": customRules.all,
-      "files": [ customRulesMd ],
-      markdownItFactory,
-      // @ts-ignore
-      "resultVersion": 0
-    };
-    lintAsync(options, function callback(err, actualResult) {
-      t.assert.equal(err, null);
-      const expectedResult = {
-        [customRulesMd]: {
-          "any-blockquote-markdown-it": [ 12 ],
-          "any-blockquote-micromark": [ 12 ],
-          "every-n-lines": [ 2, 4, 6, 10, 12 ],
-          "first-line": [ 1 ],
-          "letters-E-X": [ 3, 7 ]
-        }
-      };
-      t.assert.deepEqual(actualResult, expectedResult, "Undetected issues.");
-      // @ts-ignore
-      let actualMessage = actualResult.toString();
-      let expectedMessage =
-        "./test/custom-rules.md: 12: any-blockquote-markdown-it" +
-        " Rule that reports an error for any blockquote\n" +
-        "./test/custom-rules.md: 12: any-blockquote-micromark" +
-        " Rule that reports an error for any blockquote\n" +
-        "./test/custom-rules.md: 2: every-n-lines" +
-        " Rule that reports an error every N lines\n" +
-        "./test/custom-rules.md: 4: every-n-lines" +
-        " Rule that reports an error every N lines\n" +
-        "./test/custom-rules.md: 6: every-n-lines" +
-        " Rule that reports an error every N lines\n" +
-        "./test/custom-rules.md: 10: every-n-lines" +
-        " Rule that reports an error every N lines\n" +
-        "./test/custom-rules.md: 12: every-n-lines" +
-        " Rule that reports an error every N lines\n" +
-        "./test/custom-rules.md: 1: first-line" +
-        " Rule that reports an error for the first line\n" +
-        "./test/custom-rules.md: 3: letters-E-X" +
-        " Rule that reports an error for lines with the letters 'EX'\n" +
-        "./test/custom-rules.md: 7: letters-E-X" +
-        " Rule that reports an error for lines with the letters 'EX'";
-      t.assert.equal(actualMessage, expectedMessage, "Incorrect message (name).");
-      // @ts-ignore
-      actualMessage = actualResult.toString(true);
-      expectedMessage =
-        "./test/custom-rules.md: 12: any-blockquote-markdown-it" +
-        " Rule that reports an error for any blockquote\n" +
-        "./test/custom-rules.md: 12: any-blockquote-micromark" +
-        " Rule that reports an error for any blockquote\n" +
-        "./test/custom-rules.md: 2: every-n-lines" +
-        " Rule that reports an error every N lines\n" +
-        "./test/custom-rules.md: 4: every-n-lines" +
-        " Rule that reports an error every N lines\n" +
-        "./test/custom-rules.md: 6: every-n-lines" +
-        " Rule that reports an error every N lines\n" +
-        "./test/custom-rules.md: 10: every-n-lines" +
-        " Rule that reports an error every N lines\n" +
-        "./test/custom-rules.md: 12: every-n-lines" +
-        " Rule that reports an error every N lines\n" +
-        "./test/custom-rules.md: 1: first-line" +
-        " Rule that reports an error for the first line\n" +
-        "./test/custom-rules.md: 3: letter-E-letter-X" +
-        " Rule that reports an error for lines with the letters 'EX'\n" +
-        "./test/custom-rules.md: 7: letter-E-letter-X" +
-        " Rule that reports an error for lines with the letters 'EX'";
-      t.assert.equal(actualMessage, expectedMessage, "Incorrect message (alias).");
-      resolve();
-    });
-  }));
-
-  test("customRulesV1", (t) => new Promise((resolve) => {
+  test("customRules", (t) => new Promise((resolve) => {
     t.plan(3);
     const customRulesMd = "./test/custom-rules.md";
     /** @type {import("markdownlint").Options} */
     const options = {
       "customRules": customRules.all,
       "files": [ customRulesMd ],
-      markdownItFactory,
-      // @ts-ignore
-      "resultVersion": 1
-    };
-    lintAsync(options, function callback(err, actualResult) {
-      t.assert.equal(err, null);
-      const expectedResult = {
-        [customRulesMd]: [
-          { "lineNumber": 12,
-            "ruleName": "any-blockquote-markdown-it",
-            "ruleAlias": "any-blockquote-markdown-it",
-            "ruleDescription": "Rule that reports an error for any blockquote",
-            "ruleInformation":
-              `${homepage}/blob/main/test/rules/any-blockquote.js`,
-            "errorDetail": "Blockquote spans 1 line(s).",
-            "errorContext": "> Blockquote",
-            "errorRange": null },
-          { "lineNumber": 12,
-            "ruleName": "any-blockquote-micromark",
-            "ruleAlias": "any-blockquote-micromark",
-            "ruleDescription": "Rule that reports an error for any blockquote",
-            "ruleInformation":
-              `${homepage}/blob/main/test/rules/any-blockquote.js`,
-            "errorDetail": "Blockquote spans 1 line(s).",
-            "errorContext": "> Blockquote",
-            "errorRange": null },
-          { "lineNumber": 2,
-            "ruleName": "every-n-lines",
-            "ruleAlias": "every-n-lines",
-            "ruleDescription": "Rule that reports an error every N lines",
-            "ruleInformation": null,
-            "errorDetail": "Line number 2",
-            "errorContext": null,
-            "errorRange": null },
-          { "lineNumber": 4,
-            "ruleName": "every-n-lines",
-            "ruleAlias": "every-n-lines",
-            "ruleDescription": "Rule that reports an error every N lines",
-            "ruleInformation": null,
-            "errorDetail": "Line number 4",
-            "errorContext": null,
-            "errorRange": null },
-          { "lineNumber": 6,
-            "ruleName": "every-n-lines",
-            "ruleAlias": "every-n-lines",
-            "ruleDescription": "Rule that reports an error every N lines",
-            "ruleInformation": null,
-            "errorDetail": "Line number 6",
-            "errorContext": null,
-            "errorRange": null },
-          { "lineNumber": 10,
-            "ruleName": "every-n-lines",
-            "ruleAlias": "every-n-lines",
-            "ruleDescription": "Rule that reports an error every N lines",
-            "ruleInformation": null,
-            "errorDetail": "Line number 10",
-            "errorContext": null,
-            "errorRange": null },
-          { "lineNumber": 12,
-            "ruleName": "every-n-lines",
-            "ruleAlias": "every-n-lines",
-            "ruleDescription": "Rule that reports an error every N lines",
-            "ruleInformation": null,
-            "errorDetail": "Line number 12",
-            "errorContext": null,
-            "errorRange": null },
-          { "lineNumber": 1,
-            "ruleName": "first-line",
-            "ruleAlias": "first-line",
-            "ruleDescription": "Rule that reports an error for the first line",
-            "ruleInformation": null,
-            "errorDetail": null,
-            "errorContext": null,
-            "errorRange": null },
-          { "lineNumber": 3,
-            "ruleName": "letters-E-X",
-            "ruleAlias": "letter-E-letter-X",
-            "ruleDescription":
-              "Rule that reports an error for lines with the letters 'EX'",
-            "ruleInformation": `${homepage}/blob/main/test/rules/letters-E-X.js`,
-            "errorDetail": null,
-            "errorContext": "text",
-            "errorRange": null },
-          { "lineNumber": 7,
-            "ruleName": "letters-E-X",
-            "ruleAlias": "letter-E-letter-X",
-            "ruleDescription":
-              "Rule that reports an error for lines with the letters 'EX'",
-            "ruleInformation": `${homepage}/blob/main/test/rules/letters-E-X.js`,
-            "errorDetail": null,
-            "errorContext": "text",
-            "errorRange": null }
-        ]
-      };
-      t.assert.deepEqual(actualResult, expectedResult, "Undetected issues.");
-      // @ts-ignore
-      const actualMessage = actualResult.toString();
-      const expectedMessage =
-        "./test/custom-rules.md: 12: any-blockquote-markdown-it/any-blockquote-markdown-it" +
-        " Rule that reports an error for any blockquote" +
-        " [Blockquote spans 1 line(s).] [Context: \"> Blockquote\"]\n" +
-        "./test/custom-rules.md: 12: any-blockquote-micromark/any-blockquote-micromark" +
-        " Rule that reports an error for any blockquote" +
-        " [Blockquote spans 1 line(s).] [Context: \"> Blockquote\"]\n" +
-        "./test/custom-rules.md: 2: every-n-lines/every-n-lines" +
-        " Rule that reports an error every N lines [Line number 2]\n" +
-        "./test/custom-rules.md: 4: every-n-lines/every-n-lines" +
-        " Rule that reports an error every N lines [Line number 4]\n" +
-        "./test/custom-rules.md: 6: every-n-lines/every-n-lines" +
-        " Rule that reports an error every N lines [Line number 6]\n" +
-        "./test/custom-rules.md: 10: every-n-lines/every-n-lines" +
-        " Rule that reports an error every N lines [Line number 10]\n" +
-        "./test/custom-rules.md: 12: every-n-lines/every-n-lines" +
-        " Rule that reports an error every N lines [Line number 12]\n" +
-        "./test/custom-rules.md: 1: first-line/first-line" +
-        " Rule that reports an error for the first line\n" +
-        "./test/custom-rules.md: 3: letters-E-X/letter-E-letter-X" +
-        " Rule that reports an error for lines with the letters 'EX'" +
-        " [Context: \"text\"]\n" +
-        "./test/custom-rules.md: 7: letters-E-X/letter-E-letter-X" +
-        " Rule that reports an error for lines with the letters 'EX'" +
-        " [Context: \"text\"]";
-      t.assert.equal(actualMessage, expectedMessage, "Incorrect message.");
-      resolve();
-    });
-  }));
-
-  test("customRulesV2", (t) => new Promise((resolve) => {
-    t.plan(3);
-    const customRulesMd = "./test/custom-rules.md";
-    /** @type {import("markdownlint").Options} */
-    const options = {
-      "customRules": customRules.all,
-      "files": [ customRulesMd ],
-      markdownItFactory,
-      // @ts-ignore
-      "resultVersion": 2
+      markdownItFactory
     };
     lintAsync(options, function callback(err, actualResult) {
       t.assert.equal(err, null);
@@ -249,7 +39,9 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
               `${homepage}/blob/main/test/rules/any-blockquote.js`,
             "errorDetail": "Blockquote spans 1 line(s).",
             "errorContext": "> Blockquote",
-            "errorRange": null },
+            "errorRange": null,
+            "fixInfo": null,
+            "severity": "error" },
           { "lineNumber": 12,
             "ruleNames": [ "any-blockquote-micromark" ],
             "ruleDescription": "Rule that reports an error for any blockquote",
@@ -257,49 +49,63 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
               `${homepage}/blob/main/test/rules/any-blockquote.js`,
             "errorDetail": "Blockquote spans 1 line(s).",
             "errorContext": "> Blockquote",
-            "errorRange": null },
+            "errorRange": null,
+            "fixInfo": null,
+            "severity": "error" },
           { "lineNumber": 2,
             "ruleNames": [ "every-n-lines" ],
             "ruleDescription": "Rule that reports an error every N lines",
             "ruleInformation": null,
             "errorDetail": "Line number 2",
             "errorContext": null,
-            "errorRange": null },
+            "errorRange": null,
+            "fixInfo": null,
+            "severity": "error" },
           { "lineNumber": 4,
             "ruleNames": [ "every-n-lines" ],
             "ruleDescription": "Rule that reports an error every N lines",
             "ruleInformation": null,
             "errorDetail": "Line number 4",
             "errorContext": null,
-            "errorRange": null },
+            "errorRange": null,
+            "fixInfo": null,
+            "severity": "error" },
           { "lineNumber": 6,
             "ruleNames": [ "every-n-lines" ],
             "ruleDescription": "Rule that reports an error every N lines",
             "ruleInformation": null,
             "errorDetail": "Line number 6",
             "errorContext": null,
-            "errorRange": null },
+            "errorRange": null,
+            "fixInfo": null,
+            "severity": "error" },
           { "lineNumber": 10,
             "ruleNames": [ "every-n-lines" ],
             "ruleDescription": "Rule that reports an error every N lines",
             "ruleInformation": null,
             "errorDetail": "Line number 10",
             "errorContext": null,
-            "errorRange": null },
+            "errorRange": null,
+            "fixInfo": null,
+            "severity": "error" },
           { "lineNumber": 12,
             "ruleNames": [ "every-n-lines" ],
             "ruleDescription": "Rule that reports an error every N lines",
             "ruleInformation": null,
             "errorDetail": "Line number 12",
             "errorContext": null,
-            "errorRange": null },
+            "errorRange": null,
+            "fixInfo": null,
+            "severity": "error" },
           { "lineNumber": 1,
             "ruleNames": [ "first-line" ],
             "ruleDescription": "Rule that reports an error for the first line",
             "ruleInformation": null,
             "errorDetail": null,
             "errorContext": null,
-            "errorRange": null },
+            "errorRange": null,
+            "fixInfo": null,
+            "severity": "error" },
           { "lineNumber": 3,
             "ruleNames": [ "letters-E-X", "letter-E-letter-X", "contains-ex" ],
             "ruleDescription":
@@ -307,7 +113,9 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
             "ruleInformation": `${homepage}/blob/main/test/rules/letters-E-X.js`,
             "errorDetail": null,
             "errorContext": "text",
-            "errorRange": null },
+            "errorRange": null,
+            "fixInfo": null,
+            "severity": "error" },
           { "lineNumber": 7,
             "ruleNames": [ "letters-E-X", "letter-E-letter-X", "contains-ex" ],
             "ruleDescription":
@@ -315,10 +123,12 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
             "ruleInformation": `${homepage}/blob/main/test/rules/letters-E-X.js`,
             "errorDetail": null,
             "errorContext": "text",
-            "errorRange": null }
+            "errorRange": null,
+            "fixInfo": null,
+            "severity": "error" }
         ]
       };
-      t.assert.deepEqual(actualResult, expectedResult, "Undetected issues.");
+      t.assert.deepEqual(actualResult, expectedResult);
       // @ts-ignore
       const actualMessage = actualResult.toString();
       const expectedMessage =
@@ -365,9 +175,7 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
         },
         "letters-e-x": false
       },
-      markdownItFactory,
-      // @ts-ignore
-      "resultVersion": 0
+      markdownItFactory
     };
     lintAsync(options, function callback(err, actualResult) {
       t.assert.equal(err, null);
@@ -380,7 +188,7 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
           "letters-E-X": [ 7 ]
         }
       };
-      t.assert.deepEqual(actualResult, expectedResult, "Undetected issues.");
+      t.assert.deepEqual(convertToResultVersion0(actualResult || {}), expectedResult);
       resolve();
     });
   }));
@@ -396,9 +204,7 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
       markdownItFactory,
       "strings": {
         "string": "# Text\n\n---\n\nText ✅\n"
-      },
-      // @ts-ignore
-      "resultVersion": 0
+      }
     };
     lintAsync(options, function callback(err, actualResult) {
       t.assert.equal(err, null);
@@ -408,7 +214,7 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
           "sample-rule": [ 3 ]
         }
       };
-      t.assert.deepEqual(actualResult, expectedResult, "Undetected issues.");
+      t.assert.deepEqual(convertToResultVersion0(actualResult || {}), expectedResult);
       resolve();
     });
   }));
@@ -972,7 +778,7 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
           }
         ]
       };
-      t.assert.deepEqual(actualResult, expectedResult, "Undetected issues.");
+      t.assert.deepEqual(actualResult, expectedResult);
       resolve();
     });
   }));
@@ -1440,7 +1246,7 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
           }
         ]
       };
-      t.assert.deepEqual(actualResult, expectedResult, "Undetected issues.");
+      t.assert.deepEqual(actualResult, expectedResult);
       resolve();
     });
   }));
@@ -1505,7 +1311,7 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
           }
         ]
       };
-      t.assert.deepEqual(actualResult, expectedResult, "Undetected issues.");
+      t.assert.deepEqual(actualResult, expectedResult);
       resolve();
     });
   }));
@@ -1549,7 +1355,7 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
           }
         ]
       };
-      t.assert.deepEqual(actualResult, expectedResult, "Undetected issues.");
+      t.assert.deepEqual(actualResult, expectedResult);
       resolve();
     });
   }));
@@ -1593,7 +1399,7 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
         }
       ]
     };
-    t.assert.deepEqual(actualResult, expectedResult, "Undetected issues.");
+    t.assert.deepEqual(actualResult, expectedResult);
   });
 
   test("customRulesVersion", (t) => new Promise((resolve) => {
@@ -2422,7 +2228,7 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
           "handleRuleFailures": true
         }, function callback(err, actualResult) {
           t.assert.equal(err, null);
-          t.assert.deepEqual(actualResult, expectedResult, "Undetected issues.");
+          t.assert.deepEqual(actualResult, expectedResult);
           resolve();
         });
       }));
@@ -2456,7 +2262,7 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
           strings,
           "handleRuleFailures": true
         });
-        t.assert.deepEqual(actualResult, expectedResult, "Undetected issues.");
+        t.assert.deepEqual(actualResult, expectedResult);
       });
     }
   }
@@ -2558,7 +2364,7 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
               }
             ]
           };
-          t.assert.deepEqual(actualResult, expectedResult, "Undetected issues.");
+          t.assert.deepEqual(actualResult, expectedResult);
           resolve();
         });
       }));

@@ -11,341 +11,21 @@ const { homepage, version } = packageJson;
 
 test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
 
-  test("resultObjectToStringNotEnumerable", (t) => new Promise((resolve) => {
-    t.plan(2);
+  test("resultObjectToStringNotEnumerable", (t) => {
+    t.plan(1);
     const options = {
       "strings": {
         "string": "# Heading"
       }
     };
-    lintAsync(options, function callback(err, result) {
-      t.assert.equal(err, null);
-      // eslint-disable-next-line guard-for-in
-      for (const property in result) {
-        t.assert.notEqual(property, "toString", "Function should not enumerate.");
-      }
-      resolve();
-    });
-  }));
-
-  test("resultFormattingV0", (t) => new Promise((resolve) => {
-    t.plan(4);
-    const options = {
-      "files": [
-        "./test/atx_heading_spacing.md",
-        "./test/first_heading_bad_atx.md"
-      ],
-      "config": {
-        "MD041": true
-      },
-      "noInlineConfig": true,
-      "resultVersion": 0
-    };
-    lintAsync(options, function callback(err, actualResult) {
-      t.assert.equal(err, null);
-      const expectedResult = {
-        "./test/atx_heading_spacing.md": {
-          "MD018": [ 1 ],
-          "MD019": [ 3, 5 ],
-          "MD041": [ 1 ]
-        },
-        "./test/first_heading_bad_atx.md": {
-          "MD041": [ 1 ]
-        }
-      };
-      // @ts-ignore
-      t.assert.deepEqual(actualResult, expectedResult, "Undetected issues.");
-      // @ts-ignore
-      let actualMessage = actualResult.toString();
-      let expectedMessage =
-        "./test/atx_heading_spacing.md: 1: MD018" +
-        " No space after hash on atx style heading\n" +
-        "./test/atx_heading_spacing.md: 3: MD019" +
-        " Multiple spaces after hash on atx style heading\n" +
-        "./test/atx_heading_spacing.md: 5: MD019" +
-        " Multiple spaces after hash on atx style heading\n" +
-        "./test/atx_heading_spacing.md: 1: MD041" +
-        " First line in a file should be a top-level heading\n" +
-        "./test/first_heading_bad_atx.md: 1: MD041" +
-        " First line in a file should be a top-level heading";
-      t.assert.equal(actualMessage, expectedMessage, "Incorrect message (name).");
-      // @ts-ignore
-      actualMessage = actualResult.toString(true);
-      expectedMessage =
-        "./test/atx_heading_spacing.md: 1: no-missing-space-atx" +
-        " No space after hash on atx style heading\n" +
-        "./test/atx_heading_spacing.md: 3: no-multiple-space-atx" +
-        " Multiple spaces after hash on atx style heading\n" +
-        "./test/atx_heading_spacing.md: 5: no-multiple-space-atx" +
-        " Multiple spaces after hash on atx style heading\n" +
-        "./test/atx_heading_spacing.md: 1: first-line-heading" +
-        " First line in a file should be a top-level heading\n" +
-        "./test/first_heading_bad_atx.md: 1: first-line-heading" +
-        " First line in a file should be a top-level heading";
-      t.assert.equal(actualMessage, expectedMessage, "Incorrect message (alias).");
-      resolve();
-    });
-  }));
-
-  test("resultFormattingSyncV0", (t) => {
-    t.plan(3);
-    const options = {
-      "files": [
-        "./test/atx_heading_spacing.md",
-        "./test/first_heading_bad_atx.md"
-      ],
-      "config": {
-        "MD041": true
-      },
-      "noInlineConfig": true,
-      "resultVersion": 0
-    };
-    const actualResult = lintSync(options);
-    const expectedResult = {
-      "./test/atx_heading_spacing.md": {
-        "MD018": [ 1 ],
-        "MD019": [ 3, 5 ],
-        "MD041": [ 1 ]
-      },
-      "./test/first_heading_bad_atx.md": {
-        "MD041": [ 1 ]
-      }
-    };
-    // @ts-ignore
-    t.assert.deepEqual(actualResult, expectedResult, "Undetected issues.");
-    let actualMessage = actualResult.toString();
-    let expectedMessage =
-      "./test/atx_heading_spacing.md: 1: MD018" +
-      " No space after hash on atx style heading\n" +
-      "./test/atx_heading_spacing.md: 3: MD019" +
-      " Multiple spaces after hash on atx style heading\n" +
-      "./test/atx_heading_spacing.md: 5: MD019" +
-      " Multiple spaces after hash on atx style heading\n" +
-      "./test/atx_heading_spacing.md: 1: MD041" +
-      " First line in a file should be a top-level heading\n" +
-      "./test/first_heading_bad_atx.md: 1: MD041" +
-      " First line in a file should be a top-level heading";
-    t.assert.equal(actualMessage, expectedMessage, "Incorrect message (name).");
-    // @ts-ignore
-    actualMessage = actualResult.toString(true);
-    expectedMessage =
-      "./test/atx_heading_spacing.md: 1: no-missing-space-atx" +
-      " No space after hash on atx style heading\n" +
-      "./test/atx_heading_spacing.md: 3: no-multiple-space-atx" +
-      " Multiple spaces after hash on atx style heading\n" +
-      "./test/atx_heading_spacing.md: 5: no-multiple-space-atx" +
-      " Multiple spaces after hash on atx style heading\n" +
-      "./test/atx_heading_spacing.md: 1: first-line-heading" +
-      " First line in a file should be a top-level heading\n" +
-      "./test/first_heading_bad_atx.md: 1: first-line-heading" +
-      " First line in a file should be a top-level heading";
-    t.assert.equal(actualMessage, expectedMessage, "Incorrect message (alias).");
+    const result = lintSync(options);
+    // eslint-disable-next-line guard-for-in
+    for (const property in result) {
+      t.assert.notEqual(property, "toString", "Function should not enumerate.");
+    }
   });
 
-  test("resultFormattingV1", (t) => new Promise((resolve) => {
-    t.plan(3);
-    const options = {
-      "strings": {
-        "truncate":
-          "#  Multiple spaces inside hashes on closed atx style heading  #\n"
-      },
-      "files": [
-        "./test/atx_heading_spacing.md",
-        "./test/first_heading_bad_atx.md"
-      ],
-      "config": {
-        "MD041": true
-      },
-      "noInlineConfig": true,
-      "resultVersion": 1
-    };
-    lintAsync(options, function callback(err, actualResult) {
-      t.assert.equal(err, null);
-      const expectedResult = {
-        "truncate": [
-          { "lineNumber": 1,
-            "ruleName": "MD021",
-            "ruleAlias": "no-multiple-space-closed-atx",
-            "ruleDescription":
-              "Multiple spaces inside hashes on closed atx style heading",
-            "ruleInformation": `${homepage}/blob/v${version}/doc/md021.md`,
-            "errorDetail": null,
-            "errorContext": "#  Multiple spaces inside hash...",
-            "errorRange": [ 3, 1 ] }
-        ],
-        "./test/atx_heading_spacing.md": [
-          { "lineNumber": 1,
-            "ruleName": "MD018",
-            "ruleAlias": "no-missing-space-atx",
-            "ruleDescription": "No space after hash on atx style heading",
-            "ruleInformation": `${homepage}/blob/v${version}/doc/md018.md`,
-            "errorDetail": null,
-            "errorContext": "#Heading 1 {MD018}",
-            "errorRange": [ 1, 2 ] },
-          { "lineNumber": 3,
-            "ruleName": "MD019",
-            "ruleAlias": "no-multiple-space-atx",
-            "ruleDescription": "Multiple spaces after hash on atx style heading",
-            "ruleInformation": `${homepage}/blob/v${version}/doc/md019.md`,
-            "errorDetail": null,
-            "errorContext": "##  Heading 2 {MD019}",
-            "errorRange": [ 4, 1 ] },
-          { "lineNumber": 5,
-            "ruleName": "MD019",
-            "ruleAlias": "no-multiple-space-atx",
-            "ruleDescription": "Multiple spaces after hash on atx style heading",
-            "ruleInformation": `${homepage}/blob/v${version}/doc/md019.md`,
-            "errorDetail": null,
-            "errorContext": "##   Heading 3 {MD019}",
-            "errorRange": [ 4, 2 ] },
-          { "lineNumber": 1,
-            "ruleName": "MD041",
-            "ruleAlias": "first-line-heading",
-            "ruleDescription": "First line in a file should be a top-level heading",
-            "ruleInformation": `${homepage}/blob/v${version}/doc/md041.md`,
-            "errorDetail": null,
-            "errorContext": "#Heading 1 {MD018}",
-            "errorRange": null }
-        ],
-        "./test/first_heading_bad_atx.md": [
-          { "lineNumber": 1,
-            "ruleName": "MD041",
-            "ruleAlias": "first-line-heading",
-            "ruleDescription": "First line in a file should be a top-level heading",
-            "ruleInformation": `${homepage}/blob/v${version}/doc/md041.md`,
-            "errorDetail": null,
-            "errorContext": "## Heading",
-            "errorRange": null }
-        ]
-      };
-      // @ts-ignore
-      t.assert.deepEqual(actualResult, expectedResult, "Undetected issues.");
-      // @ts-ignore
-      const actualMessage = actualResult.toString();
-      const expectedMessage =
-        "./test/atx_heading_spacing.md: 1: MD018/no-missing-space-atx" +
-        " No space after hash on atx style heading" +
-        " [Context: \"#Heading 1 {MD018}\"]\n" +
-        "./test/atx_heading_spacing.md: 3: MD019/no-multiple-space-atx" +
-        " Multiple spaces after hash on atx style heading" +
-        " [Context: \"##  Heading 2 {MD019}\"]\n" +
-        "./test/atx_heading_spacing.md: 5: MD019/no-multiple-space-atx" +
-        " Multiple spaces after hash on atx style heading" +
-        " [Context: \"##   Heading 3 {MD019}\"]\n" +
-        "./test/atx_heading_spacing.md: 1: MD041/first-line-heading" +
-        " First line in a file should be a top-level heading" +
-        " [Context: \"#Heading 1 {MD018}\"]\n" +
-        "./test/first_heading_bad_atx.md: 1: MD041/first-line-heading" +
-        " First line in a file should be a top-level heading" +
-        " [Context: \"## Heading\"]\n" +
-        "truncate: 1: MD021/no-multiple-space-closed-atx" +
-        " Multiple spaces inside hashes on closed atx style heading" +
-        " [Context: \"#  Multiple spaces inside hash...\"]";
-      t.assert.equal(actualMessage, expectedMessage, "Incorrect message.");
-      resolve();
-    });
-  }));
-
-  test("resultFormattingV2", (t) => new Promise((resolve) => {
-    t.plan(3);
-    const options = {
-      "strings": {
-        "truncate":
-          "#  Multiple spaces inside hashes on closed atx style heading  #\n"
-      },
-      "files": [
-        "./test/atx_heading_spacing.md",
-        "./test/first_heading_bad_atx.md"
-      ],
-      "config": {
-        "MD041": true
-      },
-      "noInlineConfig": true,
-      "resultVersion": 2
-    };
-    lintAsync(options, function callback(err, actualResult) {
-      t.assert.equal(err, null);
-      const expectedResult = {
-        "truncate": [
-          { "lineNumber": 1,
-            "ruleNames": [ "MD021", "no-multiple-space-closed-atx" ],
-            "ruleDescription":
-              "Multiple spaces inside hashes on closed atx style heading",
-            "ruleInformation": `${homepage}/blob/v${version}/doc/md021.md`,
-            "errorDetail": null,
-            "errorContext": "#  Multiple spaces inside hash...",
-            "errorRange": [ 3, 1 ] }
-        ],
-        "./test/atx_heading_spacing.md": [
-          { "lineNumber": 1,
-            "ruleNames": [ "MD018", "no-missing-space-atx" ],
-            "ruleDescription": "No space after hash on atx style heading",
-            "ruleInformation": `${homepage}/blob/v${version}/doc/md018.md`,
-            "errorDetail": null,
-            "errorContext": "#Heading 1 {MD018}",
-            "errorRange": [ 1, 2 ] },
-          { "lineNumber": 3,
-            "ruleNames": [ "MD019", "no-multiple-space-atx" ],
-            "ruleDescription": "Multiple spaces after hash on atx style heading",
-            "ruleInformation": `${homepage}/blob/v${version}/doc/md019.md`,
-            "errorDetail": null,
-            "errorContext": "##  Heading 2 {MD019}",
-            "errorRange": [ 4, 1 ] },
-          { "lineNumber": 5,
-            "ruleNames": [ "MD019", "no-multiple-space-atx" ],
-            "ruleDescription": "Multiple spaces after hash on atx style heading",
-            "ruleInformation": `${homepage}/blob/v${version}/doc/md019.md`,
-            "errorDetail": null,
-            "errorContext": "##   Heading 3 {MD019}",
-            "errorRange": [ 4, 2 ] },
-          { "lineNumber": 1,
-            "ruleNames": [ "MD041", "first-line-heading", "first-line-h1" ],
-            "ruleDescription": "First line in a file should be a top-level heading",
-            "ruleInformation": `${homepage}/blob/v${version}/doc/md041.md`,
-            "errorDetail": null,
-            "errorContext": "#Heading 1 {MD018}",
-            "errorRange": null }
-        ],
-        "./test/first_heading_bad_atx.md": [
-          { "lineNumber": 1,
-            "ruleNames": [ "MD041", "first-line-heading", "first-line-h1" ],
-            "ruleDescription": "First line in a file should be a top-level heading",
-            "ruleInformation": `${homepage}/blob/v${version}/doc/md041.md`,
-            "errorDetail": null,
-            "errorContext": "## Heading",
-            "errorRange": null }
-        ]
-      };
-      t.assert.deepEqual(actualResult, expectedResult, "Undetected issues.");
-      // @ts-ignore
-      const actualMessage = actualResult.toString();
-      const expectedMessage =
-        "./test/atx_heading_spacing.md: 1: MD018/no-missing-space-atx" +
-        " No space after hash on atx style heading" +
-        " [Context: \"#Heading 1 {MD018}\"]\n" +
-        "./test/atx_heading_spacing.md: 3: MD019/no-multiple-space-atx" +
-        " Multiple spaces after hash on atx style heading" +
-        " [Context: \"##  Heading 2 {MD019}\"]\n" +
-        "./test/atx_heading_spacing.md: 5: MD019/no-multiple-space-atx" +
-        " Multiple spaces after hash on atx style heading" +
-        " [Context: \"##   Heading 3 {MD019}\"]\n" +
-        "./test/atx_heading_spacing.md: 1:" +
-        " MD041/first-line-heading/first-line-h1" +
-        " First line in a file should be a top-level heading" +
-        " [Context: \"#Heading 1 {MD018}\"]\n" +
-        "./test/first_heading_bad_atx.md: 1:" +
-        " MD041/first-line-heading/first-line-h1" +
-        " First line in a file should be a top-level heading" +
-        " [Context: \"## Heading\"]\n" +
-        "truncate: 1: MD021/no-multiple-space-closed-atx" +
-        " Multiple spaces inside hashes on closed atx style heading" +
-        " [Context: \"#  Multiple spaces inside hash...\"]";
-      t.assert.equal(actualMessage, expectedMessage, "Incorrect message.");
-      resolve();
-    });
-  }));
-
-  test("resultFormattingV3", (t) => new Promise((resolve) => {
+  test("resultFormatting", (t) => new Promise((resolve) => {
     t.plan(3);
     const options = {
       "strings": {
@@ -354,8 +34,7 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
           "\n" +
           "Text\ttext\t\ttext\n" +
           "Text * emphasis * text"
-      },
-      "resultVersion": 3
+      }
     };
     lintAsync(options, function callback(err, actualResult) {
       t.assert.equal(err, null);
@@ -449,7 +128,7 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
           }
         ]
       };
-      t.assert.deepEqual(actualResult, expectedResult, "Undetected issues.");
+      t.assert.deepEqual(actualResult, expectedResult);
       // @ts-ignore
       const actualMessage = actualResult.toString();
       const expectedMessage =
@@ -470,38 +149,22 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
     });
   }));
 
-  test("onePerLineResultVersion0", (t) => new Promise((resolve) => {
-    t.plan(2);
+  test("correctPerLineResult", (t) => new Promise((resolve) => {
+    t.plan(5);
     const options = {
       "strings": {
         "input": "# Heading\theading\t\theading\n"
-      },
-      "resultVersion": 0
+      }
     };
     lintAsync(options, function callback(err, actualResult) {
       t.assert.equal(err, null);
-      const expectedResult = {
+      const expectedResultV0 = {
         "input": {
           "MD010": [ 1 ]
         }
       };
-      // @ts-ignore
-      t.assert.deepEqual(actualResult, expectedResult, "Undetected issues.");
-      resolve();
-    });
-  }));
-
-  test("onePerLineResultVersion1", (t) => new Promise((resolve) => {
-    t.plan(2);
-    const options = {
-      "strings": {
-        "input": "# Heading\theading\t\theading\n"
-      },
-      "resultVersion": 1
-    };
-    lintAsync(options, function callback(err, actualResult) {
-      t.assert.equal(err, null);
-      const expectedResult = {
+      t.assert.deepEqual(convertToResultVersion0(actualResult || {}), expectedResultV0);
+      const expectedResultV1 = {
         "input": [
           {
             "lineNumber": 1,
@@ -516,23 +179,8 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
           }
         ]
       };
-      // @ts-ignore
-      t.assert.deepEqual(actualResult, expectedResult, "Undetected issues.");
-      resolve();
-    });
-  }));
-
-  test("onePerLineResultVersion2", (t) => new Promise((resolve) => {
-    t.plan(2);
-    const options = {
-      "strings": {
-        "input": "# Heading\theading\t\theading\n"
-      },
-      "resultVersion": 2
-    };
-    lintAsync(options, function callback(err, actualResult) {
-      t.assert.equal(err, null);
-      const expectedResult = {
+      t.assert.deepEqual(convertToResultVersion1(actualResult || {}), expectedResultV1);
+      const expectedResultV2 = {
         "input": [
           {
             "lineNumber": 1,
@@ -546,21 +194,7 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
           }
         ]
       };
-      t.assert.deepEqual(actualResult, expectedResult, "Undetected issues.");
-      resolve();
-    });
-  }));
-
-  test("manyPerLineResultVersion3", (t) => new Promise((resolve) => {
-    t.plan(2);
-    const options = {
-      "strings": {
-        "input": "# Heading\theading\t\theading\n"
-      },
-      "resultVersion": 3
-    };
-    lintAsync(options, function callback(err, actualResult) {
-      t.assert.equal(err, null);
+      t.assert.deepEqual(convertToResultVersion2(actualResult || {}), expectedResultV2);
       const expectedResult = {
         "input": [
           {
@@ -597,18 +231,17 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
           }
         ]
       };
-      t.assert.deepEqual(actualResult, expectedResult, "Undetected issues.");
+      t.assert.deepEqual(actualResult, expectedResult);
       resolve();
     });
   }));
 
-  test("frontMatterResultVersion3", (t) => new Promise((resolve) => {
+  test("frontMatterResult", (t) => new Promise((resolve) => {
     t.plan(2);
     const options = {
       "strings": {
         "input": "---\n---\n# Heading\nText\n"
-      },
-      "resultVersion": 3
+      }
     };
     lintAsync(options, function callback(err, actualResult) {
       t.assert.equal(err, null);
@@ -632,7 +265,7 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
           }
         ]
       };
-      t.assert.deepEqual(actualResult, expectedResult, "Undetected issues.");
+      t.assert.deepEqual(actualResult, expectedResult);
       resolve();
     });
   }));

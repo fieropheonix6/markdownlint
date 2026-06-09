@@ -682,7 +682,6 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
     const version0 = convertToResultVersion0(results);
     const version1 = convertToResultVersion1(results);
     const version2 = convertToResultVersion2(results);
-    const version3 = results;
     t.assert.snapshot({
       results,
       "resultsToString": results.toString(),
@@ -691,9 +690,7 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
       version1,
       "version1ToString": version1.toString(),
       version2,
-      "version2ToString": version2.toString(),
-      version3,
-      "version3ToString": version3.toString()
+      "version2ToString": version2.toString()
     });
   });
 

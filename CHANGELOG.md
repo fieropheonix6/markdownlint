@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.41.0
+
+- Improve MD022/MD028/MD035/MD042/MD051/MD060
+- Remove handling of inline directive syntax (frequent false positives)
+- Remove deprecated `Options.resultVersion` (breaking change)
+- Remove deprecated `LintResults.toString` (breaking change)
+- Remove support for end-of-life Node version 20
+- Update dependencies
+
 ## 0.40.0
 
 - Improve MD011/MD013/MD051/MD060

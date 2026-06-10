@@ -630,7 +630,6 @@ function convertLintErrorsVersion2To0(errors) {
 function copyAndTransformResults(results, transform) {
   /** @type {Object.<string, LintErrors>} */
   const newResults = {};
-  Object.defineProperty(newResults, "toString", { "value": results.toString });
   for (const key of Object.keys(results)) {
     const arr = results[key].map((r) => ({ ...r }));
     newResults[key] = transform(arr);

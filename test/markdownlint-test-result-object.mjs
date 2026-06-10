@@ -3,7 +3,6 @@
 import test from "node:test";
 import { lint as lintAsync } from "markdownlint/async";
 import { lint as lintPromise } from "markdownlint/promise";
-import { lint as lintSync } from "markdownlint/sync";
 import { convertToResultVersion0, convertToResultVersion1, convertToResultVersion2 } from "markdownlint/helpers";
 import firstLine from "./rules/first-line.cjs";
 import packageJson from "../package.json" with { "type": "json" };
@@ -11,22 +10,8 @@ const { homepage, version } = packageJson;
 
 test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
 
-  test("resultObjectToStringNotEnumerable", (t) => {
-    t.plan(1);
-    const options = {
-      "strings": {
-        "string": "# Heading"
-      }
-    };
-    const result = lintSync(options);
-    // eslint-disable-next-line guard-for-in
-    for (const property in result) {
-      t.assert.notEqual(property, "toString", "Function should not enumerate.");
-    }
-  });
-
   test("resultFormatting", (t) => new Promise((resolve) => {
-    t.plan(3);
+    t.plan(2);
     const options = {
       "strings": {
         "input":
@@ -129,22 +114,6 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
         ]
       };
       t.assert.deepEqual(actualResult, expectedResult);
-      // @ts-ignore
-      const actualMessage = actualResult.toString();
-      const expectedMessage =
-        "input: 1: MD009/no-trailing-spaces" +
-        " Trailing spaces [Expected: 0 or 2; Actual: 3]\n" +
-        "input: 3: MD010/no-hard-tabs" +
-        " Hard tabs [Column: 5]\n" +
-        "input: 3: MD010/no-hard-tabs" +
-        " Hard tabs [Column: 10]\n" +
-        "input: 4: MD037/no-space-in-emphasis" +
-        " Spaces inside emphasis markers [Context: \"* e\"]\n" +
-        "input: 4: MD037/no-space-in-emphasis" +
-        " Spaces inside emphasis markers [Context: \"s *\"]\n" +
-        "input: 4: MD047/single-trailing-newline" +
-        " Files should end with a single newline character";
-      t.assert.equal(actualMessage, expectedMessage, "Incorrect message.");
       resolve();
     });
   }));
@@ -319,13 +288,9 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
     const version2 = convertToResultVersion2(results);
     t.assert.snapshot({
       results,
-      "resultsToString": results.toString(),
       version0,
-      "version0ToString": version0.toString(),
       version1,
-      "version1ToString": version1.toString(),
-      version2,
-      "version2ToString": version2.toString()
+      version2
     });
   });
 

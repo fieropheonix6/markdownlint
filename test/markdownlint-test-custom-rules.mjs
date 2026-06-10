@@ -20,7 +20,7 @@ const markdownItFactory = () => markdownIt({ "html": true });
 test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
 
   test("customRules", (t) => new Promise((resolve) => {
-    t.plan(3);
+    t.plan(2);
     const customRulesMd = "./test/custom-rules.md";
     /** @type {import("markdownlint").Options} */
     const options = {
@@ -129,34 +129,6 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
         ]
       };
       t.assert.deepEqual(actualResult, expectedResult);
-      // @ts-ignore
-      const actualMessage = actualResult.toString();
-      const expectedMessage =
-        "./test/custom-rules.md: 12: any-blockquote-markdown-it" +
-        " Rule that reports an error for any blockquote" +
-        " [Blockquote spans 1 line(s).] [Context: \"> Blockquote\"]\n" +
-        "./test/custom-rules.md: 12: any-blockquote-micromark" +
-        " Rule that reports an error for any blockquote" +
-        " [Blockquote spans 1 line(s).] [Context: \"> Blockquote\"]\n" +
-        "./test/custom-rules.md: 2: every-n-lines" +
-        " Rule that reports an error every N lines [Line number 2]\n" +
-        "./test/custom-rules.md: 4: every-n-lines" +
-        " Rule that reports an error every N lines [Line number 4]\n" +
-        "./test/custom-rules.md: 6: every-n-lines" +
-        " Rule that reports an error every N lines [Line number 6]\n" +
-        "./test/custom-rules.md: 10: every-n-lines" +
-        " Rule that reports an error every N lines [Line number 10]\n" +
-        "./test/custom-rules.md: 12: every-n-lines" +
-        " Rule that reports an error every N lines [Line number 12]\n" +
-        "./test/custom-rules.md: 1: first-line" +
-        " Rule that reports an error for the first line\n" +
-        "./test/custom-rules.md: 3: letters-E-X/letter-E-letter-X/contains-ex" +
-        " Rule that reports an error for lines with the letters 'EX'" +
-        " [Context: \"text\"]\n" +
-        "./test/custom-rules.md: 7: letters-E-X/letter-E-letter-X/contains-ex" +
-        " Rule that reports an error for lines with the letters 'EX'" +
-        " [Context: \"text\"]";
-      t.assert.equal(actualMessage, expectedMessage, "Incorrect message.");
       resolve();
     });
   }));

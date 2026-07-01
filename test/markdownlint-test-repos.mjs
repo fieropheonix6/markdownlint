@@ -47,7 +47,7 @@ export function lintTestRepo(t, globPatterns, configPath, configOverrides, paral
       files,
       config
     }).then((results) => {
-      t.assert.snapshot(formatLintResults(results).join("\n"));
+      t.assert.snapshot(formatLintResults(results));
     });
   });
 }

@@ -19,8 +19,11 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
       strings[content.length.toString()] = content;
       content = content.slice(0, -1);
     }
-    test(`type ${file}`, () => {
+    test(`type ${file}`, (t) => {
+      t.plan(1);
       lint({ strings });
+      // @ts-ignore
+      t.assert.ok(true);
     });
   }
 

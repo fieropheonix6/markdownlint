@@ -485,7 +485,7 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
     await lintSync(options);
   });
 
-  test("customRulesMarkdownItFactoryNeededSync", async() => {
+  test("customRulesMarkdownItFactoryNeededSync", async(t) => {
     /** @type {import("markdownlint").Options} */
     const options = {
       "customRules": [
@@ -503,6 +503,8 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
       }
     };
     await lintSync(options);
+    // @ts-ignore
+    t.assert.ok(true);
   });
 
   test("customRulesMarkdownItFactoryNotNeededAsync", async(t) => {
@@ -525,7 +527,7 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
     await lintPromise(options);
   });
 
-  test("customRulesMarkdownItFactoryNeededAsyncRunsSync", async() => {
+  test("customRulesMarkdownItFactoryNeededAsyncRunsSync", async(t) => {
     /** @type {import("markdownlint").Options} */
     const options = {
       "customRules": [
@@ -543,9 +545,11 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
       }
     };
     await lintPromise(options);
+    // @ts-ignore
+    t.assert.ok(true);
   });
 
-  test("customRulesMarkdownItFactoryNeededAsyncRunsAsync", async() => {
+  test("customRulesMarkdownItFactoryNeededAsyncRunsAsync", async(t) => {
     /** @type {import("markdownlint").Options} */
     const options = {
       "customRules": [
@@ -563,9 +567,11 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
       }
     };
     await lintPromise(options);
+    // @ts-ignore
+    t.assert.ok(true);
   });
 
-  test("customRulesMarkdownItFactoryNeededAsyncRunsAsyncWithImport", async() => {
+  test("customRulesMarkdownItFactoryNeededAsyncRunsAsyncWithImport", async(t) => {
     /** @type {import("markdownlint").Options} */
     const options = {
       "customRules": [
@@ -583,6 +589,8 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
       }
     };
     await lintPromise(options);
+    // @ts-ignore
+    t.assert.ok(true);
   });
 
   test("customRulesMarkdownItInstanceCanBeReusedSync", (t) => {

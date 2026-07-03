@@ -901,6 +901,7 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
     });
   }));
 
+  // eslint-disable-next-line node-test/require-assertion
   test("missingCallback", (t) => {
     t.plan(0);
     // @ts-ignore
@@ -988,7 +989,8 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
       "files": file,
       "fs": fsApi
     });
-    t.assert.deepEqual(result[file].length, 1, "Did not report violations.");
+    // @ts-ignore
+    t.assert.strictEqual(result[file].length, 1, "Did not report violations.");
   });
 
   test("customFileSystemAsync", (t) => new Promise((resolve) => {
@@ -1010,7 +1012,7 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
     }, function callback(err, result) {
       t.assert.equal(err, null);
       // @ts-ignore
-      t.assert.deepEqual(result[file].length, 1, "Did not report violations.");
+      t.assert.strictEqual(result[file].length, 1, "Did not report violations.");
       resolve();
     });
   }));

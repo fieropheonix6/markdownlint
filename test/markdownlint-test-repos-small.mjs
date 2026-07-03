@@ -1,5 +1,7 @@
 // @ts-check
 
+/* eslint-disable node-test/require-assertion */
+
 import path from "node:path";
 import test from "node:test";
 const { join } = path.posix;

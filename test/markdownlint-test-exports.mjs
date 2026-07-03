@@ -74,6 +74,7 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
     ];
     for (const scenario of scenarios) {
       const { conditions, throws } = scenario;
+      // eslint-disable-next-line node-test/prefer-assert-throws
       try {
         // eslint-disable-next-line no-await-in-loop
         await spawn("node", [ `--conditions=${conditions}`, "./standalone.mjs" ], { "cwd": "./example" });
@@ -84,10 +85,10 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
     }
     // Fake "100%" coverage for node-imports-browser.mjs
     const { "fs": browserFs } = await import("../lib/node-imports-browser.mjs");
-    t.assert.throws(() => browserFs.access());
-    t.assert.throws(() => browserFs.accessSync());
-    t.assert.throws(() => browserFs.readFile());
-    t.assert.throws(() => browserFs.readFileSync());
+    t.assert.throws(() => browserFs.access(), /TypeError:/u);
+    t.assert.throws(() => browserFs.accessSync(), /Error:/u);
+    t.assert.throws(() => browserFs.readFile(), /TypeError:/u);
+    t.assert.throws(() => browserFs.readFileSync(), /Error:/u);
   });
 
 });

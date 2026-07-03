@@ -1,4 +1,5 @@
 import js from "@eslint/js";
+import eslintNodeTest from "eslint-node-test";
 import eslintPluginJsdoc from "eslint-plugin-jsdoc";
 import eslintPluginNode from "eslint-plugin-n";
 import eslintPluginRegexp from "eslint-plugin-regexp";
@@ -7,6 +8,7 @@ import eslintPluginUnicorn from "eslint-plugin-unicorn";
 
 export default [
   js.configs.all,
+  eslintNodeTest.configs.all,
   eslintPluginJsdoc.configs["flat/recommended"],
   eslintPluginNode.configs["flat/recommended"],
   eslintPluginRegexp.configs["flat/recommended"],
@@ -62,6 +64,16 @@ export default [
       "no-undef-init": "off",
       "no-undefined": "off",
       "no-useless-assignment": "off",
+      "node-test/consistent-test-filename": "off",
+      "node-test/consistent-test-it": "off",
+      "node-test/max-assertions": "off",
+      "node-test/no-conditional-assertion": "off",
+      "node-test/no-conditional-in-test": "off",
+      "node-test/no-conditional-tests": "off",
+      "node-test/no-identical-assertion-arguments": "off",
+      "node-test/prefer-async-await": "off",
+      "node-test/prefer-lowercase-title": "off",
+      "node-test/prefer-strict-assert": "off",
       "object-shorthand": "off",
       "one-var": "off",
       "prefer-arrow-callback": "off",

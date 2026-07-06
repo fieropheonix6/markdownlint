@@ -85,10 +85,10 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
     }
     // Fake "100%" coverage for node-imports-browser.mjs
     const { "fs": browserFs } = await import("../lib/node-imports-browser.mjs");
-    t.assert.throws(() => browserFs.access(), /TypeError:/u);
-    t.assert.throws(() => browserFs.accessSync(), /Error:/u);
-    t.assert.throws(() => browserFs.readFile(), /TypeError:/u);
-    t.assert.throws(() => browserFs.readFileSync(), /Error:/u);
+    t.assert.throws(() => browserFs.access(), /^TypeError:/u);
+    t.assert.throws(() => browserFs.accessSync(), /^Error:/u);
+    t.assert.throws(() => browserFs.readFile(), /^TypeError:/u);
+    t.assert.throws(() => browserFs.readFileSync(), /^Error:/u);
   });
 
 });

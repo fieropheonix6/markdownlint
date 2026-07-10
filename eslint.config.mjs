@@ -28,6 +28,7 @@ export default [
       "demo/markdownlint-browser.js",
       "demo/markdownlint-browser.min.js",
       "example/typescript/type-check-*",
+      "test/resolve-module-webpack.cjs",
       "test-repos/**"
     ]
   },

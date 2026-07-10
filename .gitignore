@@ -3,6 +3,7 @@ demo/markdown-it.min.js
 demo/markdownlint-browser.js
 demo/markdownlint-browser.min.js
 node_modules
+test/resolve-module-webpack.cjs
 !test/node_modules
 !test/rules/node_modules
 npm-debug.log

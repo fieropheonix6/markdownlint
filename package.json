@@ -39,7 +39,7 @@
     "build-declaration": "tsc --project ./declaration/tsconfig.json && node scripts/index.mjs copy dts/lib/exports.d.mts lib/exports.d.mts && node scripts/index.mjs copy dts/lib/exports-async.d.mts lib/exports-async.d.mts && node scripts/index.mjs copy dts/lib/exports-promise.d.mts lib/exports-promise.d.mts && node scripts/index.mjs copy dts/lib/exports-sync.d.mts lib/exports-sync.d.mts && node scripts/index.mjs copy dts/lib/markdownlint.d.mts lib/markdownlint.d.mts && node scripts/index.mjs copy dts/lib/resolve-module.d.cts lib/resolve-module.d.cts && node scripts/index.mjs remove dts",
     "build-demo": "node scripts/index.mjs copy node_modules/markdown-it/dist/markdown-it.min.js demo/markdown-it.min.js && cd demo && webpack --no-stats",
     "build-docs": "node doc-build/build-rules.mjs",
-    "ci": "concurrently npm:build-demo npm:lint npm:serial-config-docs npm:serial-declaration npm:test && git diff --exit-code && echo PASS",
+    "ci": "concurrently npm:build-demo npm:lint npm:serial-config-docs npm:serial-declaration npm:test npm:test-webpack && git diff --exit-code && echo PASS",
     "clone-test-repos-apache-airflow": "cd test-repos && git clone https://github.com/apache/airflow apache-airflow --depth 1 --no-tags --quiet",
     "clone-test-repos-dotnet-docs": "cd test-repos && git clone https://github.com/dotnet/docs dotnet-docs --depth 1 --no-tags --quiet",
     "clone-test-repos-electron-electron": "cd test-repos && git clone https://github.com/electron/electron electron-electron --depth 1 --no-tags --quiet && cd electron-electron && node ../../scripts/index.mjs delete package.json && npm install --no-save --ignore-scripts @electron/lint-roller",
@@ -62,6 +62,7 @@
     "test-declaration-cts": "cd example/typescript && node ../../scripts/index.mjs copy type-check.ts type-check-commonjs.cts && tsc --project tsconfig.cts.json",
     "test-declaration-mts": "cd example/typescript && node ../../scripts/index.mjs copy type-check.ts type-check-nodenext.mts && tsc --project tsconfig.mts.json && node type-check-nodenext.mjs",
     "test-extra": "node --test test/markdownlint-test-extra-parse.mjs test/markdownlint-test-extra-type.mjs",
+    "test-webpack": "cd test && node resolve-module-webpack.mjs && webpack --entry ./resolve-module-webpack.mjs --output-path . --output-filename resolve-module-webpack.cjs --stats errors-only && node resolve-module-webpack.cjs",
     "update-snapshots": "node --test --test-update-snapshots test/markdownlint-test-custom-rules.mjs test/markdownlint-test-exports.mjs test/markdownlint-test-micromark.mjs test/markdownlint-test-result-object.mjs test/markdownlint-test-scenarios.mjs",
     "update-snapshots-test-repos": "node --test --test-update-snapshots test/markdownlint-test-repos-*.mjs",
     "update-test-repos": "node scripts/index.mjs remove ./test-repos && npm run clone-test-repos && npm run update-snapshots-test-repos"

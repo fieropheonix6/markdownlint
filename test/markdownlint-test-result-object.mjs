@@ -284,6 +284,13 @@ test.suite(import.meta.url.replace(/^.*?\/(?<name>[^/]*)$/u, "$<name>"), () => {
       }
     };
     const results = await lintPromise(options);
+    for (const lintErrors of Object.values(results)) {
+      for (const lintError of lintErrors) {
+        // Normalize versions in URLs
+        lintError.ruleInformation =
+          lintError.ruleInformation?.replace(/v\d+\.\d+\.\d+/, "v0.0.0") || null;
+      }
+    }
     const version0 = convertToResultVersion0(results);
     const version1 = convertToResultVersion1(results);
     const version2 = convertToResultVersion2(results);

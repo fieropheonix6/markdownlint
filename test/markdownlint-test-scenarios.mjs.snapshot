@@ -29177,6 +29177,686 @@ exports[`markdownlint-test-scenarios.mjs > list-item-prefix-alignment.md 1`] = `
 }
 `;
 
+exports[`markdownlint-test-scenarios.mjs > list-item-prefix-padding.md 1`] = `
+{
+  "errors": [
+    {
+      "lineNumber": 5,
+      "ruleNames": [
+        "MD029",
+        "ol-prefix"
+      ],
+      "ruleDescription": "Ordered list item prefix",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md029.md",
+      "errorDetail": "Expected: 1; Actual: 8; Style: 1/2/3",
+      "errorContext": null,
+      "errorRange": [
+        2,
+        3
+      ],
+      "fixInfo": {
+        "editColumn": 2,
+        "deleteCount": 1,
+        "insertText": "1"
+      },
+      "severity": "error"
+    },
+    {
+      "lineNumber": 6,
+      "ruleNames": [
+        "MD029",
+        "ol-prefix"
+      ],
+      "ruleDescription": "Ordered list item prefix",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md029.md",
+      "errorDetail": "Expected: 2; Actual: 9; Style: 1/2/3",
+      "errorContext": null,
+      "errorRange": [
+        2,
+        3
+      ],
+      "fixInfo": {
+        "editColumn": 2,
+        "deleteCount": 1,
+        "insertText": "2"
+      },
+      "severity": "error"
+    },
+    {
+      "lineNumber": 7,
+      "ruleNames": [
+        "MD029",
+        "ol-prefix"
+      ],
+      "ruleDescription": "Ordered list item prefix",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md029.md",
+      "errorDetail": "Expected: 3; Actual: 10; Style: 1/2/3",
+      "errorContext": null,
+      "errorRange": [
+        1,
+        4
+      ],
+      "fixInfo": {
+        "editColumn": 1,
+        "deleteCount": 2,
+        "insertText": " 3"
+      },
+      "severity": "error"
+    },
+    {
+      "lineNumber": 8,
+      "ruleNames": [
+        "MD029",
+        "ol-prefix"
+      ],
+      "ruleDescription": "Ordered list item prefix",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md029.md",
+      "errorDetail": "Expected: 4; Actual: 11; Style: 1/2/3",
+      "errorContext": null,
+      "errorRange": [
+        1,
+        4
+      ],
+      "fixInfo": {
+        "editColumn": 1,
+        "deleteCount": 2,
+        "insertText": " 4"
+      },
+      "severity": "error"
+    },
+    {
+      "lineNumber": 12,
+      "ruleNames": [
+        "MD029",
+        "ol-prefix"
+      ],
+      "ruleDescription": "Ordered list item prefix",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md029.md",
+      "errorDetail": "Expected: 1; Actual: 8; Style: 1/2/3",
+      "errorContext": null,
+      "errorRange": [
+        1,
+        4
+      ],
+      "fixInfo": {
+        "editColumn": 1,
+        "deleteCount": 2,
+        "insertText": "01"
+      },
+      "severity": "error"
+    },
+    {
+      "lineNumber": 13,
+      "ruleNames": [
+        "MD029",
+        "ol-prefix"
+      ],
+      "ruleDescription": "Ordered list item prefix",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md029.md",
+      "errorDetail": "Expected: 2; Actual: 9; Style: 1/2/3",
+      "errorContext": null,
+      "errorRange": [
+        1,
+        4
+      ],
+      "fixInfo": {
+        "editColumn": 1,
+        "deleteCount": 2,
+        "insertText": "02"
+      },
+      "severity": "error"
+    },
+    {
+      "lineNumber": 14,
+      "ruleNames": [
+        "MD029",
+        "ol-prefix"
+      ],
+      "ruleDescription": "Ordered list item prefix",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md029.md",
+      "errorDetail": "Expected: 3; Actual: 10; Style: 1/2/3",
+      "errorContext": null,
+      "errorRange": [
+        1,
+        4
+      ],
+      "fixInfo": {
+        "editColumn": 1,
+        "deleteCount": 2,
+        "insertText": "03"
+      },
+      "severity": "error"
+    },
+    {
+      "lineNumber": 15,
+      "ruleNames": [
+        "MD029",
+        "ol-prefix"
+      ],
+      "ruleDescription": "Ordered list item prefix",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md029.md",
+      "errorDetail": "Expected: 4; Actual: 11; Style: 1/2/3",
+      "errorContext": null,
+      "errorRange": [
+        1,
+        4
+      ],
+      "fixInfo": {
+        "editColumn": 1,
+        "deleteCount": 2,
+        "insertText": "04"
+      },
+      "severity": "error"
+    },
+    {
+      "lineNumber": 19,
+      "ruleNames": [
+        "MD029",
+        "ol-prefix"
+      ],
+      "ruleDescription": "Ordered list item prefix",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md029.md",
+      "errorDetail": "Expected: 1; Actual: 8; Style: 1/2/3",
+      "errorContext": null,
+      "errorRange": [
+        3,
+        3
+      ],
+      "fixInfo": {
+        "editColumn": 3,
+        "deleteCount": 1,
+        "insertText": "1"
+      },
+      "severity": "error"
+    },
+    {
+      "lineNumber": 20,
+      "ruleNames": [
+        "MD029",
+        "ol-prefix"
+      ],
+      "ruleDescription": "Ordered list item prefix",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md029.md",
+      "errorDetail": "Expected: 2; Actual: 9; Style: 1/2/3",
+      "errorContext": null,
+      "errorRange": [
+        3,
+        3
+      ],
+      "fixInfo": {
+        "editColumn": 3,
+        "deleteCount": 1,
+        "insertText": "2"
+      },
+      "severity": "error"
+    },
+    {
+      "lineNumber": 21,
+      "ruleNames": [
+        "MD029",
+        "ol-prefix"
+      ],
+      "ruleDescription": "Ordered list item prefix",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md029.md",
+      "errorDetail": "Expected: 3; Actual: 10; Style: 1/2/3",
+      "errorContext": null,
+      "errorRange": [
+        2,
+        4
+      ],
+      "fixInfo": {
+        "editColumn": 2,
+        "deleteCount": 2,
+        "insertText": " 3"
+      },
+      "severity": "error"
+    },
+    {
+      "lineNumber": 22,
+      "ruleNames": [
+        "MD029",
+        "ol-prefix"
+      ],
+      "ruleDescription": "Ordered list item prefix",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md029.md",
+      "errorDetail": "Expected: 4; Actual: 11; Style: 1/2/3",
+      "errorContext": null,
+      "errorRange": [
+        2,
+        4
+      ],
+      "fixInfo": {
+        "editColumn": 2,
+        "deleteCount": 2,
+        "insertText": " 4"
+      },
+      "severity": "error"
+    },
+    {
+      "lineNumber": 26,
+      "ruleNames": [
+        "MD029",
+        "ol-prefix"
+      ],
+      "ruleDescription": "Ordered list item prefix",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md029.md",
+      "errorDetail": "Expected: 1; Actual: 8; Style: 1/2/3",
+      "errorContext": null,
+      "errorRange": [
+        1,
+        5
+      ],
+      "fixInfo": {
+        "editColumn": 1,
+        "deleteCount": 3,
+        "insertText": "001"
+      },
+      "severity": "error"
+    },
+    {
+      "lineNumber": 27,
+      "ruleNames": [
+        "MD029",
+        "ol-prefix"
+      ],
+      "ruleDescription": "Ordered list item prefix",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md029.md",
+      "errorDetail": "Expected: 2; Actual: 9; Style: 1/2/3",
+      "errorContext": null,
+      "errorRange": [
+        1,
+        5
+      ],
+      "fixInfo": {
+        "editColumn": 1,
+        "deleteCount": 3,
+        "insertText": "002"
+      },
+      "severity": "error"
+    },
+    {
+      "lineNumber": 28,
+      "ruleNames": [
+        "MD029",
+        "ol-prefix"
+      ],
+      "ruleDescription": "Ordered list item prefix",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md029.md",
+      "errorDetail": "Expected: 3; Actual: 10; Style: 1/2/3",
+      "errorContext": null,
+      "errorRange": [
+        1,
+        5
+      ],
+      "fixInfo": {
+        "editColumn": 1,
+        "deleteCount": 3,
+        "insertText": "003"
+      },
+      "severity": "error"
+    },
+    {
+      "lineNumber": 29,
+      "ruleNames": [
+        "MD029",
+        "ol-prefix"
+      ],
+      "ruleDescription": "Ordered list item prefix",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md029.md",
+      "errorDetail": "Expected: 4; Actual: 11; Style: 1/2/3",
+      "errorContext": null,
+      "errorRange": [
+        1,
+        5
+      ],
+      "fixInfo": {
+        "editColumn": 1,
+        "deleteCount": 3,
+        "insertText": "004"
+      },
+      "severity": "error"
+    },
+    {
+      "lineNumber": 33,
+      "ruleNames": [
+        "MD029",
+        "ol-prefix"
+      ],
+      "ruleDescription": "Ordered list item prefix",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md029.md",
+      "errorDetail": "Expected: 1; Actual: 8; Style: 1/2/3",
+      "errorContext": null,
+      "errorRange": [
+        2,
+        3
+      ],
+      "fixInfo": {
+        "editColumn": 2,
+        "deleteCount": 1,
+        "insertText": "1"
+      },
+      "severity": "error"
+    },
+    {
+      "lineNumber": 34,
+      "ruleNames": [
+        "MD029",
+        "ol-prefix"
+      ],
+      "ruleDescription": "Ordered list item prefix",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md029.md",
+      "errorDetail": "Expected: 2; Actual: 9; Style: 1/2/3",
+      "errorContext": null,
+      "errorRange": [
+        2,
+        3
+      ],
+      "fixInfo": {
+        "editColumn": 2,
+        "deleteCount": 1,
+        "insertText": "2"
+      },
+      "severity": "error"
+    },
+    {
+      "lineNumber": 35,
+      "ruleNames": [
+        "MD029",
+        "ol-prefix"
+      ],
+      "ruleDescription": "Ordered list item prefix",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md029.md",
+      "errorDetail": "Expected: 3; Actual: 10; Style: 1/2/3",
+      "errorContext": null,
+      "errorRange": [
+        1,
+        4
+      ],
+      "fixInfo": {
+        "editColumn": 1,
+        "deleteCount": 2,
+        "insertText": " 3"
+      },
+      "severity": "error"
+    },
+    {
+      "lineNumber": 36,
+      "ruleNames": [
+        "MD029",
+        "ol-prefix"
+      ],
+      "ruleDescription": "Ordered list item prefix",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md029.md",
+      "errorDetail": "Expected: 4; Actual: 11; Style: 1/2/3",
+      "errorContext": null,
+      "errorRange": [
+        1,
+        4
+      ],
+      "fixInfo": {
+        "editColumn": 1,
+        "deleteCount": 2,
+        "insertText": " 4"
+      },
+      "severity": "error"
+    },
+    {
+      "lineNumber": 40,
+      "ruleNames": [
+        "MD029",
+        "ol-prefix"
+      ],
+      "ruleDescription": "Ordered list item prefix",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md029.md",
+      "errorDetail": "Expected: 1; Actual: 8; Style: 1/2/3",
+      "errorContext": null,
+      "errorRange": [
+        1,
+        4
+      ],
+      "fixInfo": {
+        "editColumn": 1,
+        "deleteCount": 2,
+        "insertText": "01"
+      },
+      "severity": "error"
+    },
+    {
+      "lineNumber": 41,
+      "ruleNames": [
+        "MD029",
+        "ol-prefix"
+      ],
+      "ruleDescription": "Ordered list item prefix",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md029.md",
+      "errorDetail": "Expected: 2; Actual: 9; Style: 1/2/3",
+      "errorContext": null,
+      "errorRange": [
+        1,
+        4
+      ],
+      "fixInfo": {
+        "editColumn": 1,
+        "deleteCount": 2,
+        "insertText": "02"
+      },
+      "severity": "error"
+    },
+    {
+      "lineNumber": 42,
+      "ruleNames": [
+        "MD029",
+        "ol-prefix"
+      ],
+      "ruleDescription": "Ordered list item prefix",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md029.md",
+      "errorDetail": "Expected: 3; Actual: 10; Style: 1/2/3",
+      "errorContext": null,
+      "errorRange": [
+        1,
+        4
+      ],
+      "fixInfo": {
+        "editColumn": 1,
+        "deleteCount": 2,
+        "insertText": "03"
+      },
+      "severity": "error"
+    },
+    {
+      "lineNumber": 43,
+      "ruleNames": [
+        "MD029",
+        "ol-prefix"
+      ],
+      "ruleDescription": "Ordered list item prefix",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md029.md",
+      "errorDetail": "Expected: 4; Actual: 11; Style: 1/2/3",
+      "errorContext": null,
+      "errorRange": [
+        1,
+        4
+      ],
+      "fixInfo": {
+        "editColumn": 1,
+        "deleteCount": 2,
+        "insertText": "04"
+      },
+      "severity": "error"
+    },
+    {
+      "lineNumber": 53,
+      "ruleNames": [
+        "MD029",
+        "ol-prefix"
+      ],
+      "ruleDescription": "Ordered list item prefix",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md029.md",
+      "errorDetail": "Expected: 7; Actual: 8; Style: 1/2/3",
+      "errorContext": null,
+      "errorRange": [
+        2,
+        3
+      ],
+      "fixInfo": {
+        "editColumn": 2,
+        "deleteCount": 1,
+        "insertText": "7"
+      },
+      "severity": "error"
+    },
+    {
+      "lineNumber": 54,
+      "ruleNames": [
+        "MD029",
+        "ol-prefix"
+      ],
+      "ruleDescription": "Ordered list item prefix",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md029.md",
+      "errorDetail": "Expected: 8; Actual: 9; Style: 1/2/3",
+      "errorContext": null,
+      "errorRange": [
+        2,
+        3
+      ],
+      "fixInfo": {
+        "editColumn": 2,
+        "deleteCount": 1,
+        "insertText": "8"
+      },
+      "severity": "error"
+    },
+    {
+      "lineNumber": 55,
+      "ruleNames": [
+        "MD029",
+        "ol-prefix"
+      ],
+      "ruleDescription": "Ordered list item prefix",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md029.md",
+      "errorDetail": "Expected: 9; Actual: 10; Style: 1/2/3",
+      "errorContext": null,
+      "errorRange": [
+        1,
+        4
+      ],
+      "fixInfo": {
+        "editColumn": 1,
+        "deleteCount": 2,
+        "insertText": " 9"
+      },
+      "severity": "error"
+    },
+    {
+      "lineNumber": 56,
+      "ruleNames": [
+        "MD029",
+        "ol-prefix"
+      ],
+      "ruleDescription": "Ordered list item prefix",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md029.md",
+      "errorDetail": "Expected: 10; Actual: 11; Style: 1/2/3",
+      "errorContext": null,
+      "errorRange": [
+        1,
+        4
+      ],
+      "fixInfo": {
+        "editColumn": 1,
+        "deleteCount": 2,
+        "insertText": "10"
+      },
+      "severity": "error"
+    },
+    {
+      "lineNumber": 66,
+      "ruleNames": [
+        "MD029",
+        "ol-prefix"
+      ],
+      "ruleDescription": "Ordered list item prefix",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md029.md",
+      "errorDetail": "Expected: 7; Actual: 8; Style: 1/2/3",
+      "errorContext": null,
+      "errorRange": [
+        1,
+        4
+      ],
+      "fixInfo": {
+        "editColumn": 1,
+        "deleteCount": 2,
+        "insertText": "07"
+      },
+      "severity": "error"
+    },
+    {
+      "lineNumber": 67,
+      "ruleNames": [
+        "MD029",
+        "ol-prefix"
+      ],
+      "ruleDescription": "Ordered list item prefix",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md029.md",
+      "errorDetail": "Expected: 8; Actual: 9; Style: 1/2/3",
+      "errorContext": null,
+      "errorRange": [
+        1,
+        4
+      ],
+      "fixInfo": {
+        "editColumn": 1,
+        "deleteCount": 2,
+        "insertText": "08"
+      },
+      "severity": "error"
+    },
+    {
+      "lineNumber": 68,
+      "ruleNames": [
+        "MD029",
+        "ol-prefix"
+      ],
+      "ruleDescription": "Ordered list item prefix",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md029.md",
+      "errorDetail": "Expected: 9; Actual: 10; Style: 1/2/3",
+      "errorContext": null,
+      "errorRange": [
+        1,
+        4
+      ],
+      "fixInfo": {
+        "editColumn": 1,
+        "deleteCount": 2,
+        "insertText": "09"
+      },
+      "severity": "error"
+    },
+    {
+      "lineNumber": 69,
+      "ruleNames": [
+        "MD029",
+        "ol-prefix"
+      ],
+      "ruleDescription": "Ordered list item prefix",
+      "ruleInformation": "https://github.com/DavidAnson/markdownlint/blob/v0.0.0/doc/md029.md",
+      "errorDetail": "Expected: 10; Actual: 11; Style: 1/2/3",
+      "errorContext": null,
+      "errorRange": [
+        1,
+        4
+      ],
+      "fixInfo": {
+        "editColumn": 1,
+        "deleteCount": 2,
+        "insertText": "10"
+      },
+      "severity": "error"
+    }
+  ],
+  "fixed": "# List Item Prefix Padding\\n\\nText\\n\\n 1. Item {MD029}\\n 2. Item {MD029}\\n 3. Item {MD029}\\n 4. Item {MD029}\\n\\nText\\n\\n01. Item {MD029}\\n02. Item {MD029}\\n03. Item {MD029}\\n04. Item {MD029}\\n\\nText\\n\\n  1. Item {MD029}\\n  2. Item {MD029}\\n  3. Item {MD029}\\n  4. Item {MD029}\\n\\nText\\n\\n001. Item {MD029}\\n002. Item {MD029}\\n003. Item {MD029}\\n004. Item {MD029}\\n\\nText\\n\\n 1) Item {MD029}\\n 2) Item {MD029}\\n 3) Item {MD029}\\n 4) Item {MD029}\\n\\nText\\n\\n01) Item {MD029}\\n02) Item {MD029}\\n03) Item {MD029}\\n04) Item {MD029}\\n\\nText\\n\\n 1. Item\\n 2. Item\\n 3. Item\\n 4. Item\\n 5. Item\\n 6. Item\\n 7. Item {MD029}\\n 8. Item {MD029}\\n 9. Item {MD029}\\n10. Item {MD029}\\n\\nText\\n\\n01. Item\\n02. Item\\n03. Item\\n04. Item\\n05. Item\\n06. Item\\n07. Item {MD029}\\n08. Item {MD029}\\n09. Item {MD029}\\n10. Item {MD029}\\n\\nText\\n"
+}
+`;
+
 exports[`markdownlint-test-scenarios.mjs > list-syntax-in-paragraph-text.md 1`] = `
 {
   "errors": [
@@ -36128,7 +36808,7 @@ exports[`markdownlint-test-scenarios.mjs > ordered-list-item-prefix-double-digit
       "fixInfo": {
         "editColumn": 1,
         "deleteCount": 2,
-        "insertText": "1"
+        "insertText": " 1"
       },
       "severity": "error"
     },
@@ -36149,7 +36829,7 @@ exports[`markdownlint-test-scenarios.mjs > ordered-list-item-prefix-double-digit
       "fixInfo": {
         "editColumn": 1,
         "deleteCount": 2,
-        "insertText": "2"
+        "insertText": " 2"
       },
       "severity": "error"
     },
@@ -36217,7 +36897,7 @@ exports[`markdownlint-test-scenarios.mjs > ordered-list-item-prefix-double-digit
       "severity": "error"
     }
   ],
-  "fixed": "# Ordered ist Item Prefix Double Digits Ordered\\n\\nGood list:\\n\\n1. Item\\n2. Item\\n3. Item\\n4. Item\\n5. Item\\n6. Item\\n7. Item\\n8. Item\\n9. Item\\n10. Item\\n11. Item\\n\\nBad list 1:\\n\\n1. Item\\n2. Item {MD029}\\n3. Item {MD029}\\n\\nBad list 2:\\n\\n1. Item {MD029}\\n2. Item {MD029}\\n\\nBad list 3\\n\\n1. Item {MD029}\\n2. Item {MD029}\\n\\nBad list 4:\\n\\n0. Item\\n1. Item {MD029}\\n\\n<!-- markdownlint-configure-file {\\n  \\"ol-prefix\\": {\\n    \\"style\\": \\"ordered\\"\\n  }\\n} -->\\n"
+  "fixed": "# Ordered ist Item Prefix Double Digits Ordered\\n\\nGood list:\\n\\n1. Item\\n2. Item\\n3. Item\\n4. Item\\n5. Item\\n6. Item\\n7. Item\\n8. Item\\n9. Item\\n10. Item\\n11. Item\\n\\nBad list 1:\\n\\n1. Item\\n2. Item {MD029}\\n3. Item {MD029}\\n\\nBad list 2:\\n\\n 1. Item {MD029}\\n 2. Item {MD029}\\n\\nBad list 3\\n\\n1. Item {MD029}\\n2. Item {MD029}\\n\\nBad list 4:\\n\\n0. Item\\n1. Item {MD029}\\n\\n<!-- markdownlint-configure-file {\\n  \\"ol-prefix\\": {\\n    \\"style\\": \\"ordered\\"\\n  }\\n} -->\\n"
 }
 `;
 

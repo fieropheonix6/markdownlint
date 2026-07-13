@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.41.1
+
+- Improve MD029
+- Fix module resolution under webpack
+- Update dependencies
+
 ## 0.41.0
 
 - Improve MD022/MD028/MD035/MD042/MD051/MD060
